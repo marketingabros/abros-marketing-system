@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/feedback.schema.json",
+  "title": "Feedback record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand_id", "recorded_at", "source_id", "work_type", "feedback", "status"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "source_id": {"type": "string", "minLength": 1},
+    "work_id": {"type": "string"},
+    "work_type": {"enum": ["social", "ppc", "menu", "design", "website", "other"]},
+    "feedback": {"type": "string", "minLength": 1},
+    "status": {"enum": ["raw", "reviewed", "superseded"]}
+  }
+}
+

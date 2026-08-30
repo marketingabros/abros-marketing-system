@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/agent.schema.json",
+  "id": "social",
+  "mode": "persistent",
+  "purpose": "Plan, draft, analyse, and adapt social marketing using the selected Brand OS.",
+  "inputs": [
+    "brands/{brand_id}/brand-os",
+    "brands/{brand_id}/operating-context",
+    "brands/{brand_id}/channels/assets",
+    "brands/{brand_id}/history/social-history",
+    "brands/{brand_id}/evidence"
+  ],
+  "writes": [
+    "brands/{brand_id}/work-in-progress",
+    "brands/{brand_id}/evidence/observations"
+  ],
+  "forbidden_writes": [
+    "brands/{brand_id}/brand-os",
+    "brands/{brand_id}/governance/approved-learnings"
+  ],
+  "human_approval_required_for": [
+    "publishing",
+    "external messaging",
+    "paid promotion"
+  ]
+}
+

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/performance-record.schema.json",
+  "title": "Performance record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand_id", "work_type", "period_start", "period_end", "metric", "value", "source_id"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "work_type": {"enum": ["social", "ppc", "menu", "design", "website", "commercial", "other"]},
+    "period_start": {"type": "string", "format": "date"},
+    "period_end": {"type": "string", "format": "date"},
+    "metric": {"type": "string", "minLength": 1},
+    "value": {"type": "number"},
+    "unit": {"type": "string"},
+    "dimensions": {"type": "object", "additionalProperties": {"type": ["string", "number", "boolean"]}},
+    "source_id": {"type": "string", "minLength": 1}
+  }
+}
+

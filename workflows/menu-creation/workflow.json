@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/workflow.schema.json",
+  "id": "menu-creation",
+  "execution": "deterministic",
+  "steps": [
+    {"id": "validate-inputs", "type": "validation"},
+    {"id": "assemble-menu-data", "type": "transformation"},
+    {"id": "check-required-fields-and-prices", "type": "validation"},
+    {"id": "evaluate-brand-and-content-quality", "type": "evaluation"},
+    {"id": "request-human-approval", "type": "human_approval"},
+    {"id": "archive-decision-and-output", "type": "recording"}
+  ],
+  "external_action_policy": "blocked_without_human_approval"
+}
+

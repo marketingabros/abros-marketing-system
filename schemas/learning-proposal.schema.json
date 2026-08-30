@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/learning-proposal.schema.json",
+  "title": "Learning proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand_id", "proposed_at", "statement", "evidence_ids", "scope", "status"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "proposed_at": {"type": "string", "format": "date-time"},
+    "statement": {"type": "string", "minLength": 1},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "scope": {"enum": ["campaign", "channel", "audience", "offer", "brand"]},
+    "limitations": {"type": "string"},
+    "status": {"enum": ["proposed", "under_review", "approved", "rejected", "superseded"]},
+    "decision_id": {"type": "string"}
+  }
+}
+

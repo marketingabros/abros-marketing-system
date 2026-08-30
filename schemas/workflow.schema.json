@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/workflow.schema.json",
+  "title": "Workflow definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "execution", "steps", "external_action_policy"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "execution": {"enum": ["deterministic", "on_demand"]},
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "type": {"enum": ["validation", "transformation", "evaluation", "task_agent", "human_approval", "recording"]},
+          "condition": {"type": "string"}
+        }
+      }
+    },
+    "external_action_policy": {"const": "blocked_without_human_approval"}
+  }
+}
+

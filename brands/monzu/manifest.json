@@ -1,0 +1,8 @@
+{
+  "$schema": "../../schemas/brand-manifest.schema.json",
+  "brand_id": "monzu",
+  "display_name": "Monzù",
+  "status": "scaffold",
+  "content_state": "unpopulated"
+}
+

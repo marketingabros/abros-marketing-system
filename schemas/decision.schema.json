@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/decision.schema.json",
+  "title": "Human decision record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand_id", "subject_type", "subject_id", "decision", "decided_at", "decided_by", "rationale"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "subject_type": {"enum": ["work", "learning", "brand_os_change", "external_action"]},
+    "subject_id": {"type": "string", "minLength": 1},
+    "decision": {"enum": ["approved", "rejected", "changes_requested"]},
+    "decided_at": {"type": "string", "format": "date-time"},
+    "decided_by": {"type": "string", "minLength": 1},
+    "rationale": {"type": "string", "minLength": 1}
+  }
+}
+

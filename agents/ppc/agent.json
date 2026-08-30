@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/agent.schema.json",
+  "id": "ppc",
+  "mode": "persistent",
+  "purpose": "Investigate, plan, draft, and recommend PPC campaigns and optimisations using the selected Brand OS.",
+  "inputs": [
+    "brands/{brand_id}/brand-os",
+    "brands/{brand_id}/operating-context",
+    "brands/{brand_id}/history/advertising-history",
+    "brands/{brand_id}/evidence/performance-data"
+  ],
+  "writes": [
+    "brands/{brand_id}/work-in-progress",
+    "brands/{brand_id}/evidence/observations"
+  ],
+  "forbidden_writes": [
+    "brands/{brand_id}/brand-os",
+    "brands/{brand_id}/governance/approved-learnings"
+  ],
+  "human_approval_required_for": [
+    "campaign launch",
+    "budget change",
+    "bid change",
+    "campaign pause",
+    "external account mutation"
+  ]
+}
+

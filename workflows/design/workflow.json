@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schemas/workflow.schema.json",
+  "id": "design",
+  "execution": "on_demand",
+  "steps": [
+    {"id": "validate-brief-and-assets", "type": "validation"},
+    {"id": "resolve-brand-context", "type": "transformation"},
+    {"id": "develop-concept", "type": "task_agent", "condition": "judgment_required"},
+    {"id": "produce-asset-or-mockup", "type": "transformation"},
+    {"id": "evaluate-brand-and-production-quality", "type": "evaluation"},
+    {"id": "request-human-approval", "type": "human_approval"},
+    {"id": "archive-decision-and-output", "type": "recording"}
+  ],
+  "external_action_policy": "blocked_without_human_approval"
+}
+

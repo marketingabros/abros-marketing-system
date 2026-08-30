@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/agent.schema.json",
+  "title": "Persistent agent definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "mode", "purpose", "inputs", "writes", "forbidden_writes", "human_approval_required_for"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "mode": {"const": "persistent"},
+    "purpose": {"type": "string", "minLength": 1},
+    "inputs": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "writes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "forbidden_writes": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "human_approval_required_for": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true}
+  }
+}
+

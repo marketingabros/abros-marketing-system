@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "gates": [
+    {"id": "source-traceability", "applies_to": ["all"], "method": "deterministic", "required": true},
+    {"id": "brand-os-compliance", "applies_to": ["social", "ppc", "menu", "design", "website"], "method": "independent_review", "required": true},
+    {"id": "objective-alignment", "applies_to": ["social", "ppc", "menu", "design", "website"], "method": "independent_review", "required": true},
+    {"id": "factual-and-commercial-accuracy", "applies_to": ["social", "ppc", "menu", "website"], "method": "human_review", "required": true},
+    {"id": "production-readiness", "applies_to": ["menu", "design", "website"], "method": "deterministic_and_human_review", "required": true},
+    {"id": "consequential-action-approval", "applies_to": ["all"], "method": "human_approval", "required": true}
+  ]
+}
+

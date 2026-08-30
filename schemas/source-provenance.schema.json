@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/source-provenance.schema.json",
+  "title": "Source provenance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "brand_id", "source_type", "source_locator", "captured_at", "captured_by"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "source_type": {"enum": ["management", "document", "system", "customer", "campaign", "website", "observation", "other"]},
+    "source_locator": {"type": "string", "minLength": 1},
+    "captured_at": {"type": "string", "format": "date-time"},
+    "captured_by": {"type": "string", "minLength": 1},
+    "content_hash": {"type": "string"},
+    "notes": {"type": "string"}
+  }
+}
+

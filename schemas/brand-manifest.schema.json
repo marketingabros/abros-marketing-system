@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.local/schemas/brand-manifest.schema.json",
+  "title": "Brand manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["brand_id", "display_name", "status", "content_state"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "brand_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "display_name": {"type": "string", "minLength": 1},
+    "status": {"enum": ["scaffold", "active", "archived"]},
+    "content_state": {"enum": ["unpopulated", "draft", "reviewed"]}
+  }
+}
+
