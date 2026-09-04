@@ -1,0 +1,45 @@
+brand_os:
+  brand_id: monzu
+  display_name: "The Monzù House"
+  version: "0.1"
+  status: usable_draft
+  reviewed_through: "2026-09-04"
+  provenance_register: "../provenance/SOURCE_REGISTER.md"
+  knowledge_classes:
+    - AUTHORITATIVE
+    - OBSERVED
+    - UNKNOWN
+    - CONFLICTING
+    - HISTORICAL
+  durable_sections:
+    identity: "brand-identity/identity.yaml"
+    visual_system: "visual-identity/visual-system.yaml"
+    language_and_tone: "tone-of-voice/language.yaml"
+    positioning: "positioning/positioning.yaml"
+    audiences: "audiences/audiences.yaml"
+    business_strategy: "business-strategy/business.yaml"
+    long_term_objectives: "long-term-objectives/objectives.yaml"
+    experiences: "products-and-services/experiences.yaml"
+  time_sensitive_sections:
+    operating_status: "../operating-context/operating-status.yaml"
+    current_objectives: "../operating-context/current-objectives/objectives.yaml"
+    commercial_priorities: "../operating-context/commercial-priorities/priorities.yaml"
+    transition_rules: "../operating-context/transition-rules.yaml"
+    approval_status: "../operating-context/approval-status.yaml"
+  governance:
+    management_rules: "../governance/management-decisions/rules.yaml"
+    human_review: "../HUMAN_REVIEW_REQUIRED.md"
+    knowledge_gaps: "../KNOWLEDGE_GAPS.yaml"
+  memory:
+    approved_work: "../governance/approved-work/REGISTER.yaml"
+    rejected_work: "../governance/rejected-work/REGISTER.yaml"
+    observations: "../evidence/observations/OBSERVATIONS.yaml"
+    marketing_history: "../history/marketing-history/REGISTER.yaml"
+    social_history: "../history/social-history/REGISTER.yaml"
+    advertising_history: "../history/advertising-history/REGISTER.yaml"
+    performance_sources: "../evidence/performance-data/SOURCES.yaml"
+  retrieval_policy:
+    default: "Load only the sections mapped to the task in CONTEXT_LOADING.md."
+    stale_facts: "Reconfirm time-sensitive facts when their review date has passed or publication depends on them."
+    missing_facts: "Do not infer. Block only the claim or action that materially depends on the missing fact."
+    external_actions: "Require human approval before publication, spend, deployment, customer messaging, or other consequential action."

@@ -1,0 +1,32 @@
+section: observations
+lifecycle: evidence
+policy: "These records may guide hypotheses and tests but are not permanent brand rules."
+items:
+  - id: MONZU-O017
+    classification: OBSERVED
+    statement: "The location requires intentional visits and is not supported by substantial hospitality-area footfall."
+    source_ids: [MGMT-001]
+  - id: MONZU-O018
+    classification: OBSERVED
+    statement: "Management reports that Restaurant is perceived as expensive, difficult and occasion-led."
+    source_ids: [MGMT-001]
+  - id: MONZU-O019
+    classification: OBSERVED
+    statement: "Management believes visible social momentum influences Kifissia visit decisions."
+    source_ids: [MGMT-001]
+  - id: MONZU-O020
+    classification: OBSERVED
+    statement: "A more casual Piazza proposition may increase frequency."
+    source_ids: [BUS-001]
+    limitation: unvalidated_hypothesis
+  - id: MONZU-O021
+    classification: OBSERVED
+    statement: "The three-experience architecture may increase cross-use or total customer value."
+    source_ids: [BUS-001]
+    limitation: unvalidated_hypothesis
+  - id: MONZU-O022
+    classification: OBSERVED
+    statement: "Cava Vinifera equity may transfer successfully to Monzù Cellar."
+    source_ids: [BUS-001]
+    limitation: unvalidated_hypothesis
+note: "IDs duplicate the canonical observed records in the relevant durable section so consumers can load an evidence-only view without creating new claims."

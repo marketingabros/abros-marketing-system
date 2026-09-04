@@ -1,0 +1,71 @@
+section: asset_references
+storage_policy:
+  authoritative_storage: google_drive
+  library_url: "https://drive.google.com/drive/folders/1HIdXvVaFTb-ermMo9rt2M9N3ynVhZBd_"
+  copy_large_originals_to_git: false
+  selection_rule: "Use only assets with confirmed approval, rights and experience mapping."
+collections:
+  - id: MONZU-ASSET-001
+    source_ids: [VIS-001]
+    title: "Visual Identity Final.pdf"
+    drive_path: "01 — BRAND / 02 — Visual Identity"
+    classification: AUTHORITATIVE
+    status: final_current_master
+    local_copy: false
+  - id: MONZU-ASSET-002
+    source_ids: [VIS-002, VIS-003, VIS-004, VIS-005]
+    title: "Final identity boards"
+    drive_path: "01 — BRAND / 03 — Logos / House, Restaurant, Piazza, Cellar"
+    classification: AUTHORITATIVE
+    status: approved_final
+    local_copy: false
+  - id: MONZU-ASSET-003
+    source_ids: [VIS-006]
+    title: "Logo production exports"
+    drive_path: "01 — BRAND / 03 — Logos"
+    classification: UNKNOWN
+    status: individual_derivative_mapping_required
+    local_copy: false
+  - id: MONZU-ASSET-004
+    source_ids: [VIS-007]
+    title: "Icons and graphic elements"
+    drive_path: "01 — BRAND / 05 — Icons & Graphic Elements"
+    classification: UNKNOWN
+    status: mixed_or_file_level_approval_unverified
+    local_copy: false
+  - id: MONZU-ASSET-005
+    source_ids: [VIS-008, VIS-009]
+    title: "Colour and typography sources"
+    drive_path: "01 — BRAND / 04 — Colours & Typography"
+    classification: CONFLICTING
+    status: canonical_tokens_and_font_package_unresolved
+    local_copy: false
+  - id: MONZU-ASSET-006
+    source_ids: [ASSET-001]
+    title: "Photography library and June 2026 Restaurant shortcut"
+    drive_path: "05 — ASSETS / Photography"
+    classification: UNKNOWN
+    status: approved_selects_and_rights_unresolved
+    local_copy: false
+  - id: MONZU-ASSET-007
+    source_ids: [ASSET-002]
+    title: "Illustrations"
+    drive_path: "05 — ASSETS / Illustrations"
+    classification: UNKNOWN
+    status: file_level_approval_and_rights_unresolved
+    local_copy: false
+  - id: MONZU-ASSET-008
+    source_ids: [VIS-010]
+    title: "Packaging and collateral originals"
+    drive_path: "01 — BRAND / 08 — Packaging & Collateral"
+    classification: OBSERVED
+    status: mixed_final_working_and_historical
+    local_copy: false
+required_before_publication:
+  - drive_file_id
+  - version_or_modified_date
+  - experience
+  - approval_status
+  - rights_and_expiry
+  - permitted_channels
+  - supersession_status

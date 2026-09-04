@@ -1,0 +1,22 @@
+section: approval_status
+lifecycle: time_sensitive
+reviewed_on: "2026-09-04"
+rules:
+  - id: MONZU-T009
+    classification: AUTHORITATIVE
+    statement: "Until the brand is stabilised and the team aligned, all decisions remain under founder approval."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-T010
+    classification: AUTHORITATIVE
+    statement: "Current founder approval covers brand, creative, menus, operations, partnerships and customer communication."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+unknowns:
+  - id: MONZU-U026
+    classification: UNKNOWN
+    subject: "Future delegation model and urgent escalation process when the founder is unavailable"
+    source_ids: [MGMT-001]
+refresh_rule: "Reconfirm when management changes approval or delegation authority."

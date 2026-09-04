@@ -1,0 +1,33 @@
+section: performance_sources
+lifecycle: evidence
+analysis_status: blocked_pending_validation
+sources:
+  - id: MONZU-PERF-001
+    source_ids: [PPC-002]
+    platform: meta
+    classification: OBSERVED
+    period: "2023-08-01 to 2026-09-01"
+    validation_required:
+      - currency
+      - timezone
+      - attribution_window
+      - conversion_definitions
+      - campaign_taxonomy
+  - id: MONZU-PERF-002
+    source_ids: [PPC-003, PPC-004, PPC-005]
+    platform: google_ads
+    classification: OBSERVED
+    contamination: "Unrelated Homebrew campaign/ad rows are present."
+    validation_required:
+      - verified_Monzu_account_or_campaign_filter
+      - currency
+      - timezone
+      - attribution_window
+      - primary_and_secondary_conversion_actions
+      - reporting_period
+  - id: MONZU-PERF-003
+    source_ids: [MKT-004]
+    platform: social
+    classification: UNKNOWN
+    status: connector_visibility_unresolved
+policy: "Do not draw optimisation conclusions or create approved learnings until validation and separate evaluation are complete."

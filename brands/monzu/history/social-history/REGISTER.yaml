@@ -1,0 +1,21 @@
+section: social_history
+lifecycle: historical_and_approved_output_evidence
+items:
+  - id: MONZU-H004
+    source_ids: [MKT-002]
+    classification: HISTORICAL
+    title: "Approved social output snapshot"
+    date: "2026-09-01"
+    retained_for: "Approved-output precedent and later pattern analysis."
+    inference_limit: "Does not create permanent tone or visual rules."
+  - id: MONZU-H005
+    source_ids: [MKT-003]
+    classification: HISTORICAL
+    title: "Rejected social output snapshot"
+    date: "2026-09-01"
+    retained_for: "Specific rejection evidence."
+    inference_limit: "Does not create a universal prohibition without rationale."
+performance_status:
+  source_ids: [MKT-004]
+  classification: UNKNOWN
+  statement: "Connector returned no Performance children; management warned that indexing may lag."

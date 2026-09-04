@@ -1,0 +1,86 @@
+section: management_rules
+lifecycle: durable_and_current_governance
+statements:
+  - id: MONZU-A067
+    classification: AUTHORITATIVE
+    statement: "A commercially promising idea must be rejected or changed if it blurs the independent concepts."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A068
+    classification: AUTHORITATIVE
+    statement: "Commercial reallocation of space is acceptable when experience boundaries remain clear."
+    source_ids: [MGMT-001]
+    approval_status: recorded_accepted_compromise
+    current_status: current
+  - id: MONZU-A069
+    classification: AUTHORITATIVE
+    statement: "Service and recommendations must respond to relevance and guest need rather than price."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_rule
+    current_status: current
+  - id: MONZU-A070
+    classification: AUTHORITATIVE
+    statement: "Staff must acknowledge guests, avoid visible hurry or conflict, take responsibility for mistakes, and avoid false intimacy."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_service_rules
+    current_status: current
+decision_test:
+  id: MONZU-A071
+  classification: AUTHORITATIVE
+  source_ids: [MGMT-001]
+  approval_status: explicit_management_decision_test
+  questions:
+    - "Does it belong to this House, this room and this rhythm?"
+    - "Does it protect harmony or compete for attention?"
+    - "Does it put people at ease while preserving standards?"
+    - "Is it thoughtfully made and honest?"
+    - "Is it likely to remain, or is it chasing novelty?"
+    - "Does it demonstrate quality rather than announce it?"
+    - "Can anything unnecessary be removed?"
+ai_reliability_rules:
+  - id: MONZU-A072
+    classification: AUTHORITATIVE
+    statement: "Do not invent menus, products, prices, policies, audiences, competitors, opening information, events or commercial targets."
+    source_ids: [GOV-004, MGMT-001]
+    approval_status: explicit_management_and_phase_instruction
+    current_status: current
+  - id: MONZU-A073
+    classification: AUTHORITATIVE
+    statement: "Do not treat internal concepts such as quiet luxury as public claims."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_rule
+    current_status: current
+  - id: MONZU-A074
+    classification: AUTHORITATIVE
+    statement: "Do not treat inspiration brands as competitors."
+    source_ids: [MGMT-001, BUS-001]
+    approval_status: explicit_management_context
+    current_status: current
+  - id: MONZU-A075
+    classification: AUTHORITATIVE
+    statement: "Do not treat expensive as synonymous with appropriate."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_rule
+    current_status: current
+  - id: MONZU-A076
+    classification: AUTHORITATIVE
+    statement: "Approved examples prove approval of those outputs only; rejected examples prove a specific rejection only. Neither automatically creates a universal rule."
+    source_ids: [GOV-004, MKT-002, MKT-003]
+    approval_status: explicit_phase_instruction
+    current_status: current
+  - id: MONZU-A077
+    classification: AUTHORITATIVE
+    statement: "Stale operating information must be checked against its effective/current status before use."
+    source_ids: [GOV-004, GOV-001]
+    approval_status: explicit_phase_instruction
+    current_status: current
+  - id: MONZU-A078
+    classification: AUTHORITATIVE
+    statement: "Consequential external actions require human approval."
+    source_ids: [GOV-004]
+    approval_status: explicit_system_and_phase_governance
+    current_status: current
+context_dependent_rule_refs: [MONZU-A056, MONZU-A069, MONZU-T008]
+contextual_precedent_ref: MONZU-O005
+current_approval_reference: "../../operating-context/approval-status.yaml"

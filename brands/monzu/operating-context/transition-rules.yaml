@@ -1,0 +1,17 @@
+section: transition_rules
+lifecycle: time_sensitive
+reviewed_on: "2026-09-04"
+rules:
+  - id: MONZU-T007
+    classification: AUTHORITATIVE
+    statement: "During the Cava Vinifera transition, first confirm that the customer reached the correct team, introduce Monzù Cellar clearly, then serve the request."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-T008
+    classification: AUTHORITATIVE
+    statement: "Use the Cava Vinifera name only when it helps reassurance and migration."
+    source_ids: [MGMT-001]
+    approval_status: explicit_context_dependent_rule
+    current_status: current
+expiry_condition: "Retire or revise when management declares the identity transition complete."

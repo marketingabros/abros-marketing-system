@@ -1,0 +1,38 @@
+section: menu_references
+lifecycle: time_sensitive
+items:
+  - id: MONZU-MENU-001
+    source_ids: [MENU-001]
+    experience: restaurant
+    title: "Restaurant Summer 2026 source set"
+    classification: CONFLICTING
+    status: "Base and change-marked variants; current served version not confirmed."
+    permitted_use: "Source comparison only."
+  - id: MONZU-MENU-002
+    source_ids: [MENU-002]
+    experience: restaurant
+    title: "Restaurant menus 2020–2025"
+    classification: HISTORICAL
+    status: superseded_or_time_bound
+    permitted_use: "History and learning only."
+  - id: MONZU-MENU-003
+    source_ids: [MENU-003]
+    experience: piazza
+    title: "Piazza menu candidates"
+    classification: UNKNOWN
+    status: final_and_served_state_unconfirmed
+    permitted_use: "Do not publish dishes or prices."
+  - id: MONZU-MENU-004
+    source_ids: [MENU-004]
+    experience: piazza
+    title: "Rejected Piazza menus"
+    classification: HISTORICAL
+    status: rejected
+    permitted_use: "Specific rejection evidence only."
+  - id: MONZU-MENU-005
+    source_ids: [MENU-005]
+    experience: cellar
+    title: "Cellar menu source area"
+    classification: UNKNOWN
+    status: connector_visibility_unresolved
+    permitted_use: "Do not infer absence or current offer."

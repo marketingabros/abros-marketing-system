@@ -1,0 +1,99 @@
+section: visual_system
+lifecycle: durable
+authoritative_master:
+  source_id: VIS-001
+  title: "Visual Identity Final.pdf"
+  storage: google_drive
+  copy_to_git: false
+statements:
+  - id: MONZU-A011
+    classification: AUTHORITATIVE
+    statement: "Visual Identity Final.pdf is the current authoritative master visual-identity source."
+    source_ids: [GOV-003, VIS-001]
+    approval_status: explicitly_final
+    current_status: current
+  - id: MONZU-A012
+    classification: AUTHORITATIVE
+    statement: "The approved identity system includes distinct final identity boards for House, Restaurant, Piazza and Cellar."
+    source_ids: [GOV-003, VIS-002, VIS-003, VIS-004, VIS-005]
+    approval_status: explicitly_final
+    current_status: current
+  - id: MONZU-A013
+    classification: AUTHORITATIVE
+    statement: "Visual work must respect the actual neoclassical building and must not impose a generic luxury scheme on it."
+    source_ids: [MGMT-001, BRD-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A014
+    classification: AUTHORITATIVE
+    statement: "Do not use bold colour or oversized lettering merely to demand attention."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A015
+    classification: AUTHORITATIVE
+    statement: "Do not use overdecoration, superficial styling or materials that pretend to quality."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A016
+    classification: AUTHORITATIVE
+    statement: "Do not use conspicuous logos or generic status display."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A017
+    classification: AUTHORITATIVE
+    statement: "Do not use loud, theatrical, folkloric or trend-led Italian theming."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A018
+    classification: AUTHORITATIVE
+    statement: "No material may compete with the building's existing character."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A019
+    classification: AUTHORITATIVE
+    statement: "Price is not a design-quality test; expensive materials are neither automatically accepted nor automatically rejected."
+    source_ids: [MGMT-001]
+    approval_status: explicit_context_dependent_rule
+    current_status: current
+  - id: MONZU-A020
+    classification: AUTHORITATIVE
+    statement: "The founder must personally approve the atmosphere, design direction, visual identity, look and feel of each experience."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+observed:
+  - id: MONZU-O004
+    classification: OBSERVED
+    statement: "Working design logic treats heritage elements such as the entrance, doors, tiles, garden, walls and rooms as structural identity rather than decoration."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: working_document_corroborated_by_management_context
+  - id: MONZU-O005
+    classification: OBSERVED
+    statement: "Past decisions favoured proprietary prints and precisely colour-matched ribbon and rejected Italian marble that competed with heritage tiles."
+    source_ids: [MGMT-001, BRD-001]
+    approval_status: recorded_decision_examples
+    permitted_use: "Precedent, not a universal requirement for custom production."
+unknowns:
+  - id: MONZU-U007
+    classification: UNKNOWN
+    subject: "Canonical machine-readable palette values and source-file precedence"
+    source_ids: [VIS-001, VIS-008]
+  - id: MONZU-U008
+    classification: UNKNOWN
+    subject: "Complete licensed font package, Greek coverage and fallbacks"
+    source_ids: [VIS-001, VIS-009]
+  - id: MONZU-U015
+    classification: UNKNOWN
+    subject: "Approved production rules for lockups, clear space, minimum size, signage, uniforms and digital layouts"
+    source_ids: [VIS-001, VIS-006, VIS-007]
+conflicts:
+  - id: MONZU-C002
+    classification: CONFLICTING
+    subject: "Numbered palette variants do not have an explicit canonical technical precedence."
+    source_ids: [VIS-001, VIS-008]
+    handling: "Do not guess technical tokens."

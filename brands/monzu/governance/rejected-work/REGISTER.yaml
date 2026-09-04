@@ -1,0 +1,18 @@
+section: rejected_work
+lifecycle: evidence
+items:
+  - id: MONZU-H009
+    source_ids: [MKT-003]
+    classification: HISTORICAL
+    title: "Social Rejected collection"
+    location: "Google Drive / 04 — MARKETING / Social / Rejected"
+    connector_count_at_audit: 1
+    inference_limit: "A rejected output is not a universal prohibition unless the rejection rationale establishes one."
+  - id: MONZU-H010
+    source_ids: [MENU-004]
+    classification: HISTORICAL
+    title: "Piazza rejected menu collection"
+    location: "Google Drive / 04 — MARKETING / Menus / Piazza / Rejected"
+    connector_count_at_audit: 11
+    inference_limit: "Do not treat rejected dishes, prices or layouts as the current offer."
+connector_note: "Counts are point-in-time connector observations, not proof of completeness."

@@ -1,0 +1,62 @@
+section: audiences_and_occasions
+lifecycle: durable_with_unvalidated_observations
+authoritative_boundaries:
+  - id: MONZU-A038
+    classification: AUTHORITATIVE
+    statement: "Do not invent audiences or present unvalidated segments as established."
+    source_ids: [MGMT-001, BUS-001]
+    approval_status: explicit_reliability_rule
+    current_status: current
+observed:
+  - id: MONZU-O028
+    classification: OBSERVED
+    statement: "Inclusion is not determined by wealth, fame, age or profession; guest conduct, appreciation and respect are the relevant psychographic boundary."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: founder_attributed_in_working_document
+    permitted_use: "Non-exclusion safeguard and review hypothesis; not a validated audience definition."
+  - id: MONZU-O009
+    classification: OBSERVED
+    statement: "Working sources centre people who value manners, conversation, craft, discretion, consistency and being looked after without spectacle."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: working_psychographic_description
+  - id: MONZU-O010
+    classification: OBSERVED
+    statement: "Couples may use Restaurant for celebration or an ongoing shared ritual."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: established_guest_situation_not_validated_segment
+  - id: MONZU-O011
+    classification: OBSERVED
+    statement: "Families may gather over Restaurant dinner."
+    source_ids: [BUS-001]
+    approval_status: established_guest_situation_not_validated_segment
+  - id: MONZU-O012
+    classification: OBSERVED
+    statement: "Friends may meet casually at Piazza to share news, wine and food."
+    source_ids: [BUS-001, EXP-001]
+    approval_status: established_guest_situation_not_validated_segment
+  - id: MONZU-O013
+    classification: OBSERVED
+    statement: "Professionals may use Restaurant to celebrate shared achievement."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: established_guest_situation_not_validated_segment
+  - id: MONZU-O014
+    classification: OBSERVED
+    statement: "Household wine buyers may replenish familiar selections through Cellar."
+    source_ids: [BUS-001, EXP-001]
+    approval_status: identified_commercial_use_case
+  - id: MONZU-O015
+    classification: OBSERVED
+    statement: "Personal and business customers may seek gifts through Cellar."
+    source_ids: [BUS-001, EXP-001]
+    approval_status: identified_commercial_use_case
+  - id: MONZU-O016
+    classification: OBSERVED
+    statement: "Some guests want wine detail while others prefer direct guidance or discovery through taste."
+    source_ids: [MGMT-001, BUS-001, EXP-001]
+    approval_status: management_context
+unknowns:
+  - id: MONZU-U005
+    classification: UNKNOWN
+    subject: "Validated personas, priority ranking, audience size, geography, value, journeys, barriers, tourism relevance and acquisition sources"
+    source_ids: [BUS-001, BRD-001]
+usage_rule: "Use observed occasions as hypotheses for planning and tests, not as proven audience facts or exclusion criteria."

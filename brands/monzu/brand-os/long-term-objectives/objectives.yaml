@@ -1,0 +1,28 @@
+section: long_term_objectives
+lifecycle: durable
+observed:
+  - id: MONZU-O023
+    classification: OBSERVED
+    statement: "Working qualitative objectives are to preserve the House as central identity, create more reasons to use the address, protect cross-experience coherence and make Restaurant a dependable dinner choice beyond milestones."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: working_document_not_final
+  - id: MONZU-O024
+    classification: OBSERVED
+    statement: "A working long-term ambition is for future Monzù activity to remain recognisable through its decision logic."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: working_formulation
+  - id: MONZU-O025
+    classification: OBSERVED
+    statement: "The founder reportedly linked possible expansion to an actual house with neoclassical heritage character, but the strictness and applicability of that requirement are unresolved."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: founder_attributed_but_unresolved
+unknowns:
+  - id: MONZU-U021
+    classification: UNKNOWN
+    subject: "Approved top outcomes for the next 12 months"
+    source_ids: [MGMT-001]
+  - id: MONZU-U022
+    classification: UNKNOWN
+    subject: "Expansion timing, geography, model and non-negotiable site requirements"
+    source_ids: [BUS-001, BRD-001]
+policy: "No long-term objective is classified AUTHORITATIVE in v0.1; current 90-day objectives are stored separately."

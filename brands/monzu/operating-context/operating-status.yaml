@@ -1,0 +1,39 @@
+section: operating_status
+lifecycle: time_sensitive
+reviewed_on: "2026-09-04"
+restaurant:
+  id: MONZU-T011
+  status: open
+  classification: AUTHORITATIVE
+  source_ids: [GOV-001]
+  approval_status: explicit_current_management_confirmation
+  current_status: current
+  days_open: [Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday]
+  days_closed: [Monday]
+  guest_hours:
+    opens: "19:00"
+    closes: "02:00"
+  kitchen_closes: "23:30"
+  supersedes:
+    value: "19:00–01:00"
+    classification: HISTORICAL
+    source_ids: [BRD-001, BRD-002, EXP-001]
+  publishing_rule: "These values may be used while current; recheck if the task concerns a future date, holiday exception or a source reports a later change."
+piazza:
+  id: MONZU-U001
+  status: unknown
+  classification: UNKNOWN
+  source_ids: [MGMT-001, EXP-001]
+  planned_status:
+    classification: HISTORICAL
+    statement: "Sources recorded an intended beginning-of-September opening."
+  prohibited_inference: "Do not infer that Piazza is open or publish days/hours from the plan."
+cellar:
+  id: MONZU-U002
+  status: unknown
+  classification: UNKNOWN
+  source_ids: [MGMT-001, EXP-001]
+  planned_status:
+    classification: HISTORICAL
+    statement: "Sources recorded an intended beginning-of-September opening."
+  prohibited_inference: "Do not infer that Cellar is open or publish days/hours from the plan."

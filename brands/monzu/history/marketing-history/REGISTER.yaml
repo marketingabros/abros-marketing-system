@@ -1,0 +1,22 @@
+section: marketing_history
+lifecycle: historical_evidence
+items:
+  - id: MONZU-H001
+    source_ids: [MKT-001]
+    classification: HISTORICAL
+    title: "The Monzu House Communication Rollout Plan"
+    period: "2026-06 to planned 2026-09"
+    retained_for: "Launch sequencing, intended channels, prior copy and planned KPIs."
+    not_current_truth: "Planned launch timing, copy and experience status."
+  - id: MONZU-H002
+    source_ids: [VIS-010]
+    classification: HISTORICAL
+    title: "Packaging and collateral applications"
+    retained_for: "Application history and specific approval/rejection research."
+    not_current_truth: "Unlabelled design rules or asset finality."
+  - id: MONZU-H003
+    source_ids: [ARC-001]
+    classification: HISTORICAL
+    title: "Archive and superseded material"
+    retained_for: "Traceability only when a specific decision or learning requires it."
+    not_current_truth: "Any brand, offer, operating or visual claim."

@@ -1,0 +1,68 @@
+section: current_objectives
+lifecycle: time_sensitive
+source_ids: [MGMT-001, GOV-002]
+recorded_on: "2026-08-31"
+reviewed_on: "2026-09-04"
+effective_period:
+  id: MONZU-U027
+  classification: UNKNOWN
+  source_ids: [MGMT-001]
+  statement: "Described as the next 90 days, but exact start and end dates are not stated."
+objectives:
+  - id: MONZU-T001
+    classification: AUTHORITATIVE
+    experience: piazza
+    source_ids: [MGMT-001, GOV-002]
+    objective: "Generate qualified attention, leads and visits; give Piazza a strong market head start."
+    quantitative_target: null
+    measurement_status: incomplete
+  - id: MONZU-T002
+    classification: AUTHORITATIVE
+    experience: piazza
+    source_ids: [MGMT-001]
+    objective: "Bring regular Monzù customers back and begin establishing Piazza as a multiple-visits-per-week experience."
+    quantitative_target: null
+    measurement_status: incomplete
+  - id: MONZU-T003
+    classification: AUTHORITATIVE
+    experience: piazza
+    source_ids: [MGMT-001]
+    objective: "Reach approximately 50% of available cover capacity during the first month."
+    quantitative_target:
+      value: 50
+      unit: percent_of_available_cover_capacity
+      period: first_month
+    measurement_status: "Target is evidenced; capacity baseline and opening date are unknown."
+  - id: MONZU-T004
+    classification: AUTHORITATIVE
+    experience: piazza
+    source_ids: [MGMT-001]
+    objective: "Target 30–40 covers per day during the first month."
+    quantitative_target:
+      minimum: 30
+      maximum: 40
+      unit: covers_per_day
+      period: first_month
+    measurement_status: "Target is evidenced; opening date and source system are unknown."
+  - id: MONZU-T005
+    classification: AUTHORITATIVE
+    experience: cellar
+    source_ids: [MGMT-001]
+    objective: "Protect former Cava Vinifera customer trust, revenue and continuity while introducing Monzù Cellar, then grow."
+    quantitative_target:
+      minimum: 500000
+      unit: EUR_sales
+      period: rolling_12_months
+    measurement_status: "Target is evidenced; accounting definition and source system require confirmation."
+  - id: MONZU-T006
+    classification: AUTHORITATIVE
+    experience: restaurant
+    source_ids: [MGMT-001]
+    objective: "Reduce the current year-on-year decline without lowering standards; returning to flat is not the stated 90-day target."
+    quantitative_context:
+      reported_decline_minimum: 20
+      reported_decline_maximum: 40
+      unit: percent_below_equivalent_period_last_year
+    measurement_status: "Reported range requires baseline, comparison period and source-system validation."
+approval_status: current_management_knowledge
+refresh_rule: "Reconfirm effective dates, ownership, baselines and status before automated evaluation or after a material operating change."

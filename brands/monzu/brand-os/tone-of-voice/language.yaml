@@ -1,0 +1,93 @@
+section: language_and_tone
+lifecycle: durable
+statements:
+  - id: MONZU-A021
+    classification: AUTHORITATIVE
+    statement: "Communication must use precise, credible language."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A022
+    classification: AUTHORITATIVE
+    statement: "Spoken Greek must sound natural, and English brand terminology must not be repeated unnecessarily."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A023
+    classification: AUTHORITATIVE
+    statement: "Do not depend on superlatives, slogans, exaggerated marketing or unnecessary English."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A024
+    classification: AUTHORITATIVE
+    statement: "Never use «κάβα» for Monzù Cellar."
+    source_ids: [MGMT-001, EXP-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A025
+    classification: AUTHORITATIVE
+    statement: "Never describe the Restaurant as fine dining or a «γαστρονομική εμπειρία»."
+    source_ids: [MGMT-001, EXP-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A026
+    classification: AUTHORITATIVE
+    statement: "Never describe The Monzù House as a new destination."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A027
+    classification: AUTHORITATIVE
+    statement: "Do not use quiet luxury, old money, aristocracy, premium or exclusive club as public positioning claims."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A028
+    classification: AUTHORITATIVE
+    statement: "Do not use boutique as a shortcut for explaining Cellar's curation."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A029
+    classification: AUTHORITATIVE
+    statement: "Give a practical answer before explaining the full brand architecture."
+    source_ids: [MGMT-001, BRD-001]
+    approval_status: management_decision_corroborated
+    current_status: current
+  - id: MONZU-A030
+    classification: AUTHORITATIVE
+    statement: "Written language may be more poetic than telephone or face-to-face language; spoken service language must remain direct and natural."
+    source_ids: [MGMT-001]
+    approval_status: explicit_context_dependent_rule
+    current_status: current
+transition_rule_reference: "../../operating-context/transition-rules.yaml"
+canonical_wording: []
+canonical_wording_status:
+  id: MONZU-U016
+  classification: UNKNOWN
+  statement: "No full manifesto, tagline, long-form passage or campaign line is safe to treat as approved canonical copy in v0.1."
+  source_ids: [GOV-003, BRD-001, BRD-002, BRD-003]
+observed:
+  - id: MONZU-O006
+    classification: OBSERVED
+    statement: "Working tone language favours few words, concrete meaning, warmth, calm and assurance without forced familiarity."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: working_formulation
+  - id: MONZU-O007
+    classification: OBSERVED
+    statement: "The messaging guide contains labelled official phrasing and expanded copy, but its approval scope is mixed and several examples conflict with current management rules."
+    source_ids: [BRD-003, GOV-003]
+    approval_status: mixed
+    permitted_use: "Source review only; do not reproduce as canonical copy."
+conflicts:
+  - id: MONZU-C001
+    classification: CONFLICTING
+    subject: "BRD-003 prohibits the Greek noun «ανακάλυψη» while BRD-001/002 prefer discover / ανακαλύπτω."
+    source_ids: [BRD-001, BRD-002, BRD-003]
+    handling: "Avoid the disputed word family in public or canonical copy pending management resolution."
+unknowns:
+  - id: MONZU-U017
+    classification: UNKNOWN
+    subject: "Which non-prohibited vocabulary preferences are mandatory versus channel-specific"
+    source_ids: [BRD-003]

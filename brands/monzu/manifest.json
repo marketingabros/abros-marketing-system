@@ -1,8 +1,7 @@
 {
   "$schema": "../../schemas/brand-manifest.schema.json",
   "brand_id": "monzu",
-  "display_name": "Monzù",
-  "status": "scaffold",
-  "content_state": "unpopulated"
+  "display_name": "The Monzù House",
+  "status": "active",
+  "content_state": "draft"
 }
-

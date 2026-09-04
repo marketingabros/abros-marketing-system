@@ -1,0 +1,80 @@
+section: business_strategy
+lifecycle: durable
+statements:
+  - id: MONZU-A040
+    classification: AUTHORITATIVE
+    statement: "Commercial adaptation may change allocation or emphasis but must not erase the conceptual boundaries among Restaurant, Piazza and Cellar."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A041
+    classification: AUTHORITATIVE
+    statement: "No commercial decision may blur Restaurant, Piazza and Cellar."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A042
+    classification: AUTHORITATIVE
+    statement: "Any attempt to make the Restaurant more accessible or frequent must not lower food or hospitality standards."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_tradeoff_rule
+    current_status: current
+  - id: MONZU-A044
+    classification: AUTHORITATIVE
+    statement: "Piazza must offer a lower-commitment, more frequent use occasion without diluting Monzù."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_strategy
+    current_status: current
+  - id: MONZU-A045
+    classification: AUTHORITATIVE
+    statement: "Monzù must not use discounts, price-led promotions or influencer collaborations."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_prohibition
+    current_status: current
+  - id: MONZU-A046
+    classification: AUTHORITATIVE
+    statement: "Permitted attention-building may include launch invitations, PR/editorial activity, hosted events, high-end wine or spirits partnerships, and carefully selected artist or socially relevant partnerships, each subject to required approval."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_permission_with_case_by_case_approval
+    current_status: current
+observed:
+  - id: MONZU-O017
+    classification: OBSERVED
+    statement: "The location requires intentional visits and cannot rely on significant market-area footfall."
+    source_ids: [MGMT-001]
+    approval_status: management_observation
+  - id: MONZU-O018
+    classification: OBSERVED
+    statement: "Management reports that the Restaurant is perceived as expensive, difficult and occasion-led, limiting frequency."
+    source_ids: [MGMT-001]
+    approval_status: management_observation_not_validated_research
+  - id: MONZU-O019
+    classification: OBSERVED
+    statement: "Management believes visible activity and social momentum influence visits in Kifissia."
+    source_ids: [MGMT-001]
+    approval_status: explicitly_labelled_management_observation
+hypotheses:
+  - id: MONZU-O020
+    classification: OBSERVED
+    statement: "A more casual Piazza proposition may increase visit frequency."
+    source_ids: [BUS-001]
+    approval_status: unvalidated_hypothesis
+  - id: MONZU-O021
+    classification: OBSERVED
+    statement: "The three-experience architecture may increase cross-use or total customer value."
+    source_ids: [BUS-001]
+    approval_status: unvalidated_hypothesis
+  - id: MONZU-O022
+    classification: OBSERVED
+    statement: "Cava Vinifera equity may transfer successfully to Monzù Cellar."
+    source_ids: [BUS-001]
+    approval_status: unvalidated_hypothesis
+unknowns:
+  - id: MONZU-U019
+    classification: UNKNOWN
+    subject: "Legal entities, ownership structure, complete revenue model, capacities, staffing and unit economics"
+    source_ids: [BUS-001, BRD-001]
+  - id: MONZU-U020
+    classification: UNKNOWN
+    subject: "Where money, staff time or commercial opportunities are currently being lost"
+    source_ids: [MGMT-001]

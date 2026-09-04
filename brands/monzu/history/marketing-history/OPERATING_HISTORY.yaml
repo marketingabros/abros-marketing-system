@@ -1,0 +1,22 @@
+section: operating_history
+lifecycle: historical_evidence
+items:
+  - id: MONZU-H011
+    classification: HISTORICAL
+    statement: "Working Brand Knowledge and Experience sources stated Restaurant guest hours of 19:00–01:00."
+    source_ids: [BRD-001, BRD-002, EXP-001]
+    superseded_by: GOV-001
+    current_value_reference: "../../operating-context/operating-status.yaml"
+  - id: MONZU-H012
+    classification: HISTORICAL
+    statement: "The communication rollout planned Piazza and full-ecosystem launch activity for September 2026."
+    source_ids: [MKT-001]
+    current_status: "Planning evidence only; not proof that Piazza or Cellar opened."
+  - id: MONZU-H013
+    classification: HISTORICAL
+    statement: "Monzù began as an Italian-inspired Restaurant and later moved away from a version perceived as too expensive, difficult and special-occasion-led."
+    source_ids: [MGMT-001, BUS-001]
+  - id: MONZU-H014
+    classification: HISTORICAL
+    statement: "Cava Vinifera is the predecessor identity whose recognition, trust and sales continuity Monzù Cellar is intended to protect."
+    source_ids: [MGMT-001]

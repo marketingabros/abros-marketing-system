@@ -1,0 +1,49 @@
+section: positioning
+lifecycle: durable
+statements:
+  - id: MONZU-A033
+    classification: AUTHORITATIVE
+    statement: "The Restaurant is a dinner experience that must not be positioned as fine dining, difficult or reserved only for special occasions."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A034
+    classification: AUTHORITATIVE
+    statement: "Piazza is the relaxed-gathering expression and must remain distinct from the Restaurant in food and service rhythm."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A035
+    classification: AUTHORITATIVE
+    statement: "Cellar is defined by curation, guidance, gifting and relevance rather than exhaustive range, volume or price comparison."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A036
+    classification: AUTHORITATIVE
+    statement: "The three experiences must be understandable through practical use; their distinction must not depend on a long brand explanation."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A037
+    classification: AUTHORITATIVE
+    statement: "Cultivated reference brands are inspiration only; they are not verified competitors and must not be copied."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_context
+    current_status: current
+observed:
+  - id: MONZU-O008
+    classification: OBSERVED
+    statement: "A working positioning territory describes a historic Kifissia house offering food, wine and hospitality through three rhythms, prioritising cultivated taste, composure and belonging over status, spectacle or trend."
+    source_ids: [BUS-001, BRD-001]
+    approval_status: working_formulation
+    permitted_use: "Internal evaluation, not approved public positioning copy."
+unknowns:
+  - id: MONZU-U018
+    classification: UNKNOWN
+    subject: "Approved formal positioning statement, category definition, price position, proof hierarchy and market map"
+    source_ids: [BUS-001, BRD-001]
+  - id: MONZU-U006
+    classification: UNKNOWN
+    subject: "Verified direct and indirect competitors"
+    source_ids: [BUS-001, MGMT-001]

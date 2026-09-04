@@ -1,0 +1,22 @@
+section: advertising_history
+lifecycle: historical_evidence
+items:
+  - id: MONZU-H006
+    source_ids: [PPC-001]
+    classification: HISTORICAL
+    title: "Meta campaign creative"
+    retained_for: "Campaign lineage and creative review."
+    inference_limit: "Historic creative/copy does not define current positioning."
+  - id: MONZU-H007
+    source_ids: [PPC-002]
+    classification: HISTORICAL
+    title: "Meta campaign performance export"
+    period: "2023-08-01 to 2026-09-01"
+    retained_for: "Performance analysis after metric validation."
+  - id: MONZU-H008
+    source_ids: [PPC-003, PPC-004, PPC-005]
+    classification: HISTORICAL
+    title: "Google Ads campaign, ad-group and ad exports"
+    retained_for: "Performance and copy history after validation."
+    data_quality_warning: "Contains unrelated Homebrew records; quarantine before analysis."
+    positioning_warning: "Historic gastronomy/award language is not current Brand OS truth."

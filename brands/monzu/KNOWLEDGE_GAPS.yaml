@@ -1,0 +1,94 @@
+version: "0.1"
+reviewed_on: "2026-09-04"
+policy:
+  block_only_when_material: true
+  never_infer_missing_facts: true
+gaps:
+  - id: MONZU-U001
+    classification: UNKNOWN
+    subject: "Piazza opening status, date, days, hours and booking model"
+    source_ids: [MGMT-001, EXP-001]
+    blocks: ["publishing Piazza availability or hours", "time-dependent Piazza campaigns"]
+    does_not_block: ["brand strategy", "concept-level Piazza content drafts clearly pending fact check"]
+  - id: MONZU-U002
+    classification: UNKNOWN
+    subject: "Cellar opening status, date, days and hours"
+    source_ids: [MGMT-001, EXP-001]
+    blocks: ["publishing Cellar availability or hours"]
+    does_not_block: ["Cellar positioning and transition planning"]
+  - id: MONZU-U003
+    classification: UNKNOWN
+    subject: "Current served Restaurant and Piazza menus, prices and availability"
+    source_ids: [MENU-001, MENU-003]
+    blocks: ["menu publication", "dish and price claims"]
+    does_not_block: ["experience strategy", "non-product-specific brand content"]
+  - id: MONZU-U004
+    classification: UNKNOWN
+    subject: "Current Cellar range, stock, food provisions, cigars, delivery and ordering channels"
+    source_ids: [EXP-001, MENU-005]
+    blocks: ["specific product, availability, delivery or commerce claims"]
+    does_not_block: ["curation, guidance and gifting positioning"]
+  - id: MONZU-U005
+    classification: UNKNOWN
+    subject: "Validated priority audiences, sizes, journeys and acquisition sources"
+    source_ids: [BUS-001, BRD-001]
+    blocks: ["claiming validated personas or audience rankings"]
+    does_not_block: ["testing occasion-based hypotheses"]
+  - id: MONZU-U006
+    classification: UNKNOWN
+    subject: "Verified direct and indirect competitors"
+    source_ids: [BUS-001, MGMT-001]
+    blocks: ["competitor comparisons and conquest strategy"]
+    does_not_block: ["brand positioning without named competitors"]
+  - id: MONZU-U007
+    classification: UNKNOWN
+    subject: "Canonical machine-readable colour tokens"
+    source_ids: [VIS-001, VIS-008]
+    blocks: ["new production requiring exact colour values"]
+    does_not_block: ["strategy", "using an approved supplied template unchanged"]
+  - id: MONZU-U008
+    classification: UNKNOWN
+    subject: "Licensed font package, Greek coverage and approved fallbacks"
+    source_ids: [VIS-001, VIS-009]
+    blocks: ["new production requiring embedded or web fonts"]
+    does_not_block: ["strategy and copy work"]
+  - id: MONZU-U009
+    classification: UNKNOWN
+    subject: "Detailed photography direction and approved rights-cleared asset set"
+    source_ids: [ASSET-001, ASSET-002]
+    blocks: ["selecting or publishing unverified imagery"]
+    does_not_block: ["copy-only work", "social strategy analysis"]
+  - id: MONZU-U010
+    classification: UNKNOWN
+    subject: "Current website approved copy and ownership/update workflow"
+    source_ids: [GOV-002, WEB-001]
+    blocks: ["treating screenshot copy as canonical", "unsupervised website publication"]
+    does_not_block: ["website audit and planning"]
+  - id: MONZU-U011
+    classification: UNKNOWN
+    subject: "Objective owners, effective period, baselines and reporting cadence"
+    source_ids: [MGMT-001]
+    blocks: ["automated performance evaluation against targets"]
+    does_not_block: ["directional strategy using labelled current objectives"]
+  - id: MONZU-U012
+    classification: UNKNOWN
+    subject: "Google/Meta metric definitions, currency, timezone and attribution"
+    source_ids: [PPC-002, PPC-003, PPC-004, PPC-005]
+    blocks: ["comparative performance conclusions and optimisation"]
+    does_not_block: ["data-quality audit"]
+conflicts:
+  - id: MONZU-C001
+    classification: CONFLICTING
+    subject: "Use of discovery terminology"
+    source_ids: [BRD-001, BRD-002, BRD-003]
+    handling: "Do not use the disputed word family in canonical or public copy until management defines the boundary."
+  - id: MONZU-C002
+    classification: CONFLICTING
+    subject: "Canonical palette file among numbered SCSS/PDF/SVG variants"
+    source_ids: [VIS-001, VIS-008]
+    handling: "Use supplied final identity artwork as reference; do not invent or select technical tokens."
+  - id: MONZU-C003
+    classification: CONFLICTING
+    subject: "Final Restaurant Summer 2026 menu version"
+    source_ids: [MENU-001]
+    handling: "Do not publish dishes or prices until management identifies the served file."

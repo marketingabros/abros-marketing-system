@@ -1,0 +1,41 @@
+section: website_information
+lifecycle: time_sensitive
+domain_routing:
+  classification: AUTHORITATIVE
+  source_ids: [GOV-002]
+  items:
+    - domain: monzu.gr
+      id: MONZU-T015
+      classification: AUTHORITATIVE
+      source_ids: [GOV-002]
+      role: restaurant
+      current_status: "Described as mostly current; verify before publication."
+    - domain: themonzuhouse.gr
+      id: MONZU-T016
+      classification: AUTHORITATIVE
+      source_ids: [GOV-002]
+      role: house_and_non_restaurant_experiences
+      current_status: "Routes Restaurant to monzu.gr; verify live implementation."
+evidence:
+  - id: MONZU-WEB-001
+    source_ids: [WEB-001]
+    classification: OBSERVED
+    title: "Website screenshots"
+    limitation: "Point-in-time evidence; copy is not canonical and may be stale."
+unknowns:
+  - id: MONZU-U030
+    classification: UNKNOWN
+    subject: "Current approved page copy"
+    source_ids: [GOV-002, WEB-001]
+  - id: MONZU-U031
+    classification: UNKNOWN
+    subject: "Live page inventory and launch status"
+    source_ids: [GOV-002, WEB-001]
+  - id: MONZU-U032
+    classification: UNKNOWN
+    subject: "Analytics and search-console scope"
+    source_ids: [WEB-001]
+  - id: MONZU-U033
+    classification: UNKNOWN
+    subject: "Content owner, update workflow and review cadence"
+    source_ids: [GOV-002]

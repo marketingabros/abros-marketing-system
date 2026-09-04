@@ -1,0 +1,30 @@
+section: commercial_priorities
+lifecycle: time_sensitive
+reviewed_on: "2026-09-04"
+source_ids: [MGMT-001, GOV-002]
+priorities:
+  - rank: 1
+    id: MONZU-T012
+    classification: AUTHORITATIVE
+    statement: "Give Piazza the strongest immediate head start through qualified attention and visits."
+    source_ids: [MGMT-001]
+  - rank: 2
+    id: MONZU-T013
+    classification: AUTHORITATIVE
+    statement: "Protect Cellar's inherited customers, trust and rolling commercial value during the identity transition."
+    source_ids: [MGMT-001, GOV-002]
+  - rank: 3
+    id: MONZU-T014
+    classification: AUTHORITATIVE
+    statement: "Reduce Restaurant decline and make repeat dinner visits more natural without lowering standards."
+    source_ids: [MGMT-001]
+constraint_rule_refs: [MONZU-A041, MONZU-A045]
+unknowns:
+  - id: MONZU-U028
+    classification: UNKNOWN
+    subject: "Owners, budgets, exact deadlines and channel-level targets"
+    source_ids: [MGMT-001]
+  - id: MONZU-U029
+    classification: UNKNOWN
+    subject: "Priority order after the initial launch period"
+    source_ids: [MGMT-001]

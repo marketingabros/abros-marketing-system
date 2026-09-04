@@ -1,0 +1,145 @@
+section: experiences
+lifecycle: durable
+operating_status_reference: "../../operating-context/operating-status.yaml"
+house:
+  statements:
+    - id: MONZU-A047
+      classification: AUTHORITATIVE
+      statement: "The House governs the food, wine, service, objects, language and pace of Restaurant, Piazza and Cellar while preserving each experience's distinct model."
+      source_ids: [MGMT-001, BRD-001]
+      approval_status: management_decision_corroborated
+      current_status: current
+restaurant:
+  role: celebrated_dinner
+  statements:
+    - id: MONZU-A048
+      classification: AUTHORITATIVE
+      statement: "Restaurant is dinner-only."
+      source_ids: [MGMT-001]
+      approval_status: explicit_management_decision
+      current_status: current
+    - id: MONZU-A049
+      classification: AUTHORITATIVE
+      statement: "Restaurant food is governed by taste, ingredient quality, balance and consistency; technique and presentation serve flavour."
+      source_ids: [MGMT-001]
+      approval_status: explicit_management_decision
+      current_status: current
+    - id: MONZU-A050
+      classification: AUTHORITATIVE
+      statement: "Restaurant is Italian-inspired but must not use loud, theatrical or folkloric Italian theming."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: management_decision_corroborated
+      current_status: current
+    - id: MONZU-A051
+      classification: AUTHORITATIVE
+      statement: "Restaurant service must be precise, calm and attentive without visible hurry, conflict, intimidation, lecturing or unnecessary pressure."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: management_prohibitions_corroborated
+      current_status: current
+    - id: MONZU-A052
+      classification: AUTHORITATIVE
+      statement: "Restaurant must not be positioned as fine dining, a «γαστρονομική εμπειρία», or a special-occasion-only choice."
+      source_ids: [MGMT-001]
+      approval_status: explicit_management_prohibition
+      current_status: current
+    - id: MONZU-A053
+      classification: AUTHORITATIVE
+      statement: "Pizza must not be placed in the Restaurant area because it blurs the experience boundaries."
+      source_ids: [MGMT-001]
+      approval_status: recorded_refused_compromise
+      current_status: current
+  unknowns:
+    - id: MONZU-U023
+      classification: UNKNOWN
+      subject: "Current served dishes, prices, dietary/allergen offer, group rules, table-turn policy, children/pets policy and final Restaurant copy"
+      source_ids: [EXP-001, MENU-001]
+piazza:
+  role: relaxed_gathering
+  statements:
+    - id: MONZU-A054
+      classification: AUTHORITATIVE
+      statement: "Piazza is the more relaxed and spontaneous House expression, oriented to wine, gathering and genuinely shareable food."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: management_decision_corroborated
+      current_status: current
+    - id: MONZU-A055
+      classification: AUTHORITATIVE
+      statement: "Piazza food must be genuinely shareable, appropriate beside wine and distinct from Restaurant starters."
+      source_ids: [MGMT-001]
+      approval_status: explicit_management_decision
+      current_status: current
+    - id: MONZU-A056
+      classification: AUTHORITATIVE
+      statement: "Piazza uses a lower-intervention service rhythm; Restaurant choreography must not be imposed on it."
+      source_ids: [MGMT-001]
+      approval_status: explicit_management_decision
+      current_status: current
+    - id: MONZU-A057
+      classification: AUTHORITATIVE
+      statement: "Relaxed Piazza service must not become careless, loud, trend-led or inconsistent."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: management_rule_corroborated
+      current_status: current
+    - id: MONZU-O029
+      classification: OBSERVED
+      statement: "Piazza must not be defined only as drinking; it is a social rhythm of stopping and sharing."
+      source_ids: [EXP-001]
+      approval_status: working_experience_rule
+      permitted_use: "Concept review; not approved canonical wording."
+  unknowns:
+    - id: MONZU-U024
+      classification: UNKNOWN
+      subject: "Current menu, wine/by-the-glass list, prices, opening status/hours, seating zones, music timing and reservation/walk-in rules"
+      source_ids: [MGMT-001, EXP-001, MENU-003]
+cellar:
+  role: slow_discovery
+  statements:
+    - id: MONZU-A059
+      classification: AUTHORITATIVE
+      statement: "Cellar is built on curation, guidance, gifting and relevance, not exhaustive range or volume."
+      source_ids: [MGMT-001]
+      approval_status: explicit_management_decision
+      current_status: current
+    - id: MONZU-O030
+      classification: OBSERVED
+      statement: "The documented Cellar offer model includes selected wines and spirits, take-home bottles, repeat household orders, personal gifts and business/corporate gift baskets."
+      source_ids: [EXP-001, MGMT-001]
+      approval_status: working_experience_offer_with_management_corroboration
+      permitted_use: "Business-model context only; verify live product/service status before publication."
+    - id: MONZU-A061
+      classification: AUTHORITATIVE
+      statement: "Cellar service must begin with the guest's need and provide relevant guidance without testing, lecturing or pressuring the guest."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: management_service_rules_corroborated
+      current_status: current
+    - id: MONZU-A062
+      classification: AUTHORITATIVE
+      statement: "Cellar must not compete through claims of enormous range, volume or exhaustive choice."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: explicit_management_prohibition
+      current_status: current
+    - id: MONZU-A063
+      classification: AUTHORITATIVE
+      statement: "Cellar must never be called «κάβα»."
+      source_ids: [MGMT-001, EXP-001]
+      approval_status: explicit_management_prohibition
+      current_status: current
+  transition_rule_reference: "../../operating-context/transition-rules.yaml"
+  observed:
+    - id: MONZU-O026
+      classification: OBSERVED
+      statement: "Cheese, cured meats and Monzù-branded spreads were described as intended future-world products, not confirmed live inventory."
+      source_ids: [EXP-001]
+      approval_status: founder_intention_not_current_offer
+    - id: MONZU-O027
+      classification: OBSERVED
+      statement: "Cigars were identified only as a possible later addition."
+      source_ids: [EXP-001]
+      approval_status: possible_future_idea
+  unknowns:
+    - id: MONZU-U025
+      classification: UNKNOWN
+      subject: "Live range, stock policy, prices, delivery area, e-commerce/order channels, subscriptions, corporate-gifting process, operating status/hours and food-provision launch status"
+      source_ids: [EXP-001, MENU-005]
+reliability_rule_refs: [MONZU-A072, MONZU-A077]
+retrieval_rule: "Load current operating facts from operating-context, not this durable definition."

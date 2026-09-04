@@ -1,0 +1,18 @@
+section: approved_work
+lifecycle: evidence
+items:
+  - id: MONZU-MEM-A001
+    source_ids: [MKT-002]
+    classification: OBSERVED
+    title: "Social Approved collection"
+    location: "Google Drive / 04 — MARKETING / Social / Approved"
+    connector_count_at_audit: 11
+    approval_status: approved_output
+    inference_limit: "Approval applies to each output, not automatically to every copy, layout or design choice within it."
+  - id: MONZU-MEM-A002
+    source_ids: [VIS-002, VIS-003, VIS-004, VIS-005]
+    classification: AUTHORITATIVE
+    title: "Final House and experience identity boards"
+    approval_status: explicitly_final
+    inference_limit: "Use as the current visual source; unlabelled derivatives still require mapping."
+connector_note: "Recent Drive indexing may be incomplete; re-inventory before relying on file counts."

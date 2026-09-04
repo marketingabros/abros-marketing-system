@@ -1,0 +1,91 @@
+section: identity
+lifecycle: durable
+statements:
+  - id: MONZU-A001
+    classification: AUTHORITATIVE
+    statement: "The House is the central identity; Restaurant, Piazza and Cellar are three expressions of the same House, not unrelated venues."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A002
+    classification: AUTHORITATIVE
+    statement: "The existing neoclassical building and known address in Kifissia are central to the identity."
+    source_ids: [MGMT-001, BRD-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A003
+    classification: AUTHORITATIVE
+    statement: "The Monzù House must not be presented as a new destination."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A004
+    classification: AUTHORITATIVE
+    statement: "Restaurant, Piazza and Cellar must each retain an independent atmosphere, visual identity, look and feel."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A005
+    classification: AUTHORITATIVE
+    statement: "The founder-selected formal values are Honest, Craftsmanship and Consistency."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: founder_selected
+    current_status: current
+  - id: MONZU-A006
+    classification: AUTHORITATIVE
+    statement: "The building and Restaurant food are protected priorities and should not be compromised."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A007
+    classification: AUTHORITATIVE
+    statement: "Decisions must be judged by whether they belong to this House, room and rhythm, not by whether they appear luxurious or expensive."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_decision
+    current_status: current
+  - id: MONZU-A008
+    classification: AUTHORITATIVE
+    statement: "Monzù should demonstrate quality through conduct and detail rather than announce it."
+    source_ids: [MGMT-001, BRD-001]
+    approval_status: management_decision_corroborated
+    current_status: current
+  - id: MONZU-A009
+    classification: AUTHORITATIVE
+    statement: "Hospitality must put people at ease while preserving standards; it must not test or intimidate the guest."
+    source_ids: [MGMT-001, BRD-001]
+    approval_status: management_decision_corroborated
+    current_status: current
+  - id: MONZU-A010
+    classification: AUTHORITATIVE
+    statement: "The House protects coherence between heritage and current use without becoming a literal historic or cultural theme."
+    source_ids: [MGMT-001]
+    approval_status: explicit_management_context_and_prohibitions
+    current_status: current
+observed:
+  - id: MONZU-O001
+    classification: OBSERVED
+    statement: "A working purpose describes preserving honest pleasures of food, wine and hospitality inside a house that makes visits feel timeless."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: working_formulation_not_final
+    permitted_use: "Internal synthesis only; not canonical public copy."
+  - id: MONZU-O002
+    classification: OBSERVED
+    statement: "Working character language describes the House as elegant, warm, composed, intelligent, low-key, intriguing and boundaried without coldness."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: working_characterisation
+    permitted_use: "Evaluation aid; do not quote as approved manifesto."
+  - id: MONZU-O003
+    classification: OBSERVED
+    statement: "Discernment, Craft and Stewardship are consolidated strategic pillars, explicitly distinct from the founder-selected values."
+    source_ids: [BRD-001, BRD-002]
+    approval_status: working_consolidation
+    permitted_use: "Internal decision-support language pending founder decision."
+unknowns:
+  - id: MONZU-U013
+    classification: UNKNOWN
+    subject: "Approved exact public purpose or manifesto wording"
+    source_ids: [BRD-001, BRD-002, BRD-003]
+  - id: MONZU-U014
+    classification: UNKNOWN
+    subject: "Whether working strategic pillars should remain internal, become formal, or replace anything"
+    source_ids: [BRD-001, BUS-001]
