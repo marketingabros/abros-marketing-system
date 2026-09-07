@@ -1,0 +1,455 @@
+registry_version: "1.0"
+audit_date: "2026-09-06"
+scope: "Brand-independent organic social and Instagram expertise"
+status: "research_only"
+scoring:
+  minimum: 0
+  maximum: 10
+  dimensions:
+    - expertise_depth
+    - platform_specificity
+    - decision_framework_quality
+    - analytics_quality
+    - creative_quality
+    - recency
+    - restaurant_relevance
+    - implementation_quality
+  note: "Scores are comparative audit judgments. They are not source quality certifications."
+security_policy:
+  external_material_trusted: false
+  scripts_executed: false
+  packages_installed: false
+  credentials_supplied: false
+
+candidates:
+  - id: meta-instagram-best-practices
+    rank: 1
+    name: "Instagram Best Practices in Professional Dashboard"
+    source: "Meta Newsroom and in-app Instagram Professional Dashboard"
+    author: "Instagram / Meta"
+    url: "https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/"
+    publication_or_update_date: "2024-10-01; living in-app resource"
+    version: "living"
+    license: "Proprietary; public documentation, no reuse license identified"
+    domain: [platform_operations, creation, engagement, reach, monetization, guidelines]
+    platform: [instagram]
+    purpose: "Provide current general and account-personalised guidance."
+    scores: {expertise_depth: 7, platform_specificity: 10, decision_framework_quality: 6, analytics_quality: 7, creative_quality: 5, recency: 10, restaurant_relevance: 3, implementation_quality: 8}
+    disposition: ADOPT
+    what_is_actually_useful: "Highest-authority refresh gateway; separates creation, engagement, reach and guidelines and can reflect account-specific state."
+    what_is_generic_or_obvious: "Some recommendations remain broad and creator-oriented."
+    what_is_outdated: "The announcement is not the knowledge itself; any screenshots or 2024 rollout details may be obsolete."
+    assumptions: "Professional account access and feature availability; creator success is the primary framing."
+    business_model: "Platform operator seeking healthy creator activity and retention."
+    extract: "Source hierarchy, refresh procedure, and fact checks before platform-dependent advice."
+    do_not_copy: "Wording, screenshots, or mutable recommendations as permanent rules."
+    security_or_script_risk: "Low for reading; login and account data exposure if automated later. Do not scrape credentials or private dashboard data."
+    license_restrictions: "Summarise and cite; do not reproduce substantial proprietary content."
+
+  - id: meta-instagram-ranking-system-cards
+    rank: 2
+    name: "Instagram Ranking System Cards"
+    source: "Meta AI / Transparency documentation"
+    author: "Meta"
+    url: "https://ai.meta.com/tools/system-cards/instagram-feed-ranking/"
+    publication_or_update_date: "System-card programme announced 2023-06-29; living pages retrieved 2026-09-06"
+    version: "living"
+    license: "Proprietary public documentation; no reuse license identified"
+    domain: [ranking, recommendations, discovery, platform_architecture]
+    platform: [instagram]
+    purpose: "Explain candidate sourcing, filtering, prediction, scoring, ranking and controls by surface."
+    scores: {expertise_depth: 9, platform_specificity: 10, decision_framework_quality: 7, analytics_quality: 6, creative_quality: 2, recency: 9, restaurant_relevance: 2, implementation_quality: 7}
+    disposition: ADOPT
+    what_is_actually_useful: "Authoritative evidence that Instagram is not governed by one algorithm and that surfaces use distinct systems and predicted actions."
+    what_is_generic_or_obvious: "User-control sections are less relevant to brand operations."
+    what_is_outdated: "Older diagrams can lag product changes; exact system-card update dates must be captured at refresh."
+    assumptions: "Describes platform systems at a transparency level, not complete model internals or weights."
+    business_model: "Platform transparency and regulatory accountability."
+    extract: "Surface-specific reasoning and the separation of eligibility/filtering from ranking."
+    do_not_copy: "Diagrams, model names, or signal order as a permanent tactical recipe."
+    security_or_script_risk: "Low; documentation only."
+    license_restrictions: "Paraphrase with attribution."
+
+  - id: amec-integrated-evaluation
+    rank: 3
+    name: "AMEC Integrated Evaluation Framework and Barcelona Principles V4.0"
+    source: "International Association for Measurement and Evaluation of Communication"
+    author: "AMEC and contributors; taxonomy by Jim Macnamara"
+    url: "https://amecorg.com/amecframework/home/framework/introduction/"
+    publication_or_update_date: "Living framework; Barcelona Principles V4.0 published 2025"
+    version: "IEF current site; Barcelona Principles 4.0"
+    license: "Copyrighted; V4.0 PDF states all rights reserved"
+    domain: [strategy, objectives, measurement, evaluation]
+    platform: [cross_platform]
+    purpose: "Connect organisational objectives to inputs, activities, outputs, out-takes, outcomes and impact."
+    scores: {expertise_depth: 10, platform_specificity: 3, decision_framework_quality: 10, analytics_quality: 9, creative_quality: 2, recency: 9, restaurant_relevance: 5, implementation_quality: 8}
+    disposition: ADAPT
+    what_is_actually_useful: "Best durable logic for stopping vanity reporting and designing measures from business objectives."
+    what_is_generic_or_obvious: "Examples are communications-wide and often campaign-level."
+    what_is_outdated: "None material in the core logic; individual worksheets/examples may predate current social metrics."
+    assumptions: "Effects can be expressed in a programme logic chain; impact attribution is contributory rather than automatically causal."
+    business_model: "Professional communications measurement standards body."
+    extract: "Objective design, taxonomy, measurement plan, outcome orientation and iterative evaluation."
+    do_not_copy: "Protected diagrams, worksheets, wording, or AMEC branding."
+    security_or_script_risk: "Low; documents and an interactive framework only."
+    license_restrictions: "Implement original Abros terminology and templates; cite the conceptual influence."
+
+  - id: socialinsider-instagram-benchmarks
+    rank: 4
+    name: "2026 Instagram Organic Benchmarks"
+    source: "Socialinsider"
+    author: "Elena Cucu / Socialinsider"
+    url: "https://www.socialinsider.io/social-media-benchmarks/instagram"
+    publication_or_update_date: "2026-02-20; includes later quarterly updates"
+    version: "2026 report using 2025 full-year data"
+    license: "Copyrighted vendor report"
+    domain: [analytics, benchmarking, formats, cadence]
+    platform: [instagram]
+    purpose: "Contextualise engagement, views, saves, comments, growth and posting frequency by format/account size."
+    scores: {expertise_depth: 8, platform_specificity: 10, decision_framework_quality: 6, analytics_quality: 9, creative_quality: 5, recency: 9, restaurant_relevance: 4, implementation_quality: 7}
+    disposition: ADAPT
+    what_is_actually_useful: "Large disclosed sample (35M posts, 447,613 pages), explicit window and formulas, format-level comparisons."
+    what_is_generic_or_obvious: "Editorial prescriptions can over-generalise aggregate differences."
+    what_is_outdated: "Labelled 2026 but core annual values are from 2025; quarterly values will age quickly."
+    assumptions: "Socialinsider customer/public-page sample represents a useful comparison set; follower-based engagement is meaningful."
+    business_model: "Social analytics SaaS content marketing."
+    extract: "Method disclosure checklist and use of benchmarks as dated priors, segmented by size and format."
+    do_not_copy: "Report prose, charts, or medians as universal performance targets."
+    security_or_script_risk: "Low for reading; no vendor connection authorised."
+    license_restrictions: "Quote minimally; cite; do not republish tables/charts wholesale."
+
+  - id: social-media-skills-library
+    rank: 5
+    name: "Social Media Skills library"
+    source: "GitHub repository"
+    author: "social-media-skills organisation"
+    url: "https://github.com/social-media-skills/skills"
+    publication_or_update_date: "Created 2026-07-16; repository pushed 2026-09-03; inspected 2026-09-06"
+    version: "Individual files commonly 1.0.0; audit pinned conceptually to inspected default-branch blobs"
+    license: "MIT"
+    domain: [strategy, writing, video, design, growth, community, analytics, publishing]
+    platform: [cross_platform, instagram]
+    purpose: "Provide 106 composable agent skills for social work."
+    scores: {expertise_depth: 7, platform_specificity: 8, decision_framework_quality: 8, analytics_quality: 6, creative_quality: 7, recency: 9, restaurant_relevance: 2, implementation_quality: 8}
+    disposition: ADAPT
+    what_is_actually_useful: "Clear triggers and boundaries; dependency routing; shootable Reel table; carousel spine; Story sequence; native-insights boundary; human approval language."
+    what_is_generic_or_obvious: "Many skills restate familiar advice and create routing overhead; breadth exceeds Abros' current need."
+    what_is_outdated: "No age problem yet, but many '2026 reality' claims lack source/date at claim level and will become stale."
+    assumptions: "A flat skill library, brand files named brand-profile.md/voice.md, WoopSocial, Claude-style loaders, and creator-led businesses."
+    business_model: "Open-source library with optional third-party tool integrations and broad agent ecosystem distribution."
+    extract: "Selected decomposition, explicit hand-offs, structured production outputs, failure-mode checks, and approval boundaries after independent rewriting."
+    do_not_copy: "Wholesale pack; vendor-specific dependencies; unsupported numeric claims such as fixed weights, attribution undercount, universal cadence, or format absolutes."
+    security_or_script_risk: "Medium/high if installed: README proposes npx/CLI/plugin installers, scripts, tool integrations, scheduling, network access and credential-bearing publishing. Static Markdown alone is lower risk."
+    license_restrictions: "MIT permits reuse with copyright and license notice; Abros should still rewrite and preserve provenance."
+
+  - id: touchbistro-diner-trends-2025
+    rank: 6
+    name: "2025 U.S. Diner Trends Report"
+    source: "TouchBistro"
+    author: "TouchBistro"
+    url: "https://marketingdev.touchbistro.com/wp-content/uploads/2025/04/2025-TouchBistro-American-Diner-Trends-Report.pdf"
+    publication_or_update_date: "2025"
+    version: "2025 U.S. edition"
+    license: "Copyrighted vendor report"
+    domain: [restaurant_consumer_research, discovery, reviews]
+    platform: [instagram, tiktok, social_media]
+    purpose: "Describe how U.S. diners discover, research and choose restaurants."
+    scores: {expertise_depth: 7, platform_specificity: 6, decision_framework_quality: 5, analytics_quality: 8, creative_quality: 3, recency: 8, restaurant_relevance: 10, implementation_quality: 5}
+    disposition: ADAPT
+    what_is_actually_useful: "Evidence that restaurant social can serve research/choice, with meaningful generational differences; useful hypothesis source."
+    what_is_generic_or_obvious: "Vendor recommendations and broad restaurant marketing conclusions."
+    what_is_outdated: "Annual consumer percentages decay; refresh at least yearly."
+    assumptions: "U.S. diners and surveyed sample transfer to the operating market."
+    business_model: "Restaurant technology vendor using research for category education and demand generation."
+    extract: "Discovery-to-choice questions and segments to validate locally."
+    do_not_copy: "U.S. percentages as Greek facts, charts, or report copy."
+    security_or_script_risk: "Low; PDF only."
+    license_restrictions: "Summarise/cite; no wholesale reproduction."
+
+  - id: buffer-state-social-2026
+    rank: 7
+    name: "State of Social Media Engagement 2026"
+    source: "Buffer"
+    author: "Buffer research/editorial team"
+    url: "https://buffer.com/resources/state-of-social-media-engagement-2026/"
+    publication_or_update_date: "2026; data through 2025-12-03"
+    version: "2026"
+    license: "Copyrighted vendor report"
+    domain: [analytics, cross_platform_benchmarking]
+    platform: [instagram, cross_platform]
+    purpose: "Compare engagement patterns across platforms using 52M+ posts."
+    scores: {expertise_depth: 8, platform_specificity: 7, decision_framework_quality: 7, analytics_quality: 9, creative_quality: 3, recency: 9, restaurant_relevance: 3, implementation_quality: 7}
+    disposition: ADAPT
+    what_is_actually_useful: "Clear warning that platform engagement definitions differ; publishes eligibility criteria, time windows and limitations."
+    what_is_generic_or_obvious: "Cross-platform rankings can distract from a brand's actual objective."
+    what_is_outdated: "Some embedded Instagram format analyses use older windows; all medians require annual refresh."
+    assumptions: "Active Buffer users are a useful population; provider-specific data access produces comparable measures."
+    business_model: "Publishing/analytics SaaS content marketing."
+    extract: "Metric-definition discipline, dataset eligibility disclosure, medians as context rather than universal truth."
+    do_not_copy: "Platform league tables into decisions without matching definitions and samples."
+    security_or_script_risk: "Low for reading; do not connect accounts during research."
+    license_restrictions: "Summarise and cite."
+
+  - id: link-in-bio
+    rank: 8
+    name: "Link in Bio"
+    source: "Practitioner newsletter/interview archive"
+    author: "Rachel Karten"
+    url: "https://www.linkinbio.news/"
+    publication_or_update_date: "Ongoing; inspected 2026-09-06"
+    version: "continuous publication"
+    license: "Copyrighted; portions may be subscriber-only"
+    domain: [creative_strategy, social_operations, case_studies, copy]
+    platform: [cross_platform, instagram]
+    purpose: "Capture how experienced social leaders think and execute through interviews and analysis."
+    scores: {expertise_depth: 9, platform_specificity: 7, decision_framework_quality: 7, analytics_quality: 4, creative_quality: 10, recency: 9, restaurant_relevance: 7, implementation_quality: 6}
+    disposition: COMBINE
+    what_is_actually_useful: "High-quality operator cases, creative taste, brand-fit judgment, team/process detail; author has food-media and CAVA experience."
+    what_is_generic_or_obvious: "Advice varies by interview and is not normalised into a method."
+    what_is_outdated: "Trend commentary has short half-life; archive items must retain dates."
+    assumptions: "Named brand cases transfer through principles, not direct imitation."
+    business_model: "Independent media/newsletter and consulting."
+    extract: "Case metadata, decisions, trade-offs, creative mechanisms and failure lessons in original summaries."
+    do_not_copy: "Paid text, proprietary interviews, example executions, or a brand's voice."
+    security_or_script_risk: "Low; subscription/payment/privacy considerations only."
+    license_restrictions: "No bulk ingestion or reproduction; use brief attributed summaries and links."
+
+  - id: meta-recommendation-originality
+    rank: 9
+    name: "Instagram recommendation eligibility and original-content guidance"
+    source: "Meta Newsroom and Instagram Help Centre"
+    author: "Instagram / Meta"
+    url: "https://about.fb.com/news/2020/08/recommendation-guidelines/"
+    publication_or_update_date: "Guidelines announced 2020-08-31; original-content update 2024-04-30; living Help Centre"
+    version: "living policy"
+    license: "Proprietary public documentation"
+    domain: [recommendation_eligibility, integrity, originality]
+    platform: [instagram]
+    purpose: "Define when allowed content may still be ineligible for recommendation and how identical reposts are treated."
+    scores: {expertise_depth: 8, platform_specificity: 10, decision_framework_quality: 7, analytics_quality: 2, creative_quality: 3, recency: 8, restaurant_relevance: 4, implementation_quality: 9}
+    disposition: ADOPT
+    what_is_actually_useful: "Makes eligibility a pre-publication gate; supports original-rights-cleared content and Account Status checks."
+    what_is_generic_or_obvious: "Does not explain how to make good original content."
+    what_is_outdated: "The 2020 announcement is only a pointer; the living policy controls."
+    assumptions: "Public professional account seeking recommendation to non-followers."
+    business_model: "Platform safety, quality and creator attribution."
+    extract: "Eligibility checklist and primary-source verification requirement."
+    do_not_copy: "Static prohibited-content list or enforcement predictions."
+    security_or_script_risk: "Low for reading; Account Status is private account data."
+    license_restrictions: "Paraphrase and link."
+
+  - id: rival-iq-2025
+    rank: 10
+    name: "2025 Social Media Industry Benchmark Report"
+    source: "Rival IQ"
+    author: "Rival IQ editorial/research team"
+    url: "https://www.rivaliq.com/resources/download-the-2025-social-media-industry-benchmark-report/"
+    publication_or_update_date: "2025 edition"
+    version: "2025"
+    license: "Copyrighted vendor report"
+    domain: [analytics, industry_benchmarks, competitors]
+    platform: [instagram, facebook, tiktok, x]
+    purpose: "Benchmark engagement and posting frequency across 14 industries and 2,100 brands."
+    scores: {expertise_depth: 7, platform_specificity: 7, decision_framework_quality: 6, analytics_quality: 8, creative_quality: 4, recency: 7, restaurant_relevance: 6, implementation_quality: 6}
+    disposition: ADAPT
+    what_is_actually_useful: "Industry segmentation, public methodology and an explicit follower-based engagement formula."
+    what_is_generic_or_obvious: "Best-practice editorial around the data."
+    what_is_outdated: "2025 report is no longer a current platform baseline in late 2026."
+    assumptions: "Selected large brands and industry categories are valid comparators; follower denominator is suitable."
+    business_model: "Competitive social analytics SaaS."
+    extract: "Comparator-selection checklist and formula declaration."
+    do_not_copy: "Old medians, rankings, or vendor conclusions as targets."
+    security_or_script_risk: "Low for public report; no account connection authorised."
+    license_restrictions: "Cite; do not reproduce charts/report."
+
+  - id: icymi-newsletter
+    rank: 11
+    name: "ICYMI"
+    source: "Practitioner/news newsletter"
+    author: "Lia Haberman"
+    url: "https://liahaberman.substack.com/"
+    publication_or_update_date: "Ongoing; inspected 2026-09-06"
+    version: "continuous publication"
+    license: "Copyrighted; mixed free/paid access"
+    domain: [platform_updates, creator_economy, trend_monitoring]
+    platform: [cross_platform, instagram]
+    purpose: "Weekly detection and interpretation of social-platform changes."
+    scores: {expertise_depth: 7, platform_specificity: 8, decision_framework_quality: 5, analytics_quality: 3, creative_quality: 5, recency: 10, restaurant_relevance: 2, implementation_quality: 7}
+    disposition: ADOPT
+    what_is_actually_useful: "Efficient secondary alert stream and links that can trigger primary-source verification."
+    what_is_generic_or_obvious: "News summaries are not operating rules or full evidence."
+    what_is_outdated: "Every issue is time-sensitive."
+    assumptions: "Reader validates high-impact changes and understands rollout variability."
+    business_model: "Independent newsletter/media."
+    extract: "Change log leads with date, affected surface, rollout status and primary-source link."
+    do_not_copy: "Newsletter text or unverified reports into permanent knowledge."
+    security_or_script_risk: "Low; subscription/privacy considerations."
+    license_restrictions: "Link and summarise minimally; no bulk reproduction."
+
+  - id: sevenrooms-conversion
+    rank: 12
+    name: "SevenRooms restaurant social and booking-channel guidance"
+    source: "SevenRooms"
+    author: "Bianca Esmond / SevenRooms"
+    url: "https://sevenrooms.com/blog/how-to-create-a-social-media-marketing-plan-for-your-restaurant/"
+    publication_or_update_date: "2019-01-31; booking-channel product page retrieved 2026-09-06"
+    version: "mixed dated editorial and living integration page"
+    license: "Copyrighted vendor content"
+    domain: [restaurant_marketing, reservations, attribution]
+    platform: [instagram, facebook, tiktok, google]
+    purpose: "Reduce friction between social discovery and restaurant reservation and capture booking source."
+    scores: {expertise_depth: 6, platform_specificity: 6, decision_framework_quality: 6, analytics_quality: 7, creative_quality: 3, recency: 4, restaurant_relevance: 10, implementation_quality: 8}
+    disposition: ADAPT
+    what_is_actually_useful: "Direct booking path, profile completeness, booking-source tracking and first-party guest relationship."
+    what_is_generic_or_obvious: "Most content-planning advice is basic and promotional."
+    what_is_outdated: "2019 feature instructions and platform statistics require verification."
+    assumptions: "Compatible reservation provider, supported geography, and reservation-led venue."
+    business_model: "Restaurant CRM/reservation platform selling integrations."
+    extract: "Discovery-to-booking friction audit and reservation-source measurement."
+    do_not_copy: "SevenRooms-specific product recommendation or old UI instructions as neutral rules."
+    security_or_script_risk: "Medium if integrated later because guest/reservation data and account permissions are sensitive; none during research."
+    license_restrictions: "Summarise/cite; do not copy guide."
+
+  - id: socialinsider-stories-2025
+    rank: 13
+    name: "2025 Instagram Stories Benchmarks"
+    source: "Socialinsider"
+    author: "Elena Cucu / Socialinsider"
+    url: "https://www.socialinsider.io/social-media-benchmarks/instagram-stories-benchmarks"
+    publication_or_update_date: "2025-06-26"
+    version: "2025; January-May 2025 and 2024 comparison"
+    license: "Copyrighted vendor report"
+    domain: [stories, retention, sequencing, analytics]
+    platform: [instagram]
+    purpose: "Compare exits, forward taps, reach and impressions across Story sequences and account sizes."
+    scores: {expertise_depth: 8, platform_specificity: 10, decision_framework_quality: 7, analytics_quality: 9, creative_quality: 6, recency: 6, restaurant_relevance: 6, implementation_quality: 8}
+    disposition: ADAPT
+    what_is_actually_useful: "Transparent sample of 161,180 Stories and explicit formulas; focuses on sequence behaviour rather than generic reach."
+    what_is_generic_or_obvious: "Editorial 'sweet spot' conclusions can be mistaken for prescriptions."
+    what_is_outdated: "2025 window; Story UI and distribution can change."
+    assumptions: "Active-brand aggregate behaviour transfers across objectives and verticals."
+    business_model: "Social analytics SaaS content marketing."
+    extract: "Frame-level retention diagnosis and sequence experiment design."
+    do_not_copy: "A universal 6–13 frame rule or medians without local testing."
+    security_or_script_risk: "Low for reading."
+    license_restrictions: "Summarise/cite."
+
+  - id: meta-trial-reels
+    rank: 14
+    name: "Trial Reels"
+    source: "Meta Newsroom / Instagram"
+    author: "Instagram / Meta"
+    url: "https://about.fb.com/news/2024/12/trial-reels-try-content-non-followers-first-see-what-perfoms-best/"
+    publication_or_update_date: "2024-12-10; updated 2025-06-26"
+    version: "feature page updated 2025-06-26"
+    license: "Proprietary public documentation"
+    domain: [experimentation, reels, non_follower_distribution]
+    platform: [instagram]
+    purpose: "Test a Reel with non-followers before optionally sharing more broadly."
+    scores: {expertise_depth: 5, platform_specificity: 10, decision_framework_quality: 7, analytics_quality: 6, creative_quality: 5, recency: 8, restaurant_relevance: 5, implementation_quality: 8}
+    disposition: ADAPT
+    what_is_actually_useful: "A platform-native experimental surface; the 72-hour automatic-share option is documented."
+    what_is_generic_or_obvious: "Meta presents a product benefit, not a controlled test method."
+    what_is_outdated: "Availability, metrics and controls may differ by account/region and must be checked at use time."
+    assumptions: "The feature is available and non-follower trial performance informs a follower-facing decision."
+    business_model: "Encourage creator experimentation and content supply."
+    extract: "Use as one test channel with hypothesis, single-variable discipline, pre-set measure and human share decision."
+    do_not_copy: "Claims that trials are risk-free, statistically representative, or do not affect other distribution."
+    security_or_script_risk: "Low; consequential sharing still requires human approval."
+    license_restrictions: "Paraphrase and cite."
+
+  - id: tourism-instagram-study-2024
+    rank: 15
+    name: "Understanding engagement with Instagram posts about tourism destinations"
+    source: "Journal article via ScienceDirect"
+    author: "Article authors / Journal of Hospitality and Tourism Technology context"
+    url: "https://www.sciencedirect.com/science/article/pii/S2212571X24000969"
+    publication_or_update_date: "2024"
+    version: "published article"
+    license: "Publisher copyright; access/reuse terms apply"
+    domain: [hospitality, tourism, visual_content, engagement]
+    platform: [instagram]
+    purpose: "Analyse engagement across 27,088 destination posts by content and people/place centricity."
+    scores: {expertise_depth: 8, platform_specificity: 8, decision_framework_quality: 5, analytics_quality: 8, creative_quality: 6, recency: 7, restaurant_relevance: 7, implementation_quality: 4}
+    disposition: COMBINE
+    what_is_actually_useful: "Shows the value of coding visual content variables and user type rather than treating all hospitality posts alike."
+    what_is_generic_or_obvious: "Destination engagement is adjacent to, not identical with, restaurant demand."
+    what_is_outdated: "Historical observational data cannot establish current ranking effects."
+    assumptions: "Engagement patterns in tourism destinations offer useful hypotheses for hospitality."
+    business_model: "Academic research/publication."
+    extract: "Content-coding approach and hypotheses for people/place/service imagery."
+    do_not_copy: "Causal claims, copyrighted article text, or destination results as restaurant rules."
+    security_or_script_risk: "Low."
+    license_restrictions: "Use original synthesis and citation; respect publisher access terms."
+
+  - id: crewai-social-media-agent
+    rank: 16
+    name: "Social Media AI Agent"
+    source: "GitHub repository"
+    author: "Kushal Samani"
+    url: "https://github.com/kushalsamani/social-media-ai-agent"
+    publication_or_update_date: "Created 2026-02-13; pushed 2026-06-17; inspected 2026-09-06"
+    version: "default branch master at inspection"
+    license: "MIT"
+    domain: [automation, research, strategy, calendars, content_generation]
+    platform: [cross_platform]
+    purpose: "Run a sequential CrewAI pipeline with structured Pydantic outputs and Markdown rendering."
+    scores: {expertise_depth: 4, platform_specificity: 3, decision_framework_quality: 4, analytics_quality: 2, creative_quality: 4, recency: 8, restaurant_relevance: 1, implementation_quality: 7}
+    disposition: REJECT
+    what_is_actually_useful: "Structured output models, draft-only posture in the documented flow, and separation of rendered review files."
+    what_is_generic_or_obvious: "Role names and sequential task prompts substitute for deep social diagnosis."
+    what_is_outdated: "Model/provider names are volatile."
+    assumptions: "Product marketing, 30-day batch generation, CrewAI, Google GenAI, Serper and scraping."
+    business_model: "Developer demonstration/general product-marketing automation."
+    extract: "Only the idea of schema-validated outputs and explicit drafts."
+    do_not_copy: "Agent topology, full content factory, hard-coded inputs, dependencies or scraper workflow."
+    security_or_script_risk: "High if run: dependency install, API keys, web search/scraping, network calls, filesystem writes and model execution. No code was run."
+    license_restrictions: "MIT notice required for copied code; no code adoption recommended."
+
+  - id: mat-marketing-agent-teams
+    rank: 17
+    name: "Marketing Agent Teams (MAT)"
+    source: "GitHub repository"
+    author: "Ahil-NS"
+    url: "https://github.com/Ahil-NS/marketing-agent-teams"
+    publication_or_update_date: "Created 2026-02-27; pushed 2026-03-08; inspected 2026-09-06"
+    version: "default branch main at inspection"
+    license: "No repository license detected"
+    domain: [multi_agent_orchestration, publishing, review, credentials]
+    platform: [instagram, tiktok, facebook, reddit, youtube, x, pinterest]
+    purpose: "Orchestrate 30+ marketing agents from research through publishing."
+    scores: {expertise_depth: 4, platform_specificity: 5, decision_framework_quality: 5, analytics_quality: 3, creative_quality: 4, recency: 7, restaurant_relevance: 1, implementation_quality: 7}
+    disposition: REJECT
+    what_is_actually_useful: "Human review pause, dry-run concept, state recovery, trust tiers, credential isolation and declarative permissions are good architecture references."
+    what_is_generic_or_obvious: "Thirty-two named agents create fragmentation; claims of battle-tested intelligence are not enough evidence of senior expertise."
+    what_is_outdated: "Provider/tool assumptions and platform adapters will age rapidly."
+    assumptions: "CLI operation, Claude authentication, many parallel specialist personas, multi-platform autonomous pipeline."
+    business_model: "Open-source low-cost alternative to marketing suites."
+    extract: "Conceptual approval gate and least-privilege ideas only, for a later implementation phase."
+    do_not_copy: "Code, skill prompts, architecture, publishing adapters or credential handling."
+    security_or_script_risk: "High if run: shell/CLI, OAuth tokens, keychain access, network calls, publishing, filesystem state, many dependencies."
+    license_restrictions: "No license means default copyright; do not copy code or documentation."
+
+  - id: praj-smart-marketing-assistant
+    rank: 18
+    name: "Smart Marketing Assistant Crew AI"
+    source: "GitHub repository"
+    author: "praj2408"
+    url: "https://github.com/praj2408/Smart-Marketing-Assistant-Crew-AI"
+    publication_or_update_date: "Repository inspected 2026-09-06"
+    version: "default branch main at inspection"
+    license: "Not established during audit"
+    domain: [instagram_workflow, multi_agent_generation]
+    platform: [instagram]
+    purpose: "Demonstrate AI-agent automation of an Instagram marketing workflow."
+    scores: {expertise_depth: 3, platform_specificity: 4, decision_framework_quality: 3, analytics_quality: 2, creative_quality: 3, recency: 5, restaurant_relevance: 1, implementation_quality: 4}
+    disposition: REJECT
+    what_is_actually_useful: "Confirms common orchestration pattern; no distinctive senior methodology identified."
+    what_is_generic_or_obvious: "Agent roles and automated workflow framing without robust evidence, diagnostics or vertical logic."
+    what_is_outdated: "Unknown without trustworthy version history/content documentation."
+    assumptions: "Automation and multiple agents improve Instagram marketing quality."
+    business_model: "Developer demonstration."
+    extract: "Nothing beyond generic comparison evidence."
+    do_not_copy: "Code, prompts, workflow or configuration."
+    security_or_script_risk: "Unknown/high if run; agent frameworks typically involve dependencies, model/network calls and credentials. Nothing was executed."
+    license_restrictions: "Unknown/no clear permission; do not copy."
