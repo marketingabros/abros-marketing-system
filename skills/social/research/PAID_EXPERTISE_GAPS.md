@@ -1,439 +1,402 @@
-# Paid Social Expertise Procurement Brief
+# Paid Social Expertise Gaps — Multi-Industry Reassessment
 
-Phase: 3.5
+Phase: 3.5 architecture correction
 
-Created: 2026-09-07
+Reassessed: 2026-09-07
 
-Status: procurement definition only; no product search, purchase, Skill construction, agent construction, or integration is authorised.
+Status: procurement definition only; no product search, purchase, Skill construction, agent construction or integration is authorised.
 
 ## Management decision
 
-Abros can proceed to Social v0.1 using the free and official expertise already audited. Paid material is an accelerator and quality multiplier, not a prerequisite.
+Abros can proceed without paid material. If it buys one resource, it should buy **senior cross-industry social-native creative strategy and critique methodology**. If it buys a second, it should buy **cross-industry performance diagnosis and experimentation methodology**.
 
-Before Social v0.1, acquire **no more than three** paid resources. One or two excellent, complementary resources would be preferable to three partial ones. The first purchase should address **senior social-native creative strategy and creative critique**, because this is the clearest opportunity to improve the current 8.0/10 creative and commercial usefulness score.
+Before Social Skill Pack v0.1, acquire no more than **two** resources, and initially search for only the first. A third resource should not be considered until real use shows whether the next constraint is community/reputation, a business-model gap or a justified vertical gap.
 
-Paid resources should transfer expert judgment into Abros-owned or clearly licensed methods. Do not buy prompts, content volume, automation, platform folklore, or access to a tool presented as methodology.
+The purchasing objective is transferable decision quality for multiple Abros brands—not restaurant optimisation, platform tips, prompts, content volume or access to a tool.
 
-## 1. Capability gap assessment
+## 1. Reassessed capability gaps
 
-Ratings mean:
+| Capability/layer | Free or official coverage | Abros customisation required | Paid expertise value | Decision |
+|---|---|---|---|---|
+| Business objective to social objective | STRONG | MEDIUM | LOW | Custom-build from AMEC-informed logic; do not buy separately. |
+| Strategic prioritisation and next-action selection | ADEQUATE | HIGH | MEDIUM | Build into core; buy only if embedded in a stronger diagnosis method. |
+| Performance diagnosis and experimentation | ADEQUATE | HIGH | HIGH | Second paid priority; require competing hypotheses, failed cases and next-test logic. |
+| Portfolio planning and campaign sequencing | ADEQUATE | HIGH | MEDIUM | Custom-build; paid value only as part of senior creative or diagnostic methodology. |
+| Creative territories and concept development | WEAK | HIGH | HIGH | First paid priority. |
+| Creative critique and rejection logic | WEAK | HIGH | HIGH | First paid priority; must include before/after and failed work. |
+| Novelty, repetition and fatigue diagnosis | WEAK | HIGH | HIGH | Prefer inside the first creative resource, not a standalone course. |
+| Creative briefing across formats | ADEQUATE | MEDIUM | MEDIUM | Custom-build; paid value only with real annotated briefs and critique. |
+| Competitor conventions and whitespace | ADEQUATE | HIGH | MEDIUM | Custom-build; avoid competitive-scraping tools presented as strategy. |
+| Community and social-proof strategy | ADEQUATE | HIGH | MEDIUM | Conditional third priority after live workflow scope is known. |
+| Human approval and independent QA policy | ADEQUATE | HIGH | LOW | Custom-build from Abros governance; do not outsource authority. |
+| Instagram current platform knowledge | STRONG | MEDIUM | LOW | Keep free/official and volatile. |
+| Instagram Reels, Stories and carousel mechanics | ADEQUATE | MEDIUM | LOW | Keep official/current; creative quality comes from the core. |
+| Platform-change monitoring | STRONG | MEDIUM | LOW | Official sources plus verified alerts; do not buy “algorithm intelligence.” |
+| Business-model module design | ADEQUATE | HIGH | MEDIUM | Custom-build from current portfolio mechanics and first-party evidence. |
+| Local Venue / Experience mechanics | ADEQUATE | HIGH | MEDIUM | Build the generic module; paid cases may help only if they transfer across venue types. |
+| Local Service mechanics | WEAK | HIGH | LOW | Learn from Drops/other operations before buying generic local-marketing material. |
+| Ecommerce / Product mechanics | ADEQUATE | HIGH | MEDIUM | Public expertise is extensive; adapt selectively and avoid ecommerce dominance in the core. |
+| Restaurant vertical methodology | WEAK | HIGH | MEDIUM | Retain as a conditional vertical purchase after cross-industry priorities. |
+| Kids/family vertical methodology | WEAK | HIGH | MEDIUM | Defer procurement until safeguarding and decision scope are defined. |
+| Laundry vertical methodology | WEAK | HIGH | LOW | No purchase; a separate vertical is not justified yet. |
+| Brand identity, positioning and voice | Brand-owned | HIGH | LOW | Must remain in each Brand OS; do not buy generic brand imitation. |
+| Brand performance and history | First-party | HIGH | LOW | Runtime evidence; external methodology may diagnose it but cannot replace it. |
 
-- **Free/official coverage:** how well the Phase 3 sources cover the transferable method today.
-- **Abros customisation:** how much Abros-specific operating logic must still be designed.
-- **Paid value:** whether expert methodology could materially improve quality beyond the existing evidence.
+### What changed from the first Phase 3.5 recommendation
 
-| Proposed Social capability | Free/official coverage | Abros customisation required | Potential value of paid expertise | Procurement decision | Reason |
-|---|---|---|---|---|---|
-| Strategy and objective design | STRONG | MEDIUM | LOW | Do not buy separately | AMEC supplies a strong objective-to-impact backbone; adaptation to Abros is internal architecture work. |
-| Measurement and performance diagnosis | ADEQUATE | HIGH | HIGH | Consider buying | Metrics and measurement principles are strong, but senior symptom-to-cause diagnosis and next-test selection remain weak. |
-| Portfolio and campaign planning | ADEQUATE | HIGH | MEDIUM | Buy only as part of another category | Public planning patterns are sufficient; Abros must build capacity, diversity, sequencing and fatigue logic. |
-| Short-form video and Reels craft | ADEQUATE | MEDIUM | MEDIUM | Buy only with strong critique/case depth | Public format craft is plentiful; value would come from senior creative diagnosis, not another Reels course. |
-| Carousel and Story craft | ADEQUATE | MEDIUM | LOW | Do not buy separately | Existing sources support a credible v0.1; brand-specific testing is more valuable than generic instruction. |
-| Copy and creative development | WEAK | HIGH | HIGH | Buy first | Public sources show examples but do not provide enough territory development, rejection logic, critique or failure analysis. |
-| Community, UGC and social proof | ADEQUATE | HIGH | HIGH | Consider buying | Generic guidance does not adequately cover hospitality escalation, trust, consent, complaints and relationship development. |
-| Market, competitor, trend and platform intelligence | ADEQUATE | HIGH | MEDIUM | Buy only a methodology, not a feed | Official current knowledge is strong; the gap is cultural interpretation, whitespace and brand-safe adaptation. |
-| Restaurant/local vertical module | WEAK | HIGH | HIGH | Consider buying | Public hospitality material supplies hypotheses but not a complete local-demand, service-period and commercial decision method. |
-| Volatile Instagram current-knowledge layer | STRONG | MEDIUM | LOW | Do not buy | Meta sources and a refresh protocol are sufficient; paid “algorithm intelligence” adds more risk than value. |
-
-### Coverage conclusion
-
-Do not procure standalone material for objectives, current Instagram mechanics, basic calendars, generic captions, carousels, Stories, posting frequency, hashtags, or platform benchmarks. These are already adequately or strongly covered, and the remaining work is mostly Abros-specific design and real-world testing.
+- Cross-industry creative strategy remains first because it benefits every brand.
+- Cross-industry performance diagnosis remains second, but it is no longer framed primarily as Instagram diagnosis.
+- Restaurant/local-demand methodology moves from third overall to a conditional vertical purchase.
+- Premium lifestyle/hospitality social is removed as a procurement category. “Hospitality” is too broad, and premium expression should come from creative methodology plus Brand OS—not a shared aesthetic.
+- The maximum before v0.1 falls from three resources to two.
 
 ## 2. Procurement categories
 
-Only five categories meet the threshold for possible material improvement.
+Only five categories warrant possible consideration. Categories 1 and 2 are the only pre-v0.1 search priorities.
 
-## Category 1 — Senior social-native creative strategy and critique
+## Category 1 — Cross-industry social-native creative strategy and critique
 
-**Procurement priority:** First
+**Priority:** FIRST
 
-**Recommended before v0.1:** Yes, if a resource scores at least 85/100 and passes the category gate.
+**Layer improved:** Social Growth Core
 
 ### What we need to learn
 
-- How senior practitioners move from positioning and audience tension to creative territories.
-- How they distinguish a territory, concept, execution, format and individual asset.
-- How they create novelty and pattern interruption without eroding brand meaning.
-- How they critique openings, narrative movement, visual language, copy and CTA.
-- How they diagnose creative fatigue and decide whether to refresh, extend or retire an idea.
-- How they reject plausible but weak concepts before production.
-- How commercial objectives influence creative choices without making the work generic or overly promotional.
+- Translate positioning, audience tension and business objective into distinct creative territories.
+- Separate territory, concept, format, execution and asset.
+- Generate novelty without losing meaning or copying trends.
+- Critique openings, structure, visual language, copy, proof and action.
+- Reject plausible-but-weak concepts before production.
+- Diagnose creative fatigue and decide whether to extend, vary, rest or retire an idea.
+- Brief and review different creative disciplines consistently.
 
 ### What current sources already cover
 
 - One clear content job and truthful opening promise.
-- Beat-by-beat progression, mobile legibility and structured production briefs.
-- Practitioner examples from Link in Bio and selected external skill structures.
-- Basic Reel, carousel, Story, hook, caption and CTA craft.
+- Mobile legibility, narrative progression and structured production briefs.
+- Useful practitioner examples and format craft.
+- Basic portfolio, repetition and brand-fit principles.
 
 ### What is still missing
 
-- A repeatable concept-development method.
-- Explicit creative trade-offs and rejection criteria.
-- Before/after critique showing why the revision is stronger.
-- Failed cases and misdiagnosed creative problems.
-- Premium brand judgment that remains social-native rather than becoming conventional advertising.
-- A rubric that another evaluator can apply consistently.
+- A complete territory and concept-development process.
+- Explicit selection, rejection and revision logic.
+- Before/after decisions and failed cases across materially different industries.
+- Consistent creative-critique methodology that another evaluator can apply.
+- Strong connection between creativity, brand distinction and commercial job.
 
-### A high-quality paid resource must contain
+### A high-quality resource must contain
 
-- Recent hands-on work across multiple real brands.
-- Complete cases from brief through rejected routes, chosen route, execution and result.
-- Annotated before/after decisions with reasons.
-- A territory and concept-generation framework with inputs and outputs.
-- A creative critique scorecard and examples at different quality levels.
-- Failure modes, edge cases and brand-distance checks.
-- Methods for briefing photographers, directors, editors, designers and writers.
-- Rights to use the resulting method internally and encode permitted parts into Abros Skills/evals.
+- Recent hands-on social work across multiple business models or clear evidence that the method transfers.
+- Full cases from brief through rejected routes, chosen route, execution, result and retrospective.
+- Annotated before/after critique with reasons and trade-offs.
+- Territory, concept, novelty and fatigue frameworks with inputs and outputs.
+- Examples of creative work that failed or succeeded for different reasons.
+- Methods usable without the seller's platform or retainer.
+- Rights for permitted internal application and adaptation into Abros-authored methods/evals.
 
 ### Red flags
 
-- Hook libraries, caption formulas, trend lists or “viral idea” databases.
-- Awards reels without decision history.
-- Personal taste presented as universal truth.
-- Only successful cases, with no rejected work or failures.
-- Generic creative-advertising theory with little organic social work.
-- AI-generated course content or hundreds of shallow templates.
+- Hook, caption, viral-idea or prompt libraries.
+- Awards or attractive outputs without decision history.
+- One house style applied to every category.
+- Ecommerce, creator or restaurant cases presented as universal.
+- Only successful work; no rejected routes or failures.
+- AI-generated bulk course content or huge shallow template libraries.
 
 ### Value test
 
-Give the resource three unseen briefs: a launch, an underperforming recurring format and a commercial post that feels off-brand. It must enable two Abros reviewers to independently produce stronger territories, reject weak routes for similar reasons, and explain the commercial and brand trade-offs. Compare against a pre-resource baseline using blind review.
+Use four unseen briefs spanning a venue, local service, ecommerce product and unfamiliar future business. Compare pre-resource and post-resource territories under blind review. The method must improve distinctiveness, rejection agreement, commercial fit and explanation quality without converging the brands toward one aesthetic.
 
 ### Expected impact
 
-| Area | Impact | Rationale |
-|---|---|---|
-| Strategy | HIGH | Connects positioning and audience tension to executable territories. |
-| Creative quality | VERY HIGH | Directly addresses concept quality, novelty, critique and fatigue. |
-| Analytics | MEDIUM | Improves classification of creative variables and interpretation of failure. |
-| Commercial results | HIGH | Produces stronger reasons to notice, desire and act without default promotion. |
-| Agent decision-making | VERY HIGH | Supplies selection, rejection and revision logic rather than generation prompts. |
+| Strategy | Creative quality | Analytics | Commercial results | Agent decision-making |
+|---|---|---|---|---|
+| HIGH | VERY HIGH | MEDIUM | HIGH | VERY HIGH |
 
-## Category 2 — Instagram performance diagnosis and experimentation
+## Category 2 — Cross-industry performance diagnosis and experimentation
 
-**Procurement priority:** Second
+**Priority:** SECOND
 
-**Recommended before v0.1:** Yes if the resource demonstrates rigorous organic Instagram cases; otherwise build from current evidence.
+**Layer improved:** Social Growth Core, using platform/business-model inputs
 
 ### What we need to learn
 
-- How to move from a performance symptom to ranked alternative hypotheses.
-- How to diagnose distribution, attention, progression, response, profile conversion and action-path problems.
-- How to use follower/non-follower reach, retention, shares, saves, comments, profile actions and downstream behaviour without vanity analysis.
-- How to distinguish noise, fatigue, eligibility, audience, creative, offer, cadence and external-demand effects.
-- How to select the smallest useful next test.
+- Move from symptoms to competing hypotheses before prescribing action.
+- Validate definitions, denominators, windows, cohorts, format and distribution context.
+- Separate creative, audience, platform, offer, journey, operational and measurement causes.
+- Select the smallest useful test and define stop, continue or escalate conditions.
+- Interpret incomplete, noisy and conflicting evidence without false certainty.
+- Connect social evidence to different conversion systems with causal restraint.
 
 ### What current sources already cover
 
-- Meta's surface-specific ranking structure, recommendation eligibility and native insights.
-- AMEC's objective/output/out-take/outcome/impact discipline.
-- Transparent benchmark definitions and limitations.
-- The need for matched comparisons, clear denominators and causal humility.
+- AMEC objective-to-impact measurement discipline.
+- Official Instagram system shape and native metric boundaries.
+- Benchmark definition and comparability cautions.
+- A strong specification for the diagnostic tree Abros must build.
 
 ### What is still missing
 
-- A tested symptom-to-cause decision tree.
-- Worked retention and content-diagnosis cases.
-- Minimum evidence and comparability standards.
-- Small-sample and ambiguous-case decisions.
-- Examples where the correct action was to wait, change the offer or fix the profile rather than make more content.
+- Real diagnostic histories across business models.
+- Cases where the first explanation was wrong.
+- Decision trees that integrate creative, platform and commercial evidence.
+- Robust experimental choices under small samples and imperfect attribution.
+- Clear reasons to change strategy versus creative, distribution, journey or operations.
 
-### A high-quality paid resource must contain
+### A high-quality resource must contain
 
-- Real native-insights cases with commercially sensitive data anonymised rather than omitted.
-- Raw symptom, competing hypotheses, evidence requested, diagnosis, action and later result.
+- Raw or faithfully anonymised cases with symptoms, hypotheses, evidence requests, actions and later outcomes.
+- Multiple business models and non-ecommerce conversion examples.
+- Metric definitions and comparison rules.
+- Failed tests, ambiguous results and corrected diagnoses.
 - Decision trees with uncertainty and stop conditions.
-- Metric definitions, denominators, windows and comparison rules.
-- Experimental design covering hypothesis, main variable, success measure and follow-on decision.
-- Failed tests and cases where initial diagnosis was wrong.
-- A method that works without buying the author's analytics platform.
+- A method independent of a proprietary analytics platform.
 
 ### Red flags
 
-- Secret algorithm weights, guaranteed reach or “shadow-ban” diagnosis without evidence.
-- Universal watch-time, hashtag, frequency or engagement thresholds.
-- Follower growth as the dominant objective.
-- Screenshots without definitions, context or decisions.
-- Unexplained proprietary scores or formulas.
-- Attribution claims based only on correlation.
+- Secret algorithm weights, universal benchmarks or guaranteed growth.
+- Dashboards, screenshots or scores without definitions and decisions.
+- Follower growth or generic engagement as the dominant objective.
+- Correlation presented as revenue attribution.
+- A method that works only with large paid-media datasets or ecommerce tracking.
 
 ### Value test
 
-Use five anonymised cases containing incomplete, noisy or conflicting metrics. The resource must improve hypothesis breadth, reduce unsupported certainty, identify missing evidence and select a proportionate test. Score with an independent diagnostic rubric before revealing the real outcome.
+Use anonymised cases from different business models with missing and conflicting evidence. The method must increase hypothesis breadth, definition accuracy, commercial relevance and proportionate next-test selection while reducing unsupported certainty. Score before revealing the actual outcome.
 
 ### Expected impact
 
-| Area | Impact | Rationale |
-|---|---|---|
-| Strategy | HIGH | Prevents strategy changes based on symptoms or one post. |
-| Creative quality | HIGH | Identifies the actual creative variable that needs attention. |
-| Analytics | VERY HIGH | Converts metrics into disciplined decisions. |
-| Commercial results | HIGH | Reduces wasted production and directs effort toward meaningful constraints. |
-| Agent decision-making | VERY HIGH | Provides alternative-hypothesis, uncertainty and next-test logic. |
+| Strategy | Creative quality | Analytics | Commercial results | Agent decision-making |
+|---|---|---|---|---|
+| HIGH | HIGH | VERY HIGH | HIGH | VERY HIGH |
 
-## Category 3 — Restaurant and local-demand growth
+## Category 3 — Cross-industry community, social proof and reputation
 
-**Procurement priority:** Third
+**Priority:** CONDITIONAL AFTER V0.1 SCOPE
 
-**Recommended before v0.1:** Conditional; highest value if the expert can work from restaurant operations and first-party demand data.
+**Layer improved:** Social Growth Core, with platform/vertical risk overlays
 
 ### What we need to learn
 
-- How organic social contributes to local discovery, occasion fit, reservation, walk-in, visit and repeat behaviour.
-- How service period, capacity, booking pace, lead time, local events, weather and operations change the correct social action.
-- How to distinguish broad entertainment reach from geographically and commercially useful demand.
-- How to plan for underfilled periods without indiscriminate discounting or repetitive promotion.
-- How to measure incremental contribution with limited venue and customer data.
+- Choose community objectives and relationship priorities by business context.
+- Distinguish proof types, authenticity, consent and commercial relevance.
+- Triage routine, sensitive, harmful and specialist messages.
+- Design proactive community practice without engagement manipulation.
+- Define draft, reply, escalate and do-not-engage boundaries.
 
 ### What current sources already cover
 
-- A discovery-to-visit/repeat journey and restaurant objective hierarchy.
-- Occasion, catchment, daypart, capacity and reservation-path considerations.
-- Hospitality discovery research and vendor evidence.
-- Basic booking-source, matched-service-period and causal caveats.
+- UGC permission, disclosure and provenance principles.
+- Human approval for sensitive replies and external actions.
+- Generic community and social-proof patterns.
+- Several restaurant-specific escalation examples.
 
 ### What is still missing
 
-- A proven operating method linking social decisions to restaurant demand.
-- Greek or comparable local-market evidence.
-- Practical attribution including walk-ins and unattributed influence.
-- Margin/capacity-aware prioritisation.
-- Real cases showing weekday, launch, event and repeat-visit interventions.
+- Cross-industry annotated conversation cases and escalation trees.
+- Failed response analysis and relationship trade-offs.
+- Proof-selection methodology across venue, service and product businesses.
+- Operational handoff patterns beyond restaurants.
 
-### A high-quality paid resource must contain
+### A high-quality resource must contain
 
-- Direct restaurant or hospitality growth responsibility, not generic ecommerce experience.
-- Cases tied to service periods, covers/orders, capacity and booking pace.
-- Occasion and catchment segmentation.
-- Attribution design with explicit blind spots and confounders.
-- Examples of both demand creation and demand protection.
-- Methods feasible with simple data before advanced infrastructure.
-- Transferable worksheets or decision logic independent of a reservation vendor.
+- Real anonymised threads across different business contexts.
+- Triage, escalation, privacy and out-of-hours logic.
+- Examples of strong, weak and harmful responses with reasons.
+- Consent and authenticity processes.
+- Clear boundary between marketing, operations, legal, safety and management.
 
 ### Red flags
 
-- Treating clicks, reach or reservations alone as proof of incrementality.
-- Ignoring walk-ins, capacity, cancellations, margin or service periods.
-- U.S. consumer percentages presented as universal.
+- Auto-DMs, comment bots, engagement pods or canned response volume.
+- Review manipulation, undisclosed incentives or universal response scripts.
+- Legal/safety advice without qualified boundaries.
+- Community success measured only by reply count or engagement rate.
+
+### Value test
+
+Run matched scenarios across a venue, local service and ecommerce brand. Reviewers must triage consistently, protect privacy, preserve brand expression and escalate to the correct human owner without importing one industry's response rules into another.
+
+### Expected impact
+
+| Strategy | Creative quality | Analytics | Commercial results | Agent decision-making |
+|---|---|---|---|---|
+| MEDIUM | MEDIUM | MEDIUM | HIGH | VERY HIGH |
+
+## Category 4 — Business-model commercial social strategy
+
+**Priority:** CONDITIONAL AFTER REAL USE
+
+**Layer improved:** Business-Model Modules
+
+### What we need to learn
+
+- How strong social decisions change between local attendance, local service and ecommerce purchase journeys.
+- How capacity, geography, availability, lead time, fulfilment, margin and repeat cycles alter objectives and measurement.
+- How to connect social activity to commercially meaningful next actions without flattening all models into a funnel.
+
+### What current sources already cover
+
+- Strong general measurement and planning foundations.
+- Restaurant/local-venue hypotheses and basic ecommerce/public knowledge.
+- Current Abros operating knowledge that can inform custom module design.
+
+### What is still missing
+
+- Comparable cases showing the same social symptom requiring different decisions by business model.
+- Strong local-service cases and online-to-offline measurement.
+- A compact translation method that remains distinct from both the core and verticals.
+
+### A high-quality resource must contain
+
+- Decision cases spanning at least two relevant business models.
+- Explicit capacity, unit economics, geography, fulfilment and repeat-behaviour logic.
+- Failed commercial interpretations and attribution limits.
+- A method adaptable without importing the provider's tech stack.
+
+### Red flags
+
+- One linear ecommerce funnel marketed as universal.
+- Revenue dashboards without operational context.
+- Generic local-marketing templates or “post ideas by industry.”
+- Treating all enquiries, bookings, visits and purchases as equivalent conversions.
+
+### Value test
+
+Give the resource one similar performance symptom in three different business models. It must produce meaningfully different hypotheses, commercial measures and next actions while preserving the same core diagnostic discipline.
+
+### Expected impact
+
+| Strategy | Creative quality | Analytics | Commercial results | Agent decision-making |
+|---|---|---|---|---|
+| HIGH | MEDIUM | HIGH | VERY HIGH | HIGH |
+
+## Category 5 — Restaurant demand and conversion methodology
+
+**Priority:** CONDITIONAL VERTICAL; NOT A PRE-V0.1 CORE PURCHASE
+
+**Layer improved:** Restaurant Vertical plus Local Venue / Experience
+
+### What we need to learn
+
+- Occasion and service-period demand diagnosis.
+- Social-to-reservation/order/visit interpretation with capacity and confounders.
+- Launch, menu, event and repeat-visit strategy grounded in operations.
+- Restaurant creative/proof decisions beyond generic food aesthetics.
+
+### What current sources already cover
+
+- The restaurant journey, objective hierarchy and demand-aware planning model.
+- Service-period, booking-path, capacity and attribution cautions.
+- Format implications, proof types, launch sequencing and key safety boundaries.
+
+### What is still missing
+
+- Greece/local-market evidence.
+- Real operator cases connecting social decisions to service-period results.
+- Failed cases and decision trees under constrained capacity.
+- Reliable matched-period and booking-source methodology.
+
+### A high-quality resource must contain
+
+- Direct restaurant operating/growth responsibility.
+- Cases tied to covers/orders, service periods, booking pace, capacity and contribution.
+- Occasion/catchment segmentation and attribution caveats.
+- Feasible methods that do not require an agency retainer or reservation platform.
+- Evidence that adds specialist logic rather than repeating Local Venue mechanics.
+
+### Red flags
+
+- “Hospitality” material that mixes hotels/travel with restaurants.
+- Food-content templates or premium aesthetics presented as strategy.
+- Reservations, reach or creator visits treated as proof of incrementality.
+- U.S. consumer statistics presented as Greek market truth.
 - Ecommerce funnels relabelled for restaurants.
-- Requiring a large CRM, attribution platform or agency retainer before the method works.
 
 ### Value test
 
-Provide two matched restaurant scenarios: an underfilled weekday and a capacity-constrained weekend. The resource must produce materially different objectives, content roles, measures and stop conditions, then define a feasible test using available operational data. Reject if both scenarios receive the same “increase engagement and bookings” plan.
+Compare an underfilled weekday, a capacity-constrained weekend, a menu launch and a repeat-visit problem. The method must change objectives, content roles, measures and stop conditions appropriately and outperform the existing restaurant research.
 
 ### Expected impact
 
-| Area | Impact | Rationale |
-|---|---|---|
-| Strategy | VERY HIGH | Grounds social activity in occasions, capacity and local demand. |
-| Creative quality | HIGH | Adds commercially relevant experience and occasion cues. |
-| Analytics | HIGH | Connects platform evidence to operational outcomes with caveats. |
-| Commercial results | VERY HIGH | Focuses effort on marginal, service-specific demand and repeat visits. |
-| Agent decision-making | VERY HIGH | Adds the vertical reasoning generic social systems lack. |
+| Strategy | Creative quality | Analytics | Commercial results | Agent decision-making |
+|---|---|---|---|---|
+| HIGH | HIGH | HIGH | VERY HIGH for restaurant brands only | HIGH for restaurant tasks only |
 
-## Category 4 — Premium lifestyle and hospitality social execution
+## 3. Buying standard
 
-**Procurement priority:** Optional
+Every candidate must be scored with `PAID_RESOURCE_EVALUATION_RUBRIC.yaml` and pass its relevant category gate. It must also:
 
-**Recommended before v0.1:** Only if not adequately covered by Category 1.
-
-### What we need to learn
-
-- How premium hospitality brands balance aspiration, access, atmosphere, people, product and commercial action.
-- How editorial polish and social immediacy coexist.
-- How to communicate experience without repetitive food beauty shots or generic luxury language.
-- How launches build desire progressively without exhausting the reveal.
-- How to brief and select premium photography/video that still performs socially.
-
-### What current sources already cover
-
-- Restaurant content roles, launch sequencing and atmosphere/occasion logic.
-- General social-native format and production principles.
-- The need to avoid trend-led brand erosion and generic AI copy.
-
-### What is still missing
-
-- Premium hospitality cases with full decision context.
-- A repeatable editorial-to-social translation method.
-- Visual critique showing the boundary between distinctive restraint and low-energy content.
-- Commercial CTA integration that does not cheapen the brand.
-
-### A high-quality paid resource must contain
-
-- Current premium restaurant, bar, hotel or lifestyle work.
-- Briefs, contact sheets/storyboards, rejected selections and final edits.
-- Explanation of visual, copy, casting, pacing and CTA decisions.
-- Launch and always-on cases, not only campaign films.
-- Evidence of organic platform operation, not only paid advertising or brand identity.
-- A method transferable across premium brands without copying a house style.
-
-### Red flags
-
-- Generic “luxury tone” rules, muted-colour presets or prohibited-word lists.
-- Portfolio aesthetics with no performance or decision context.
-- Influencer access presented as strategy.
-- Conventional campaign production with no native Stories/Reels/community practice.
-- One visual style positioned as appropriate for every premium brand.
-
-### Value test
-
-Ask the resource to critique two attractive but strategically different hospitality content sets. It must identify which visual/copy decisions fit each positioning and objective, demonstrate what it would change, and avoid converging both brands toward the same premium aesthetic.
-
-### Expected impact
-
-| Area | Impact | Rationale |
-|---|---|---|
-| Strategy | MEDIUM | Refines expression more than core objective selection. |
-| Creative quality | VERY HIGH | Improves visual/social distinction and premium execution. |
-| Analytics | LOW | Primarily a craft and judgment resource. |
-| Commercial results | HIGH | Can improve desire and action without brand dilution. |
-| Agent decision-making | HIGH | Adds premium-specific critique and briefing logic. |
-
-## Category 5 — Community, social proof and hospitality reputation
-
-**Procurement priority:** Conditional risk-control purchase
-
-**Recommended before v0.1:** Only before community/DM workflows are used externally at meaningful scale.
-
-### What we need to learn
-
-- How to develop community rather than merely respond to comments.
-- How to identify, request, verify and reuse credible social proof.
-- How to triage comments and DMs across routine service, sales, complaints and risk.
-- How hospitality teams handle booking disputes, allergens, illness claims, harassment, privacy and live incidents.
-- How creator, guest and employee participation should be governed.
-
-### What current sources already cover
-
-- Human approval, UGC consent, disclosure and privacy principles.
-- The separation of routine replies from sensitive escalation.
-- Basic community, creator-fit and social-proof considerations.
-- Platform branded-content and rights guidance.
-
-### What is still missing
-
-- A tested hospitality message taxonomy and severity model.
-- Public-versus-private response logic.
-- Response objectives, service levels and escalation ownership.
-- Scenario-based examples with failed responses and recovery.
-- Proactive community rituals that create repeat participation without engagement bait.
-
-### A high-quality paid resource must contain
-
-- Direct hospitality community or reputation-management experience.
-- Real anonymised conversation threads and decision annotations.
-- Triage matrix, escalation tree and out-of-hours rules.
-- Examples of good, weak and harmful responses.
-- UGC/social-proof permission and authenticity process.
-- Clear legal/operations/management handoff points.
-- Proactive relationship-building methods, not only crisis control.
-
-### Red flags
-
-- Auto-DM systems, comment bots or canned response libraries.
-- Engagement pods, review manipulation or undisclosed incentives.
-- “Always take it to DM” or other universal response rules.
-- Advice that ignores guest/staff privacy and operational ownership.
-- Legal claims delivered by an unqualified marketing trainer.
-
-### Value test
-
-Run a scenario assessment covering a compliment, reservation request, service complaint, allergy question, illness allegation, abusive comment and unsolicited creator request. The resource must lead to consistent triage, appropriate tone, privacy protection and escalation without over-automating the response.
-
-### Expected impact
-
-| Area | Impact | Rationale |
-|---|---|---|
-| Strategy | MEDIUM | Adds relationship and trust objectives. |
-| Creative quality | MEDIUM | Improves use of authentic proof and community voice. |
-| Analytics | MEDIUM | Adds meaningful relationship and service signals. |
-| Commercial results | HIGH | Protects trust and supports enquiries, repeat visits and advocacy. |
-| Agent decision-making | VERY HIGH | Defines draft, reply, escalate and do-not-engage boundaries. |
-
-## 3. Cross-category buying standard
-
-Every candidate must be scored with `PAID_RESOURCE_EVALUATION_RUBRIC.yaml`. In addition, it must:
-
-- Solve one named category rather than claim to solve all social marketing.
-- Identify the practitioner who created and will teach the methodology.
-- Show recent, hands-on operating evidence.
-- Include decision history, rejected options and failures.
-- State assumptions, business model and limits.
-- Provide usable methods without requiring a proprietary platform or agency retainer.
-- Permit internal application and clearly define whether Abros may adapt the method into internal Skills, evals and templates.
-- Disclose use of AI-generated course content, subcontractors, data collection and external tools.
-- Avoid requiring account credentials or live integrations during evaluation.
+- Solve a named gap rather than claim to solve social marketing generally.
+- Identify the practitioner responsible for the work and teaching.
+- Show recent hands-on operating evidence, decision history and failures.
+- State assumptions, business models and limits.
+- Work without mandatory software, credentials or continuing retainer.
+- Define internal use and adaptation rights clearly.
+- Disclose AI-generated material, subcontractors, data collection and external tools.
+- Add non-overlapping knowledge beyond the Phase 3 evidence base.
 
 ### Proof-of-value process
 
-1. Score the sample or syllabus before purchase.
-2. Reject any hard-disqualified candidate regardless of total score.
-3. Test the resource on unseen cases against a documented baseline.
-4. Require two reviewers for subjective creative or strategic methods.
-5. Record what decisions improved; satisfaction alone is not evidence.
-6. Promote only tested, licensed, brand-independent knowledge into future Skill development.
+1. Score the sample, syllabus, licence and evidence before purchase.
+2. Reject hard-disqualified candidates regardless of total score.
+3. Test on unseen, multi-business-model cases against a baseline.
+4. Use two reviewers for subjective strategic or creative methods.
+5. Record which decisions improved; satisfaction and output volume are not evidence.
+6. Promote only tested, licensed, correctly layered knowledge through human review.
 
 ## 4. Budget logic
 
-Price is not evidence of quality. The justified tier depends on the incremental decision quality and transfer rights delivered.
+| Spend | Incremental expertise that could justify it | Minimum evidence/output |
+|---|---|---|
+| **€0–250** | A narrow practitioner archive, case library or focused methodology that closes one defined gap | Several real cases, decision explanations, limitations and usable internal rights |
+| **€250–750** | A rigorous specialist course, workshop or operating playbook | End-to-end method, failures, exercises, critique/diagnostic tools and reusable worksheets |
+| **€750–2,000** | A tailored review or workshop using anonymised Abros cases across more than one business model | Named expert, pre-work, live critique, adapted decision framework, documentation and internal licence |
+| **€2,000+** | Direct senior practitioner access producing a transferable multi-brand operating method | Bespoke decision system, annotated cases, eval input, implementation guidance, clear ownership and follow-up validation |
 
-| Spend | What could justify it | Minimum expected output | Usually not justified by |
-|---|---|---|---|
-| **€0–250** | A focused practitioner archive, compact playbook, specialised course module or case library that closes one narrow gap | Several real cases, a clear framework, decision explanations and internal-use rights | Newsletters that only aggregate updates, prompt packs, swipe files, generic video lessons |
-| **€250–750** | A rigorous specialist course, cohort workshop, deep case library or expert template system with feedback | End-to-end method, worked failures, exercises, critique rubric and reusable internal worksheets | Certificates, large content bundles, recorded conference talks, access to a tool |
-| **€750–2,000** | A tailored workshop or methodology review using Abros-provided anonymised cases | Pre-work, live expert critique, adapted decision framework, documented gaps, internal licence and knowledge transfer | A generic group programme, audit score without method, one-off strategy deck |
-| **€2,000+** | Direct access to a proven senior practitioner for a custom operating method, multiple case reviews or hospitality measurement design | Named expert time, bespoke decision system, annotated cases, implementation guidance, eval input, clear ownership/licence and follow-up validation | Reputation alone, agency discovery, production services, software implementation or an open-ended retainer |
+Do not infer quality from price. A tailored restaurant-only engagement above €2,000 is not justified before core multi-brand gaps have been addressed and tested.
 
-### Spending controls before Social v0.1
+## 5. Procurement answers
 
-- Maximum paid resources: **three**.
-- Prefer one resource in the €250–750 range and one targeted workshop in the €750–2,000 range over a broad €2,000+ programme.
-- Cross the €2,000 threshold only when the engagement is tailored, the practitioner is named, the method will be transferred, and management approves the expected decision improvement.
-- Do not purchase overlapping resources. Score incremental coverage against what Abros already owns.
-- A lower-priced resource that passes the value test outranks an expensive resource that does not.
-
-## 5. What management should consider buying
-
-In order:
-
-1. A senior social-native creative strategy and critique methodology.
-2. A rigorous Instagram organic performance diagnosis and experimentation method.
-3. A restaurant/local-demand growth method, if it includes operational and commercial evidence.
-
-Premium hospitality execution should be acquired only if the first creative resource lacks that depth. Community/social-proof expertise becomes more urgent immediately before external reply and DM workflows are introduced.
+1. **Buy first:** cross-industry social-native creative strategy and critique.
+2. **Buy second:** cross-industry performance diagnosis and experimentation.
+3. **Restaurant-specific purchase:** only a proven restaurant demand/conversion methodology with operational cases; conditional after core priorities and not required for v0.1.
+4. **Keep free/official:** current platform mechanics, policies, metric definitions, recommendation eligibility, format features, AMEC measurement foundations and dated benchmark priors.
+5. **Custom-build:** layered routing, objective translation, portfolio planning, business-model modules, brand/context boundaries, learning promotion, approval workflows and independent evals.
+6. **Benefits every brand:** creative strategy/critique, performance diagnosis, prioritisation, sequencing, novelty/fatigue control, testing, competitor whitespace, community strategy, measurement and creative briefing.
+7. **Load selectively:** conversion journeys, capacity, geography, fulfilment, demand timing, proof and KPIs from the applicable business-model module; industry-only risk and decision logic from an approved vertical.
 
 ## 6. What management should not buy
 
-- Prompt collections or commercial “agent” bundles.
-- Generic social-media, Reels, caption, hashtag or content-calendar courses.
-- Algorithm hacks, secret scoring systems or reach guarantees.
-- Generic templates without decisions, trade-offs and failure cases.
-- Benchmark dashboards before Abros has stable internal metric definitions.
-- Ecommerce-only growth or attribution systems relabelled for hospitality.
-- Huge libraries whose value is measured by number of modules, prompts or agents.
-- Autonomous posting, comment or unsolicited-DM systems.
-- AI-generated or recycled public material presented as expert IP.
-- Agency methodologies that remain opaque or unusable without a continuing retainer.
-- Unsupported revenue claims, follower-count programmes and vanity-metric optimisation.
+- Prompt collections, commercial agent bundles or content factories.
+- Generic social, Reels, caption, hashtag or calendar courses.
+- Algorithm hacks, secret weights, universal cadence or reach guarantees.
+- Generic templates without decisions, failures and trade-offs.
+- Benchmark dashboards before internal definitions are stable.
+- Ecommerce-only systems presented as universal social growth.
+- Premium “hospitality” aesthetics or methods that combine restaurants and hotels.
+- Huge bundles measured by number of prompts, agents or modules.
+- Autonomous posting, auto-DM, comment or review systems.
+- AI-generated or recycled public information presented as expert IP.
+- Opaque agency methods unusable without a retainer.
+- Unsupported revenue claims, follower programmes and vanity-metric optimisation.
 
-## 7. Can Social v0.1 proceed without paid material?
+## 7. Can the system proceed without paid material?
 
-Yes. The existing audit provides sufficient platform truth, measurement structure, format craft, planning principles and architecture to build and test a conservative Social v0.1.
+Yes. The evidence base is sufficient to design and build a conservative v0.1 after management accepts the corrected architecture.
 
-Proceeding without paid material would leave the greatest risk in **creative judgment**: the system may be correct and well-governed but produce work that is competent rather than distinctive, culturally sharp and commercially persuasive. The second risk is diagnostic maturity, particularly when real account data is noisy or ambiguous.
-
-Paid expertise should therefore improve the quality of decisions, not expand scope. If no candidate passes the rubric and proof-of-value test, build v0.1, collect real cases and revisit procurement with better evidence.
+The largest remaining quality gap is cross-industry creative judgment: territory development, concept selection, rejection, critique, fatigue and commercially purposeful distinctiveness. This remains the paid expertise most likely to lift the current 8.0/10 creative/commercial usefulness score across every Abros brand.
 
 ## 8. Knowledge-ingestion boundary
 
-Purchased material must not automatically become a Skill, approved learning or Brand OS rule.
+Purchased material must not automatically become a Skill, module, approved learning or Brand OS rule.
 
-1. Record the author, version/date, licence, permitted uses and source files.
+1. Record provider, practitioner, version/date, licence, permitted uses and source.
 2. Keep protected source material separate from Abros-authored synthesis.
-3. Map each imported concept to the gap it addresses and the evidence supporting it.
-4. Test it on unseen and real cases; record observations separately.
-5. Require human approval before promoting any method to approved learning.
-6. Encode only licensed, brand-independent, demonstrated methodology in shared Skills.
-7. Keep platform claims in the volatile current-knowledge layer with refresh requirements.
-8. Evaluate the resulting Skill independently from both the generator and paid expert.
+3. Assign each concept to the correct architecture layer.
+4. Test it on unseen and real cases across the claimed scope.
+5. Store results as observations until human review approves promotion.
+6. Encode only licensed, demonstrated and properly scoped methodology.
+7. Keep platform claims volatile and brand knowledge inside the relevant Brand OS.
+8. Evaluate resulting Skills independently from generation and from the paid provider.

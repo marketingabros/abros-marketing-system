@@ -4,7 +4,8 @@ phase: "3.5"
 total_points: 100
 purpose: >-
   Evaluate whether a commercial methodology adds material decision quality beyond
-  the free and official expertise already audited for Abros Social.
+  the free and official expertise already audited for Abros Social, without
+  privileging one brand, platform, business model, or industry.
 
 scoring_method:
   instructions:
@@ -82,17 +83,18 @@ dimensions:
       "6": Recent work with dated platform claims
       "8": Current operating evidence plus disciplined updates and separation of durable from volatile knowledge
 
-  - id: restaurant_relevance
-    label: RESTAURANT RELEVANCE
+  - id: portfolio_business_model_relevance
+    label: PORTFOLIO / BUSINESS-MODEL RELEVANCE
     weight: 8
     evidence_required:
-      - Restaurant, hospitality, local-service, or closely analogous cases
-      - Recognition of occasions, catchments, capacity, service periods, repeat visits, and offline demand
+      - Cases relevant to the business models the resource claims to support
+      - Recognition of conversion events, geography, capacity, timing, fulfilment, repeat behaviour, and attribution limits
+      - Clear separation between transferable principles and industry-only assumptions
     anchors:
-      "0": Assumes an ecommerce or creator business model without adaptation
-      "3": Broad local or hospitality relevance but little restaurant depth
-      "6": Directly applicable restaurant or hospitality reasoning and cases
-      "8": Deep restaurant operating and commercial relevance with explicit constraints and caveats
+      "0": Treats one business model or industry as universally applicable
+      "3": Broad commercial relevance but weak translation to Abros business models
+      "6": Directly applicable reasoning for one or more current business models with clear limits
+      "8": Strong cross-model transfer or deep scoped relevance with explicit mechanics, constraints, and caveats
 
   - id: creative_value
     label: CREATIVE VALUE
@@ -152,26 +154,29 @@ global_minimum_gates:
   rule: Reject or seek missing evidence if any global minimum is not met.
 
 category_gates:
-  senior_creative_strategy_and_critique:
+  cross_industry_creative_strategy_and_critique:
     creative_value: 6
     decision_quality: 9
     case_quality: 9
-  instagram_performance_diagnosis:
+    portfolio_business_model_relevance: 5
+  cross_industry_performance_diagnosis:
     analytics_value: 6
     methodology_depth: 11
     decision_quality: 9
-  restaurant_local_demand_growth:
-    restaurant_relevance: 6
-    case_quality: 9
-    analytics_value: 5
-  premium_lifestyle_hospitality_execution:
-    creative_value: 6
-    expert_credibility: 11
-    restaurant_relevance: 5
-  community_social_proof_and_reputation:
+    portfolio_business_model_relevance: 5
+  cross_industry_community_social_proof_reputation:
     expert_credibility: 11
     case_quality: 9
     transferability_to_abros: 6
+  business_model_commercial_social_strategy:
+    portfolio_business_model_relevance: 6
+    methodology_depth: 11
+    decision_quality: 9
+  restaurant_demand_and_conversion:
+    expert_credibility: 11
+    case_quality: 9
+    portfolio_business_model_relevance: 6
+    analytics_value: 5
 
 penalties:
   - id: prompt_collection
@@ -189,9 +194,9 @@ penalties:
   - id: follower_or_vanity_obsession
     points: 10
     trigger: Treats follower count or vanity engagement as the dominant outcome.
-  - id: ecommerce_only_assumptions
+  - id: single_business_model_assumptions
     points: 8
-    trigger: Applies ecommerce funnels or attribution to hospitality without explicit adaptation.
+    trigger: Applies ecommerce, restaurant, creator, hotel, or another single-model logic beyond its valid scope.
   - id: universal_posting_frequency
     points: 8
     trigger: Prescribes a universal cadence regardless of objective, capacity, audience, or evidence.
@@ -255,7 +260,7 @@ evaluation_record_template:
     decision_quality: null
     case_quality: null
     recency: null
-    restaurant_relevance: null
+    portfolio_business_model_relevance: null
     creative_value: null
     analytics_value: null
     transferability_to_abros: null

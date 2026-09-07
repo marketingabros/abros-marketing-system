@@ -1,0 +1,387 @@
+schema_version: "1.0"
+title: Abros Social Capability Layer Map
+decision_date: "2026-09-07"
+status: architecture_only
+source_scope:
+  - SOCIAL_EXPERTISE_LANDSCAPE.md
+  - SOCIAL_SKILL_CANDIDATES.yaml
+  - INSTAGRAM_CURRENT_KNOWLEDGE.md
+  - RESTAURANT_SOCIAL_FINDINGS.md
+  - BUILD_VS_BUY_RECOMMENDATION.md
+  - PAID_EXPERTISE_GAPS.md
+  - PAID_RESOURCE_EVALUATION_RUBRIC.yaml
+
+classification_values:
+  - SOCIAL_CORE
+  - PLATFORM
+  - BUSINESS_MODEL
+  - VERTICAL
+  - BRAND_OS
+  - RUNTIME_DATA
+
+rules:
+  primary_layer: Every capability has one authoritative home.
+  decomposition: Supporting layers may supply scoped inputs but must not duplicate the primary method.
+  durable: Stable methodology or approved knowledge; changes only through review.
+  volatile: Current facts, platform state, operational state, observations, or performance requiring refresh.
+  paid_value: True means paid practitioner methodology could materially improve decision quality; it does not mean purchase is required.
+
+capabilities:
+  - id: objective_selection_and_channel_role
+    previous_capability: Objective selection and channel role
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, BRAND_OS, RUNTIME_DATA]
+    why: The translation method is cross-industry; the business outcome, brand priorities and current constraints arrive from scoped context.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: audience_behaviour_and_content_pillars
+    previous_capability: Audience behaviour and content pillars
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Audience-job and portfolio design are reusable methods, while actual audiences and observed behaviour are brand/runtime truth.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: frequency_and_content_mix
+    previous_capability: Frequency and content mix
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, BRAND_OS, RUNTIME_DATA]
+    why: Portfolio and capacity trade-offs are general judgment; current platform constraints and brand performance are inputs, never universal cadence rules.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: launch_strategy
+    previous_capability: Launch strategy
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Staging uncertainty, proof and action is general campaign strategy; conversion readiness and industry risk are selectively supplied.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: awareness_engagement_conversion
+    previous_capability: Awareness vs engagement vs conversion
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, PLATFORM, RUNTIME_DATA]
+    why: The objective-to-outcome hierarchy is universal; conversion events and platform measures are layer-specific.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: performance_diagnosis
+    previous_capability: Performance diagnosis
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, VERTICAL, RUNTIME_DATA]
+    why: Alternative-hypothesis diagnosis and next-test selection are cross-industry; definitions, commercial mechanics and actual results remain scoped inputs.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: weekly_monthly_planning
+    previous_capability: Weekly/monthly planning
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, BRAND_OS, RUNTIME_DATA]
+    why: Prioritisation, portfolio balance and feasibility review are general methods driven by brand and operational inputs.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: campaign_sequencing
+    previous_capability: Campaign sequencing
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Stage gates, dependencies and narrative progression transfer across industries; commercial timing is selectively loaded.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: repetition_prevention
+    previous_capability: Repetition prevention
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BRAND_OS, RUNTIME_DATA]
+    why: Content fingerprinting, controlled reuse and fatigue reasoning are cross-industry; actual tolerance is learned per brand.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: reels_craft
+    previous_capability: Reels craft
+    primary_layer: PLATFORM
+    supporting_layers: [SOCIAL_CORE, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Reel format, tools, specifications and platform behaviour are Instagram-specific; concept quality stays in the core and subject matter stays scoped.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+  - id: reel_performance_analysis
+    previous_capability: Reel performance analysis
+    primary_layer: PLATFORM
+    supporting_layers: [SOCIAL_CORE, BUSINESS_MODEL, RUNTIME_DATA]
+    why: Metric availability, retention representation and surface context are platform-specific; causal method remains in core.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: true
+
+  - id: carousel_craft
+    previous_capability: Carousel craft
+    primary_layer: PLATFORM
+    supporting_layers: [SOCIAL_CORE, BRAND_OS]
+    why: Carousel behaviour and specifications belong to the platform; narrative, creative strategy and visual identity do not.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+  - id: stories_craft
+    previous_capability: Stories craft
+    primary_layer: PLATFORM
+    supporting_layers: [SOCIAL_CORE, BRAND_OS, RUNTIME_DATA]
+    why: Story surfaces, stickers, expiry and metrics are platform mechanics; the communication job and brand expression remain elsewhere.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+  - id: creative_territories_and_concept_development
+    previous_capability: Creative territories and concept development
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Territory generation, selection and rejection are senior cross-industry social expertise applied to scoped truth.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: creative_briefing
+    previous_capability: Briefing designers/photographers/video
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: A decision-complete brief contract transfers across brands; deliverable specs, domain risks, identity and available assets are inputs.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: pattern_interruption_and_novelty
+    previous_capability: Pattern interruption and novelty
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BRAND_OS, RUNTIME_DATA]
+    why: Novelty mechanisms, brand-distance checks and stop conditions are general creative judgment; trend state is volatile.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: trend_adaptation
+    previous_capability: Trend adaptation
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BRAND_OS, RUNTIME_DATA]
+    why: Detect-verify-mechanism-fit-adapt-test is a durable method; the trend, shelf life and platform expression are current inputs.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: captions_hooks_and_ctas
+    previous_capability: Captions, hooks and CTAs
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, BRAND_OS]
+    why: Persuasive function, truth and critique are general; platform presentation, conversion action and voice are loaded separately.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: community_comments_replies_dms
+    previous_capability: Community/comments/replies/DMs
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Relationship objectives and triage principles are shared; platform controls, conversion context, specialist risk and live messages are scoped.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: ugc_and_social_proof
+    previous_capability: UGC and social proof
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Authenticity, proof selection and consent principles are general; effective proof and disclosure requirements vary by layer.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: true
+
+  - id: competitor_analysis
+    previous_capability: Competitor analysis
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Convention, whitespace, evidence and similarity guards are reusable; the actual market set and observations are runtime data.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: benchmarking_method
+    previous_capability: Benchmarking
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, VERTICAL, RUNTIME_DATA]
+    why: Comparator selection and definition-preserving interpretation are durable; benchmark values and metric definitions are volatile inputs.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+  - id: current_algorithm_platform_knowledge
+    previous_capability: Current algorithm/platform knowledge
+    primary_layer: PLATFORM
+    supporting_layers: []
+    why: Ranking, recommendation, eligibility, feature and metric claims are platform-owned, time-sensitive facts.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+  - id: platform_change_monitoring
+    previous_capability: Platform-change monitoring
+    primary_layer: PLATFORM
+    supporting_layers: [RUNTIME_DATA]
+    why: Monitoring maintains the platform knowledge lifecycle; dated alerts are runtime evidence until verified against primary sources.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+  - id: restaurant_local_demand
+    previous_capability: Restaurant/local demand
+    primary_layer: VERTICAL
+    supporting_layers: [BUSINESS_MODEL, BRAND_OS, RUNTIME_DATA]
+    why: The former capability is decomposed; local attendance, catchment and capacity move to Local Venue/Experience, while restaurant service-period, menu and reservation decisions remain in Restaurant.
+    durability: DURABLE
+    shared_across_brands: false
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: true
+
+  - id: social_to_reservation_measurement
+    previous_capability: Social-to-reservation measurement
+    primary_layer: BUSINESS_MODEL
+    supporting_layers: [VERTICAL, PLATFORM, RUNTIME_DATA]
+    why: Booking and online-to-offline conversion measurement is principally a Local Venue/Experience mechanic; restaurant-specific covers and service periods extend it.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: human_approval_and_qa
+    previous_capability: Human approval and QA
+    primary_layer: SOCIAL_CORE
+    supporting_layers: [PLATFORM, BUSINESS_MODEL, VERTICAL, BRAND_OS, RUNTIME_DATA]
+    why: Approval authority and evidence policy apply across brands; execution belongs in deterministic workflows and independent evals outside generation.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: business_model_commercial_mechanics
+    previous_capability: New explicit architecture capability
+    primary_layer: BUSINESS_MODEL
+    supporting_layers: [RUNTIME_DATA]
+    why: Conversion event, journey, geography, capacity, timing, repeat frequency and friction vary by how the business operates.
+    durability: DURABLE
+    shared_across_brands: true
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: true
+
+  - id: industry_specific_decision_logic
+    previous_capability: Restaurant vertical module and future justified verticals
+    primary_layer: VERTICAL
+    supporting_layers: [BUSINESS_MODEL, RUNTIME_DATA]
+    why: Industry-only proof, risk and decision logic should load only where it adds material value beyond business mechanics.
+    durability: DURABLE
+    shared_across_brands: false
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: true
+
+  - id: brand_identity_positioning_and_voice
+    previous_capability: Brand context previously described as runtime input
+    primary_layer: BRAND_OS
+    supporting_layers: []
+    why: Identity, positioning, audience definitions, tone and visual rules are authoritative brand truth and must never enter shared Skills.
+    durability: DURABLE
+    shared_across_brands: false
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: brand_product_service_and_approved_rules
+    previous_capability: Brand and offer context previously described as runtime input
+    primary_layer: BRAND_OS
+    supporting_layers: []
+    why: Stable product/service truth, approved work, management decisions and approved learnings belong to one Brand OS.
+    durability: DURABLE
+    shared_across_brands: false
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: current_objectives_priorities_and_operations
+    previous_capability: Planning and strategy inputs
+    primary_layer: RUNTIME_DATA
+    supporting_layers: [BRAND_OS]
+    why: Current priorities, capacity, stock, availability, hours and campaign state are time-bounded facts; stable approved objectives may also be referenced from Brand OS.
+    durability: VOLATILE
+    shared_across_brands: false
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: brand_performance_and_social_history
+    previous_capability: Performance diagnosis inputs
+    primary_layer: RUNTIME_DATA
+    supporting_layers: []
+    why: Results and history are brand-specific evidence that must remain separate from permanent brand rules and shared methodology.
+    durability: VOLATILE
+    shared_across_brands: false
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: observations_hypotheses_and_external_context
+    previous_capability: Learning and market-intelligence inputs
+    primary_layer: RUNTIME_DATA
+    supporting_layers: []
+    why: Unapproved observations, competitor findings, events and hypotheses require provenance, time bounds and review before any promotion.
+    durability: VOLATILE
+    shared_across_brands: false
+    requires_external_expertise: false
+    paid_expertise_could_materially_improve: false
+
+  - id: benchmark_values_and_platform_metric_extracts
+    previous_capability: Benchmarking and diagnosis inputs
+    primary_layer: RUNTIME_DATA
+    supporting_layers: [PLATFORM]
+    why: Values, samples, denominators, extraction dates and metric snapshots expire even though the comparison method is durable.
+    durability: VOLATILE
+    shared_across_brands: true
+    requires_external_expertise: true
+    paid_expertise_could_materially_improve: false
+
+loading_contract:
+  always_load: [SOCIAL_CORE]
+  load_if_requested: [PLATFORM]
+  load_exactly_one_primary: [BUSINESS_MODEL]
+  load_only_if_approved_and_relevant: [VERTICAL]
+  load_exactly_one_brand: [BRAND_OS]
+  load_minimum_relevant_window: [RUNTIME_DATA]
+  never_carry_between_brands: [BRAND_OS, RUNTIME_DATA]
