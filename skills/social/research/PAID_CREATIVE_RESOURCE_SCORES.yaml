@@ -1,0 +1,593 @@
+schema_version: "1.0"
+title: Paid Creative Resource Scores
+phase: "3.6"
+research_date: "2026-09-07"
+category: cross_industry_creative_strategy_and_critique
+rubric: PAID_RESOURCE_EVALUATION_RUBRIC.yaml
+scope_note: >-
+  Scores use only evidence available on public provider pages, course pages,
+  catalogues and terms. No paid resource was accessed. Totals do not override
+  global or category gates.
+
+decision:
+  final: BUY NONE
+  resources_investigated: 21
+  serious_candidates_scored: 15
+  screened_out_before_scoring: 6
+  conditional_due_diligence_leads: 3
+  resources_recommended_for_purchase: 0
+  rationale: >-
+    No candidate demonstrates deep social-native creative methodology and written
+    permission for the intended internal AI-assisted synthesis or encoding. The
+    strongest content candidates expressly prohibit or do not clearly permit that use.
+
+scale_notes:
+  social_native_depth: "1 = incidental; 5 = central and operational"
+  creative_method_depth: "1 = tips/inspiration; 5 = repeatable senior method"
+  case_quality: "1 = claims/examples only; 5 = contextual decisions, failures and outcomes"
+  business_model_transfer: "1 = poor; 5 = strong, subject to stated limits"
+  price_status: "Provider currency is retained; null means no public price was found."
+
+candidates:
+  - id: betterbriefs_assessing_creative_ideas
+    rank_by_score: 1
+    resource: Assessing Creative Ideas
+    provider: BetterBriefs
+    resource_type: professional_course
+    price: {amount: 595, currency: USD, status: public}
+    delivery: "Three weeks; seven modules; about five hours plus live Q&A"
+    current_availability: "Next public course listed for 2026-10-12"
+    evidence_urls:
+      - https://www.betterbriefs.com/assessing-creative-ideas-course
+      - https://www.betterbriefs.com/academy
+      - https://www.betterbriefs.com/about
+      - https://www.betterbriefs.com/terms_conditions
+    dimensions:
+      expert_credibility: {score: 15, basis: "Named founders have long agency-strategy careers, effectiveness awards and documented teaching responsibility."}
+      methodology_depth: {score: 14, basis: "Public syllabus promises a systematic idea-assessment method, bias checks, idea-versus-execution separation and preservation through development."}
+      decision_quality: {score: 12, basis: "Selection, feedback and decision bias are central rather than output production."}
+      case_quality: {score: 10, basis: "Cross-category exercises and cases are evidenced, but public material does not expose enough failed or longitudinal cases."}
+      recency: {score: 8, basis: "Current 2026 cohort, course pages and terms; recent course debriefs show active delivery."}
+      portfolio_business_model_relevance: {score: 8, basis: "Cross-category marketing method appears broadly portable, although local-service and organic-social cases are not shown publicly."}
+      creative_value: {score: 8, basis: "Direct fit for evaluation, rejection, feedback and preserving ideas."}
+      analytics_value: {score: 3, basis: "Commercial impact is asserted but performance interpretation and experimentation are not the course focus."}
+      transferability_to_abros: {score: 7, basis: "Human evaluation process is portable in principle; social-native translation would still be Abros-authored."}
+      licensing_usage_rights: {score: 0, basis: "July 2026 terms expressly prohibit AI upload/use, derivative works and using the methodology to build or improve software/tools without written permission."}
+    weighted_subtotal: 85
+    penalties: []
+    penalty_total: 0
+    final_score: 85
+    gates:
+      global: FAIL
+      category: PASS
+      failed: [licensing_usage_rights]
+      hard_disqualifier: "Public licence prohibits the intended system-encoding use; written exception would be required."
+    qualitative:
+      social_native_depth: 2
+      creative_method_depth: 5
+      case_quality: 4
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM
+    disposition: CONDITIONAL_RIGHTS_AND_SAMPLE_ENQUIRY
+
+  - id: contagious_creative_accelerator
+    rank_by_score: 1
+    resource: Creative Accelerator
+    provider: Contagious / LIONS Learning
+    resource_type: professional_course
+    price: {amount: 899, currency: EUR, status: public, alternatives: "GBP 799 / USD 999"}
+    delivery: "Six weeks; about eight hours; video, tests and final live session"
+    current_availability: "Public self-enrolment page live at research date"
+    evidence_urls:
+      - https://learning.lions.co/pages/contagious-creative-accelerator-updated
+      - https://learning.lions.co/pages/terms-and-conditions
+      - https://learning.lions.co/pages/terms-of-use
+    dimensions:
+      expert_credibility: {score: 14, basis: "Contagious has established campaign-analysis practice and named practitioner interviews; individual responsibility for every case is not public."}
+      methodology_depth: {score: 13, basis: "Includes creativity evaluation, cultural relevance, organising principles, heretical questions and creative tactics; full branching logic is not visible pre-purchase."}
+      decision_quality: {score: 11, basis: "Course promises case deconstruction and evaluative tools, but rejected routes and stop conditions are not fully evidenced publicly."}
+      case_quality: {score: 11, basis: "More than 75 recent campaigns across five continents with interviews; failure and counterexample coverage is unclear."}
+      recency: {score: 8, basis: "Course advertises cases from the preceding 18 months and a current delivery page."}
+      portfolio_business_model_relevance: {score: 8, basis: "Wide sector and geographic range supports transfer, though local conversion constraints are not a stated focus."}
+      creative_value: {score: 8, basis: "Strongest visible blend of creative evaluation, idea generation and cultural distinctiveness."}
+      analytics_value: {score: 5, basis: "Cases connect creativity to business context, but diagnostic metric interpretation is not the primary method."}
+      transferability_to_abros: {score: 7, basis: "Principles appear cross-industry and usable by humans, with Abros translation required for ongoing social systems."}
+      licensing_usage_rights: {score: 0, basis: "Published terms restrict use to viewing/professional purposes, prohibit derivative works and prohibit uploading content to AI/LLM systems."}
+    weighted_subtotal: 85
+    penalties: []
+    penalty_total: 0
+    final_score: 85
+    gates:
+      global: FAIL
+      category: PASS
+      failed: [licensing_usage_rights]
+      hard_disqualifier: "Public licence prohibits the intended system-encoding use; negotiated written rights would be required."
+    qualitative:
+      social_native_depth: 3
+      creative_method_depth: 4
+      case_quality: 5
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 5, future_unknown_industries: 4}
+    overlap_with_existing_research: LOW_MEDIUM
+    disposition: CONDITIONAL_RIGHTS_AND_SAMPLE_ENQUIRY
+
+  - id: lions_creative_mba
+    rank_by_score: 3
+    resource: LIONS Creative MBA
+    provider: LIONS Learning
+    resource_type: training_programme
+    price: {amount: 2849, currency: EUR, status: public, alternatives: "GBP 2499 / USD 3249"}
+    delivery: "Ten-week digital programme; weekly live sessions and up to six hours weekly study"
+    current_availability: "Published 2026 cohort began 2026-04-06; no later cohort was visible"
+    evidence_urls:
+      - https://learning.lions.co/bundles/lions-creative-mba
+      - https://learning.lions.co/pages/terms-and-conditions
+      - https://learning.lions.co/pages/terms-of-use
+    dimensions:
+      expert_credibility: {score: 15, basis: "Named senior leader plus access to Cannes Lions jurors and established global industry practitioners."}
+      methodology_depth: {score: 12, basis: "Substantial curriculum on creative leadership and judging, though public detail is less operational than the most focused courses."}
+      decision_quality: {score: 10, basis: "Jury-style evaluation and expert discussion support judgment, but explicit failure branches are not shown."}
+      case_quality: {score: 11, basis: "Extensive Cannes case and talk archive; selection bias toward recognised work limits failed-case evidence."}
+      recency: {score: 8, basis: "Current 2026 programme and current case ecosystem."}
+      portfolio_business_model_relevance: {score: 8, basis: "Broad industries represented; small local-business constraints are not central."}
+      creative_value: {score: 8, basis: "High exposure to senior creative standards and evaluation."}
+      analytics_value: {score: 5, basis: "Effectiveness appears in cases but operational diagnosis is secondary."}
+      transferability_to_abros: {score: 6, basis: "General judgment transfers, but programme scale, award context and time burden require translation."}
+      licensing_usage_rights: {score: 0, basis: "LIONS terms prohibit AI upload and derivative use for the intended encoding purpose."}
+    weighted_subtotal: 83
+    penalties: []
+    penalty_total: 0
+    final_score: 83
+    gates: {global: FAIL, category: PASS, failed: [licensing_usage_rights], hard_disqualifier: "No lawful licence for intended encoding under public terms."}
+    qualitative:
+      social_native_depth: 2
+      creative_method_depth: 4
+      case_quality: 5
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 5, future_unknown_industries: 4}
+    overlap_with_existing_research: LOW_MEDIUM
+    disposition: DO_NOT_SHORTLIST
+
+  - id: betterbriefs_brief_writing
+    rank_by_score: 4
+    resource: Brief Writing Training
+    provider: BetterBriefs
+    resource_type: professional_course
+    price: {amount: 695, currency: USD, status: public}
+    delivery: "Three weeks; six modules; about six hours plus two live Q&As"
+    current_availability: "Next public course listed for 2026-09-15"
+    evidence_urls:
+      - https://www.betterbriefs.com/brief-writing-course
+      - https://www.betterbriefs.com/about
+      - https://www.betterbriefs.com/terms_conditions
+    dimensions:
+      expert_credibility: {score: 15, basis: "Named award-winning agency strategists with extensive briefing research and teaching practice."}
+      methodology_depth: {score: 14, basis: "Structured brief construction with tools, frameworks, pitfalls and worked application."}
+      decision_quality: {score: 11, basis: "Connects brief components to choices and challenges poor inputs; less focused on choosing creative concepts."}
+      case_quality: {score: 10, basis: "Cross-category examples and current cohorts are evidenced; public failed-case detail remains limited."}
+      recency: {score: 8, basis: "Current September 2026 cohort and recently updated terms."}
+      portfolio_business_model_relevance: {score: 8, basis: "Briefing principles transfer well across portfolio businesses."}
+      creative_value: {score: 5, basis: "Improves inputs to creativity but does not close territory development and critique by itself."}
+      analytics_value: {score: 4, basis: "Objective discipline helps measurement, but performance diagnosis is not core."}
+      transferability_to_abros: {score: 7, basis: "Feasible human process, but the primary gap is downstream of briefing."}
+      licensing_usage_rights: {score: 0, basis: "Same 2026 terms expressly prohibit AI/tool-building use and derivative works."}
+    weighted_subtotal: 82
+    penalties: []
+    penalty_total: 0
+    final_score: 82
+    gates: {global: FAIL, category: FAIL, failed: [creative_value, licensing_usage_rights], hard_disqualifier: "No lawful licence for intended encoding under public terms."}
+    qualitative:
+      social_native_depth: 1
+      creative_method_depth: 3
+      case_quality: 4
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM_HIGH
+    disposition: DEFER
+
+  - id: dandad_creative_evaluation
+    rank_by_score: 5
+    resource: Creative Evaluation
+    provider: D&AD
+    resource_type: team_masterclass
+    price: {amount: null, currency: null, status: quote_required}
+    delivery: "Three-hour team-only masterclass"
+    current_availability: "Current 2026 catalogue; enquiry required"
+    evidence_urls:
+      - https://www.dandad.org/learning/masterclasses/creative-evaluation
+      - https://media.dandad.org/documents/Masterclass_catalogue_2026-New_Edit_2.pdf
+    dimensions:
+      expert_credibility: {score: 14, basis: "Named instructor Arif Haq and D&AD's established creative-evaluation role are visible."}
+      methodology_depth: {score: 12, basis: "Creative Compass and shared evaluation language suggest a repeatable critique method; full mechanics are not public."}
+      decision_quality: {score: 11, basis: "Accept/revise feedback and team alignment are central, but rejected alternatives are not evidenced in detail."}
+      case_quality: {score: 9, basis: "Cross-industry exposure is claimed; public syllabus does not show complete before/after or failed cases."}
+      recency: {score: 8, basis: "Listed in the current 2026 masterclass catalogue."}
+      portfolio_business_model_relevance: {score: 7, basis: "Evaluation language should transfer, with local commercial constraints added by Abros."}
+      creative_value: {score: 8, basis: "Direct critique and feedback relevance to the identified gap."}
+      analytics_value: {score: 3, basis: "No substantial performance-diagnosis content is publicly evidenced."}
+      transferability_to_abros: {score: 7, basis: "Team delivery could align human evaluators; adaptation details are not public."}
+      licensing_usage_rights: {score: 2, basis: "No public organisational adaptation, retention or AI-assisted internal-use licence was found."}
+    weighted_subtotal: 81
+    penalties: []
+    penalty_total: 0
+    final_score: 81
+    gates: {global: FAIL, category: PASS, failed: [licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 1
+      creative_method_depth: 4
+      case_quality: 3
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: LOW_MEDIUM
+    disposition: CONDITIONAL_RIGHTS_AND_SAMPLE_ENQUIRY
+
+  - id: sweathead_strategy_masterclass_membership
+    rank_by_score: 6
+    resource: Mark Pollard's Strategy Masterclass / Sweathead Membership
+    provider: Sweathead
+    resource_type: practitioner_masterclass_and_membership
+    price: {amount: 395, currency: USD, status: public, alternatives: "USD 195 sign-up plus USD 20/month"}
+    delivery: "Three-hour live masterclass plus membership resources; recording not promised"
+    current_availability: "Most recent public class found was 2026-06-24; membership page live"
+    evidence_urls:
+      - https://sweathead.com/mark-pollards-strategy-masterclass-online/
+    dimensions:
+      expert_credibility: {score: 15, basis: "Named strategist with senior roles at recognised agencies and long-running strategy teaching practice."}
+      methodology_depth: {score: 14, basis: "Four Points framework, exercises and strategy-to-brief path are concrete and repeatable."}
+      decision_quality: {score: 11, basis: "Exercises emphasize choices and articulation; public failure and stop-condition detail is thinner."}
+      case_quality: {score: 7, basis: "Practitioner examples are likely, but the public page does not evidence enough contextual outcomes or failed cases."}
+      recency: {score: 7, basis: "A 2026 live class was listed, though it had passed at research date and no next date was visible."}
+      portfolio_business_model_relevance: {score: 7, basis: "Cross-industry strategy transfers, with Abros needing to add local/ecommerce mechanics."}
+      creative_value: {score: 7, basis: "Strong insight, proposition and brief logic; less evidence of social-format critique and fatigue."}
+      analytics_value: {score: 3, basis: "Performance diagnosis is not a central public promise."}
+      transferability_to_abros: {score: 7, basis: "Compact frameworks appear portable, subject to rights and social adaptation."}
+      licensing_usage_rights: {score: 2, basis: "Public page does not establish internal encoding, adaptation or durable team-use rights."}
+    weighted_subtotal: 80
+    penalties: []
+    penalty_total: 0
+    final_score: 80
+    gates: {global: FAIL, category: FAIL, failed: [case_quality, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 2
+      creative_method_depth: 4
+      case_quality: 3
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM
+    disposition: DEFER
+
+  - id: strategy_finishing_school
+    rank_by_score: 6
+    resource: Strategy Finishing School
+    provider: Julian Cole
+    resource_type: training_programme
+    price: {amount: 1997, currency: USD, status: public}
+    delivery: "Online programme with 19 listed curriculum items"
+    current_availability: "Sales page live at research date"
+    evidence_urls:
+      - https://courses.strategyfinishingschool.com/
+    dimensions:
+      expert_credibility: {score: 14, basis: "Named strategist cites work with major technology and consumer brands; exact role varies by case."}
+      methodology_depth: {score: 14, basis: "Broad structured strategy curriculum and tools appear more systematic than a tips course."}
+      decision_quality: {score: 11, basis: "Strategy choices are central; public rejected-route and uncertainty evidence is limited."}
+      case_quality: {score: 8, basis: "Recognisable client context is present, but public failure and outcome detail does not reach the creative-category gate."}
+      recency: {score: 7, basis: "Page is live, but dated case/update information is limited."}
+      portfolio_business_model_relevance: {score: 7, basis: "General strategy transfers, though local venue/service mechanics are not explicit."}
+      creative_value: {score: 6, basis: "Useful for strategic foundations and ideas, less direct on social creative critique."}
+      analytics_value: {score: 4, basis: "Research and strategic evidence are present, not a performance-diagnosis system."}
+      transferability_to_abros: {score: 7, basis: "Methods appear portable but would require substantial social and governance translation."}
+      licensing_usage_rights: {score: 2, basis: "No public permission for internal AI-assisted encoding or derivative methodology was found."}
+    weighted_subtotal: 80
+    penalties: []
+    penalty_total: 0
+    final_score: 80
+    gates: {global: FAIL, category: FAIL, failed: [case_quality, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 1
+      creative_method_depth: 4
+      case_quality: 3
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM
+    disposition: DEFER
+
+  - id: warc_strategy_fundamentals
+    rank_by_score: 8
+    resource: Strategy Fundamentals
+    provider: WARC / LIONS Learning
+    resource_type: professional_course
+    price: {amount: null, currency: null, status: not_public}
+    delivery: "Six self-paced modules"
+    current_availability: "Course page live at research date"
+    evidence_urls:
+      - https://learning.lions.co/courses/warc-strategy-fundamentals
+      - https://learning.lions.co/pages/terms-of-use
+    dimensions:
+      expert_credibility: {score: 14, basis: "WARC is an established effectiveness and case-analysis provider with named course positioning."}
+      methodology_depth: {score: 11, basis: "Covers briefs, research, strategic development and effectiveness in an orderly sequence."}
+      decision_quality: {score: 9, basis: "Connects evidence to strategy, but is explicitly fundamentals-level rather than senior critique."}
+      case_quality: {score: 10, basis: "Award and effectiveness cases support learning; failed cases remain underrepresented."}
+      recency: {score: 9, basis: "Current course and maintained case platform."}
+      portfolio_business_model_relevance: {score: 8, basis: "Cross-industry strategy/effectiveness material transfers broadly."}
+      creative_value: {score: 5, basis: "Creative strategy is covered indirectly; territory selection and critique are not deep enough."}
+      analytics_value: {score: 6, basis: "Effectiveness and evidence interpretation add moderate value."}
+      transferability_to_abros: {score: 7, basis: "Foundational logic is portable but substantially overlaps existing research."}
+      licensing_usage_rights: {score: 0, basis: "LIONS Learning terms prohibit AI/LLM upload and derivative use for the intended purpose."}
+    weighted_subtotal: 79
+    penalties: []
+    penalty_total: 0
+    final_score: 79
+    gates: {global: FAIL, category: FAIL, failed: [creative_value, licensing_usage_rights], hard_disqualifier: "No lawful licence for intended encoding under public terms."}
+    qualitative:
+      social_native_depth: 1
+      creative_method_depth: 3
+      case_quality: 4
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: HIGH
+    disposition: DEFER
+
+  - id: miami_ad_school_social_media_management
+    rank_by_score: 9
+    resource: Social Media Management Bootcamp
+    provider: Miami Ad School
+    resource_type: training_programme
+    price: {amount: 4250, currency: USD, status: public, note: "Includes application fee"}
+    delivery: "Ten-week online bootcamp with a real-client final project"
+    current_availability: "Programme page live at research date"
+    evidence_urls:
+      - https://miamiadschool.com/bootcamp-social-media-management/
+    dimensions:
+      expert_credibility: {score: 12, basis: "Industry-school delivery and practitioner instructors are credible, though individual responsibilities are not fully visible on the page."}
+      methodology_depth: {score: 10, basis: "Broad end-to-end social curriculum, but breadth reduces depth in senior creative critique."}
+      decision_quality: {score: 9, basis: "Real-client strategy project supports applied choices; rejected routes are not publicly evidenced."}
+      case_quality: {score: 8, basis: "A real-client final project is useful but does not establish multiple before/after and failed cases."}
+      recency: {score: 9, basis: "Current programme includes contemporary tools and AI topics."}
+      portfolio_business_model_relevance: {score: 8, basis: "General social management can transfer across businesses."}
+      creative_value: {score: 7, basis: "Content and strategy work are meaningful but not clearly senior concept-critique methodology."}
+      analytics_value: {score: 6, basis: "Paid, analytics and measurement coverage is broader than creative-only courses."}
+      transferability_to_abros: {score: 6, basis: "Broad capability transfers, but time, price and irrelevant modules make extraction inefficient."}
+      licensing_usage_rights: {score: 2, basis: "No public permission for AI-assisted internal encoding or derivative methods was found."}
+    weighted_subtotal: 77
+    penalties: []
+    penalty_total: 0
+    final_score: 77
+    gates: {global: FAIL, category: FAIL, failed: [case_quality, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 5
+      creative_method_depth: 3
+      case_quality: 3
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: HIGH
+    disposition: REJECT_PRE_V0_1
+
+  - id: link_in_bio_paid_archive
+    rank_by_score: 10
+    resource: Paid newsletter archive and membership
+    provider: Link in Bio / Rachel Karten
+    resource_type: paid_newsletter_archive
+    price: {amount: 80, currency: USD, status: inferred_standard, note: "Inferred from a stated USD 64 offer at 20% off; verify before purchase"}
+    delivery: "Weekly strategy emails, quarterly trend reports, running idea posts and community access"
+    current_availability: "Publication marked its fifth year in 2026"
+    evidence_urls:
+      - https://www.linkinbio.news/p/link-in-bio-birthday-sale
+      - https://www.linkinbio.news/p/five-years-of-link-in-bio
+    dimensions:
+      expert_credibility: {score: 14, basis: "Named practitioner/editor with sustained access to current social teams and documented interviews."}
+      methodology_depth: {score: 7, basis: "Rich commentary and recurring formats, but no public end-to-end decision system."}
+      decision_quality: {score: 9, basis: "Interviews often explain why teams acted, though decision evidence is editorial rather than normalized."}
+      case_quality: {score: 10, basis: "Large stream of current, real social examples and practitioner interviews; outcome/failure context varies."}
+      recency: {score: 10, basis: "Ongoing social-native publication with current examples and trend monitoring."}
+      portfolio_business_model_relevance: {score: 8, basis: "Wide brand coverage offers cross-category inspiration with uneven local-service relevance."}
+      creative_value: {score: 8, basis: "Excellent social-native examples and practitioner thinking, but less repeatable critique logic."}
+      analytics_value: {score: 2, basis: "Performance diagnosis and controlled interpretation are not core strengths."}
+      transferability_to_abros: {score: 6, basis: "Human readers can learn patterns, but converting an archive into consistent decision logic is substantial Abros work."}
+      licensing_usage_rights: {score: 2, basis: "Subscription access does not evidence bulk extraction, durable team synthesis or AI-encoding rights."}
+    weighted_subtotal: 76
+    penalties: []
+    penalty_total: 0
+    final_score: 76
+    gates: {global: FAIL, category: FAIL, failed: [methodology_depth, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 5
+      creative_method_depth: 2
+      case_quality: 4
+      business_model_transfer: {local_venue_experience: 4, local_service: 3, ecommerce_product: 5, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM
+    disposition: DEFER_AS_RESEARCH_MONITORING
+
+  - id: dandad_creative_collider
+    rank_by_score: 11
+    resource: Creative Collider
+    provider: D&AD
+    resource_type: masterclass
+    price: {amount: null, currency: null, status: not_public}
+    delivery: "Three-hour online masterclass"
+    current_availability: "Public 2026 dates included 2026-09-14 and 2026-11-23"
+    evidence_urls:
+      - https://www.dandad.org/learning/masterclasses/creative-collider
+    dimensions:
+      expert_credibility: {score: 13, basis: "Named instructor Arif Haq and D&AD context provide credible creative practice."}
+      methodology_depth: {score: 11, basis: "Repeatable ideation process and case deconstruction are promised; full operating branches are not visible."}
+      decision_quality: {score: 8, basis: "Idea development is clearer than explicit selection/rejection logic."}
+      case_quality: {score: 8, basis: "Cases are used but public before/after, outcome and failure depth is insufficient."}
+      recency: {score: 8, basis: "Current future 2026 dates were listed."}
+      portfolio_business_model_relevance: {score: 7, basis: "Cross-industry ideation should transfer with business-model constraints supplied by Abros."}
+      creative_value: {score: 7, basis: "Useful idea-generation structure, less direct evaluation/fatigue evidence."}
+      analytics_value: {score: 2, basis: "No meaningful performance-diagnosis curriculum is visible."}
+      transferability_to_abros: {score: 7, basis: "Compact process is potentially portable, pending samples and rights."}
+      licensing_usage_rights: {score: 2, basis: "No public internal adaptation or AI-assisted use rights were found."}
+    weighted_subtotal: 73
+    penalties: []
+    penalty_total: 0
+    final_score: 73
+    gates: {global: FAIL, category: FAIL, failed: [decision_quality, case_quality, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 1
+      creative_method_depth: 4
+      case_quality: 3
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: LOW_MEDIUM
+    disposition: DEFER
+
+  - id: ipa_advanced_building_brand_social
+    rank_by_score: 12
+    resource: Advanced Building a Brand on Social
+    provider: IPA
+    resource_type: professional_course
+    price: {amount: null, currency: null, status: not_public}
+    delivery: "One-day in-person course in London"
+    current_availability: "Listed for 2026-10-13; page updated 2026-06-05"
+    evidence_urls:
+      - https://ipa.co.uk/courses-qualifications/advanced-building-a-brand-on-social/
+    dimensions:
+      expert_credibility: {score: 12, basis: "Named specialist Kineta Kelsall/School of Social and IPA delivery provide relevant practitioner credibility."}
+      methodology_depth: {score: 9, basis: "Connects brand story, recognisability and measurement, but public syllabus does not show a deep territory/critique system."}
+      decision_quality: {score: 9, basis: "Assessing good social work is included; rejected routes and decision trees are not sufficiently evidenced."}
+      case_quality: {score: 6, basis: "Public page does not document full cases, failed work or outcomes."}
+      recency: {score: 10, basis: "Future 2026 delivery and recent page update."}
+      portfolio_business_model_relevance: {score: 7, basis: "Brand-on-social principles transfer, though model-specific commercial constraints are not explicit."}
+      creative_value: {score: 6, basis: "Social recognisability and work assessment are relevant but appear compressed into one day."}
+      analytics_value: {score: 4, basis: "Measurement is included at a broad level, not deep diagnosis."}
+      transferability_to_abros: {score: 7, basis: "Social-specific language could complement the generic core, pending deeper evidence."}
+      licensing_usage_rights: {score: 2, basis: "No public permission for internal AI-assisted synthesis or encoding was found."}
+    weighted_subtotal: 72
+    penalties: []
+    penalty_total: 0
+    final_score: 72
+    gates: {global: FAIL, category: FAIL, failed: [methodology_depth, case_quality, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 5
+      creative_method_depth: 3
+      case_quality: 2
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM_HIGH
+    disposition: DEFER
+
+  - id: dma_briefing_evaluating_creative
+    rank_by_score: 13
+    resource: Briefing & Evaluating Creative
+    provider: Data & Marketing Association UK
+    resource_type: professional_course
+    price: {amount: 549, currency: GBP, status: public, alternatives: "GBP 349 member; prices exclude VAT"}
+    delivery: "One-day online course"
+    current_availability: "Listed for 2026-11-11"
+    evidence_urls:
+      - https://www.dma.org.uk/learning-and-events/learning/courses/briefing-and-evaluating-creative-course
+    dimensions:
+      expert_credibility: {score: 11, basis: "Named practitioner Becky Bocchetti and DMA context are credible, with limited public recent-case responsibility."}
+      methodology_depth: {score: 10, basis: "Brief, big idea and evaluation process are structured but compressed into one day."}
+      decision_quality: {score: 8, basis: "Feedback and evaluation choices are included; deeper alternatives and uncertainty are not visible."}
+      case_quality: {score: 7, basis: "Examples are indicated but full contextual and failed cases are not public."}
+      recency: {score: 8, basis: "Future 2026 delivery date."}
+      portfolio_business_model_relevance: {score: 7, basis: "General marketing method transfers reasonably across models."}
+      creative_value: {score: 6, basis: "Direct relevance to idea evaluation but limited visible senior depth."}
+      analytics_value: {score: 4, basis: "DMA orientation helps commercial discipline; diagnostic analytics are not core."}
+      transferability_to_abros: {score: 7, basis: "Feasible and compact, but likely overlaps current briefing knowledge."}
+      licensing_usage_rights: {score: 2, basis: "No public internal encoding or AI-use licence was found."}
+    weighted_subtotal: 70
+    penalties: []
+    penalty_total: 0
+    final_score: 70
+    gates: {global: FAIL, category: FAIL, failed: [case_quality, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 1
+      creative_method_depth: 3
+      case_quality: 3
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: MEDIUM_HIGH
+    disposition: DEFER
+
+  - id: cim_social_media_strategy_masterclass
+    rank_by_score: 14
+    resource: Social Media Strategy Masterclass
+    provider: Chartered Institute of Marketing
+    resource_type: professional_course
+    price: {amount: 625, currency: GBP, status: public_starting_price, note: "Excludes VAT; page displayed promotional wording"}
+    delivery: "One-day virtual classroom"
+    current_availability: "Multiple 2026 dates visible"
+    evidence_urls:
+      - https://cim-core-swap.cim.co.uk/learn-develop/training-development/view-all-courses/social-media-strategy-masterclass/
+    dimensions:
+      expert_credibility: {score: 11, basis: "Established professional body, but the reviewed page provides limited named recent practitioner evidence."}
+      methodology_depth: {score: 9, basis: "Covers objectives, narrative, community and metrics; depth appears broad rather than diagnostic."}
+      decision_quality: {score: 8, basis: "Planning choices are included, with limited visible rejection or failed-case logic."}
+      case_quality: {score: 6, basis: "No strong public evidence of complete before/after or failed cases."}
+      recency: {score: 9, basis: "Current 2026 scheduling."}
+      portfolio_business_model_relevance: {score: 7, basis: "General social planning transfers, but model-specific constraints are not deep."}
+      creative_value: {score: 5, basis: "Narrative/content coverage does not amount to senior concept and critique methodology."}
+      analytics_value: {score: 5, basis: "Metrics are covered at strategy-course level, not deep hypothesis diagnosis."}
+      transferability_to_abros: {score: 6, basis: "Usable basics but high overlap with free/official research."}
+      licensing_usage_rights: {score: 2, basis: "No public permission for internal AI-assisted encoding or derivative methods was found."}
+    weighted_subtotal: 68
+    penalties: []
+    penalty_total: 0
+    final_score: 68
+    gates: {global: FAIL, category: FAIL, failed: [methodology_depth, case_quality, creative_value, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 4
+      creative_method_depth: 2
+      case_quality: 2
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: HIGH
+    disposition: REJECT
+
+  - id: jellyfish_social_media_strategy
+    rank_by_score: 15
+    resource: Social Media Strategy
+    provider: Jellyfish Training
+    resource_type: professional_course
+    price: {amount: 499, currency: GBP, status: public, note: "Excludes VAT"}
+    delivery: "One-day course"
+    current_availability: "October, November and December 2026 dates visible"
+    evidence_urls:
+      - https://www.jellyfish.com/en-gb/training/courses/social-media-strategy
+    dimensions:
+      expert_credibility: {score: 10, basis: "Recognised digital training provider; reviewed page gives limited named expert responsibility and failure evidence."}
+      methodology_depth: {score: 8, basis: "Audience, objectives, pillars, competition, community and measurement form a useful plan but not a deep critique system."}
+      decision_quality: {score: 7, basis: "Planning guidance is present; explicit trade-offs and reject/revise logic are not sufficiently visible."}
+      case_quality: {score: 6, basis: "Public page does not show contextual before/after or failed cases."}
+      recency: {score: 8, basis: "Multiple future 2026 dates."}
+      portfolio_business_model_relevance: {score: 7, basis: "Broad social strategy can transfer, but local and ecommerce mechanics are not separately reasoned."}
+      creative_value: {score: 5, basis: "Content pillars are relevant but below senior creative territory and critique depth."}
+      analytics_value: {score: 5, basis: "Measurement included without deep diagnostic evidence."}
+      transferability_to_abros: {score: 6, basis: "Accessible framework but substantial duplication of audited free knowledge."}
+      licensing_usage_rights: {score: 2, basis: "No public internal AI-encoding or derivative-use permission was found."}
+    weighted_subtotal: 64
+    penalties: []
+    penalty_total: 0
+    final_score: 64
+    gates: {global: FAIL, category: FAIL, failed: [decision_quality, case_quality, creative_value, licensing_usage_rights], hard_disqualifier: null}
+    qualitative:
+      social_native_depth: 4
+      creative_method_depth: 2
+      case_quality: 2
+      business_model_transfer: {local_venue_experience: 4, local_service: 4, ecommerce_product: 4, future_unknown_industries: 4}
+    overlap_with_existing_research: HIGH
+    disposition: REJECT
+
+screened_out:
+  - resource: Strategy Accelerator
+    provider: Sweathead
+    evidence_url: https://strategyhome.sweathead.com/products/the-sweathead-strategy-accelerator/
+    reason: "Public offer referenced a 2025 cohort and overlaps the more current Sweathead masterclass evidence."
+  - resource: Brighter Briefs
+    provider: D&AD
+    evidence_url: https://www.dandad.org/learning/masterclasses/brighter-briefs
+    reason: "Team-only briefing course duplicates stronger briefing candidates and does not target the primary creative critique gap."
+  - resource: Contagious IQ membership
+    provider: Contagious
+    evidence_url: https://www.contagious.com/en/contagious-iq
+    reason: "Quote-only case library rather than a standalone decision methodology; overlaps Creative Accelerator."
+  - resource: Ad Creative Academy
+    provider: Ad Creative Academy
+    evidence_url: https://adcreativeacademy.com/
+    reason: "AI-led paid-ad/ecommerce focus conflicts with the cross-industry organic/social creative-methodology brief."
+  - resource: Paid Social Certification
+    provider: Modern Marketing Institute
+    evidence_url: https://www.modernmarketinginstitute.com/certification/paid-social-certification
+    reason: "Meta paid-media, ecommerce and AI emphasis is outside this phase and duplicates official platform material."
+  - resource: Impactful Social Writing
+    provider: Maven / Erica Schneider
+    evidence_url: https://maven.com/erica-kasey/social-writing
+    reason: "Personal-authority Twitter/LinkedIn writing and monetisation do not transfer sufficiently to Abros brand accounts."
+
+reconsideration_rules:
+  - "Do not buy from the current public evidence."
+  - "Rescore only when a provider supplies a representative methodology/case sample or new written terms."
+  - "Licensing must explicitly cover named team access, retained human notes, Abros-authored derivatives and bounded AI-assisted internal use."
+  - "Do not upload or reproduce provider materials in an AI system without explicit written permission."
+  - "Any pilot must compare blinded pre-resource and post-resource decisions on unseen multi-model briefs."
