@@ -1,0 +1,274 @@
+schema_version: "1.0"
+title: Paid Social Expertise Resource Evaluation Rubric
+phase: "3.5"
+total_points: 100
+purpose: >-
+  Evaluate whether a commercial methodology adds material decision quality beyond
+  the free and official expertise already audited for Abros Social.
+
+scoring_method:
+  instructions:
+    - Score only evidence available in a sample, syllabus, licence, demonstration, or verified case material.
+    - Record a reason and evidence reference for every dimension; do not award points for marketing claims alone.
+    - Apply hard disqualifiers before calculating a score.
+    - Calculate the weighted subtotal, apply penalties, and floor the final score at zero.
+    - Apply global and category gates after scoring; a high total cannot compensate for a failed gate.
+    - Require two independent reviewers for creative, strategic, or otherwise subjective resources.
+  calculation: "final_score = max(0, weighted_subtotal - penalty_total)"
+  penalty_cap: 50
+
+dimensions:
+  - id: expert_credibility
+    label: EXPERT CREDIBILITY
+    weight: 15
+    evidence_required:
+      - Named practitioner and clearly stated role in the work shown
+      - Verifiable recent hands-on responsibility for relevant businesses or clients
+      - Clear distinction between personal work, team work, and commentary
+    anchors:
+      "0": Anonymous, unverifiable, or no evidence of doing the work
+      "5": General experience claims with limited relevant operating evidence
+      "10": Verifiable practitioner with relevant work and clear responsibilities
+      "15": Deep, recent, repeated responsibility with transparent limits and credible failures
+
+  - id: methodology_depth
+    label: METHODOLOGY DEPTH
+    weight: 15
+    evidence_required:
+      - Structured inputs, steps, outputs, exceptions, and operating conditions
+      - Decision trees, diagnostic frameworks, or repeatable critique processes
+      - Failure modes and limits rather than formulas alone
+    anchors:
+      "0": Inspiration, prompts, tips, or templates without a method
+      "5": Named framework with shallow instructions or unexplained steps
+      "10": Repeatable end-to-end process with useful tools and exceptions
+      "15": Deep operating system with diagnosis, branches, failure modes, and worked application
+
+  - id: decision_quality
+    label: DECISION QUALITY
+    weight: 12
+    evidence_required:
+      - Examples showing why a choice was made
+      - Trade-offs, rejected options, uncertainty, and stop conditions
+      - Before/after decisions rather than outputs alone
+    anchors:
+      "0": Gives outputs or rules without reasoning
+      "4": Explains some recommendations but omits alternatives or trade-offs
+      "8": Consistently connects evidence to choices and next actions
+      "12": Demonstrates strong diagnosis, rejection logic, uncertainty, and adaptive decisions
+
+  - id: case_quality
+    label: CASE QUALITY
+    weight: 12
+    evidence_required:
+      - Actual business or client cases with enough context to judge the method
+      - Baseline, decision sequence, outcome, caveats, and failed or mixed cases
+      - Clear separation of evidence from the author's interpretation
+    anchors:
+      "0": No real cases, fabricated examples, or screenshots without context
+      "4": Success anecdotes with weak baselines, decisions, or attribution
+      "8": Multiple contextualised cases including decisions and outcomes
+      "12": Strong before/after, failed-case, confounder, and counterexample coverage
+
+  - id: recency
+    label: RECENCY
+    weight: 8
+    evidence_required:
+      - Dates or versions for cases and platform-dependent claims
+      - Evidence of current operating work and an update method
+    anchors:
+      "0": Undated or materially obsolete platform guidance
+      "3": Mostly evergreen but current applicability is unclear
+      "6": Recent work with dated platform claims
+      "8": Current operating evidence plus disciplined updates and separation of durable from volatile knowledge
+
+  - id: restaurant_relevance
+    label: RESTAURANT RELEVANCE
+    weight: 8
+    evidence_required:
+      - Restaurant, hospitality, local-service, or closely analogous cases
+      - Recognition of occasions, catchments, capacity, service periods, repeat visits, and offline demand
+    anchors:
+      "0": Assumes an ecommerce or creator business model without adaptation
+      "3": Broad local or hospitality relevance but little restaurant depth
+      "6": Directly applicable restaurant or hospitality reasoning and cases
+      "8": Deep restaurant operating and commercial relevance with explicit constraints and caveats
+
+  - id: creative_value
+    label: CREATIVE VALUE
+    weight: 8
+    evidence_required:
+      - Territory or concept development, creative critique, and rejection logic
+      - Annotated examples explaining visual, narrative, copy, and CTA decisions
+    anchors:
+      "0": Prompts, swipe files, hooks, or taste without critique
+      "3": Useful craft instruction but little concept or revision reasoning
+      "6": Repeatable development and critique method with worked examples
+      "8": Senior concept judgment, failure analysis, fatigue diagnosis, and strong before/after critique
+
+  - id: analytics_value
+    label: ANALYTICS VALUE
+    weight: 8
+    evidence_required:
+      - Clear metric definitions, denominators, windows, comparisons, and limitations
+      - Symptom-to-hypothesis diagnosis, experiment logic, and performance interpretation
+    anchors:
+      "0": Vanity metrics, unexplained scores, or unsupported attribution
+      "3": Reporting instruction with limited diagnostic reasoning
+      "6": Strong diagnosis and test design using realistic data
+      "8": Handles ambiguity, competing causes, failed tests, commercial linkage, and uncertainty well
+
+  - id: transferability_to_abros
+    label: TRANSFERABILITY TO ABROS
+    weight: 8
+    evidence_required:
+      - Brand-independent principles that can be adapted across the Abros portfolio
+      - Feasible methods that do not require the seller's platform, retainer, or proprietary data
+      - Clear fit with human approval, separate evals, and conservative knowledge promotion
+    anchors:
+      "0": Seller-dependent, one-brand imitation, or incompatible with Abros governance
+      "3": Some useful ideas but substantial translation or infrastructure is required
+      "6": Adaptable process that fits current Abros tools and controls
+      "8": Highly portable decision logic with explicit assumptions, interfaces, and evaluation points
+
+  - id: licensing_usage_rights
+    label: LICENSING / USAGE RIGHTS
+    weight: 6
+    evidence_required:
+      - Written terms for internal use, team access, adaptation, retention, and derived materials
+      - Treatment of confidential cases, downloaded materials, and termination of access
+    anchors:
+      "0": Rights are absent, contradictory, or prohibit the intended internal use
+      "2": Individual viewing rights only or material ambiguity remains
+      "4": Clear internal-use rights, with defined limits on copying and adaptation
+      "6": Clear rights permit the intended team use and authorised internal synthesis or encoding
+
+global_minimum_gates:
+  expert_credibility: 10
+  methodology_depth: 10
+  decision_quality: 8
+  case_quality: 8
+  licensing_usage_rights: 4
+  rule: Reject or seek missing evidence if any global minimum is not met.
+
+category_gates:
+  senior_creative_strategy_and_critique:
+    creative_value: 6
+    decision_quality: 9
+    case_quality: 9
+  instagram_performance_diagnosis:
+    analytics_value: 6
+    methodology_depth: 11
+    decision_quality: 9
+  restaurant_local_demand_growth:
+    restaurant_relevance: 6
+    case_quality: 9
+    analytics_value: 5
+  premium_lifestyle_hospitality_execution:
+    creative_value: 6
+    expert_credibility: 11
+    restaurant_relevance: 5
+  community_social_proof_and_reputation:
+    expert_credibility: 11
+    case_quality: 9
+    transferability_to_abros: 6
+
+penalties:
+  - id: prompt_collection
+    points: 15
+    trigger: Prompts are the principal product rather than a decision methodology.
+  - id: generic_templates
+    points: 8
+    trigger: Templates contain no decision logic, trade-offs, or worked interpretation.
+  - id: algorithm_hacks
+    points: 20
+    trigger: Claims secret algorithm access, guaranteed reach, or universal hacks.
+  - id: unexplained_formulas
+    points: 10
+    trigger: Uses proprietary scores, formulas, or thresholds without definitions and evidence.
+  - id: follower_or_vanity_obsession
+    points: 10
+    trigger: Treats follower count or vanity engagement as the dominant outcome.
+  - id: ecommerce_only_assumptions
+    points: 8
+    trigger: Applies ecommerce funnels or attribution to hospitality without explicit adaptation.
+  - id: universal_posting_frequency
+    points: 8
+    trigger: Prescribes a universal cadence regardless of objective, capacity, audience, or evidence.
+  - id: shallow_bundle
+    points: 10
+    trigger: Uses the volume of modules, prompts, agents, or templates to mask shallow content.
+  - id: ai_generated_course_material
+    points: 15
+    trigger: Material is substantially AI-generated without expert verification, disclosure, or original operating evidence.
+  - id: recycled_public_information
+    points: 12
+    trigger: Repacks official or freely available information without meaningful practitioner synthesis.
+  - id: unsupported_revenue_claims
+    points: 15
+    trigger: Makes revenue or attribution claims without baselines, controls, caveats, or credible evidence.
+
+hard_disqualifiers:
+  - Fabricated, materially misleading, or unverifiable case evidence
+  - Deceptive engagement, fake reviews, engagement pods, spam, or undisclosed manipulation
+  - Guaranteed commercial or platform outcomes presented as certain
+  - Required credential sharing, unsafe software installation, or autonomous external action during evaluation
+  - No lawful licence for Abros's intended internal use
+  - Refusal to identify the responsible expert or disclose material conflicts of interest
+
+decision_bands:
+  - range: "85-100"
+    decision: SHORTLIST
+    action: Run the category proof-of-value test; purchase only if it passes and adds non-overlapping coverage.
+  - range: "75-84"
+    decision: CONDITIONAL
+    action: Seek missing evidence, negotiate scope or rights, and buy only for a sharply bounded gap.
+  - range: "65-74"
+    decision: DEFER
+    action: Do not acquire before Social v0.1 unless management documents an exceptional narrow need.
+  - range: "0-64"
+    decision: REJECT
+    action: Existing free or official expertise and internal testing are a better investment.
+
+proof_of_value_requirements:
+  - Test the method on unseen cases against a documented pre-resource baseline.
+  - Use category-specific scenarios and success criteria from PAID_EXPERTISE_GAPS.md.
+  - Score decision improvement, not learner satisfaction, output volume, or certificate completion.
+  - For subjective methods, compare two independent reviewers and use blind assessment where feasible.
+  - Record improved decisions, unresolved gaps, failure cases, and dependencies.
+  - Do not promote purchased material into a Skill or Brand OS rule without licensing review, testing, and human approval.
+
+evaluation_record_template:
+  resource_name: ""
+  provider: ""
+  category: ""
+  price_eur: null
+  evaluator_1: ""
+  evaluator_2: ""
+  evaluation_date: "YYYY-MM-DD"
+  evidence_reviewed: []
+  hard_disqualifier_found: false
+  hard_disqualifier_notes: ""
+  dimension_scores:
+    expert_credibility: null
+    methodology_depth: null
+    decision_quality: null
+    case_quality: null
+    recency: null
+    restaurant_relevance: null
+    creative_value: null
+    analytics_value: null
+    transferability_to_abros: null
+    licensing_usage_rights: null
+  score_reasons: {}
+  weighted_subtotal: null
+  applied_penalties: []
+  penalty_total: null
+  final_score: null
+  global_gates_passed: null
+  category_gates_passed: null
+  proof_of_value_result: NOT_RUN
+  overlap_with_existing_knowledge: ""
+  incremental_value: ""
+  recommendation: ""
+  approval_required_from: management
