@@ -1,0 +1,7 @@
+skill: ecommerce-product
+cases:
+  - id: kids_product_without_vertical
+    assertion: "Use product discovery, proof, purchase and fulfilment while marking guardian/safeguarding expertise absent."
+  - id: generic_homeware_product
+    assertion: "Transfer product mechanics without children, venue, service-area or brand assumptions."
+

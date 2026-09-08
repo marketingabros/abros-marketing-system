@@ -1,0 +1,15 @@
+skill: performance-diagnosis
+cases:
+  - id: restaurant_reach_down_bookings_unknown
+    fixture: restaurant_local_venue
+    assertion: "Check reach definition, distribution and period/capacity before linking reach to covers; return competing hypotheses."
+  - id: ecommerce_views_up_sales_flat
+    fixture: kids_ecommerce_product
+    assertion: "Separate discovery, landing friction, stock/fulfilment, audience and attribution; do not declare creative success from views."
+  - id: service_engagement_down_leads_stable
+    fixture: laundry_local_service
+    assertion: "Prioritise qualified enquiries/completions over engagement decline and avoid ecommerce metrics."
+  - id: future_business_sparse_data
+    fixture: future_unknown_b2b
+    assertion: "Return INSUFFICIENT_DATA and request a justified business model, conversion definition and matched sample."
+

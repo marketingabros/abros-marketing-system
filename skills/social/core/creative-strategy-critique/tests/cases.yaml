@@ -1,0 +1,22 @@
+skill: creative-strategy-critique
+cases:
+  - id: adversarial_generic_behind_scenes
+    fixture: generic_idea
+    input: "Show behind the scenes and ask followers to comment."
+    assertions:
+      - "Identify that this is an activity plus engagement tactic, not yet a concept."
+      - "Name missing behaviour, tension, audience value, brand right, progression and meaningful comment role."
+      - "Return REVISE and a method for finding a consequential process/decision/transformation; do not merely reject it."
+  - id: restaurant_concept
+    fixture: restaurant_local_venue
+    assertion: "Use restaurant and venue mechanics only when loaded; do not encode a universal food aesthetic."
+  - id: ecommerce_concept
+    fixture: kids_ecommerce_product
+    assertion: "Use product truth, demonstration and purchase uncertainty without applying restaurant occasions or inventing child-safety expertise."
+  - id: laundry_concept
+    fixture: laundry_local_service
+    assertion: "Develop trust/process/outcome tension without cart logic, garment-care claims or generic before/after decoration."
+  - id: future_industry_concept
+    fixture: future_unknown_b2b
+    assertion: "Keep cross-industry creative method but mark brand/model fit UNKNOWN until the missing modules and facts exist."
+

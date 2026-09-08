@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/creative-work.schema.json",
+  "title": "CREATIVE_WORK",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "brand_id", "business_or_customer_behaviour", "core_idea", "social_native_mechanism", "brand_fit_evidence", "commercial_role", "novelty_evidence", "execution", "evaluation", "decision", "revision", "missing_evidence", "approval_status"],
+  "properties": {
+    "output_type": {"enum": ["CREATIVE_TERRITORY", "CREATIVE_CONCEPT", "CREATIVE_CRITIQUE"]},
+    "brand_id": {"type": "string"},
+    "business_or_customer_behaviour": {"type": "string"},
+    "core_idea": {"type": "string", "minLength": 1},
+    "social_native_mechanism": {"type": "string", "minLength": 1},
+    "brand_fit_evidence": {"type": "array", "items": {"type": "string"}},
+    "commercial_role": {"type": "string"},
+    "novelty_evidence": {"type": "object", "required": ["history_checked", "difference"], "properties": {"history_checked": {"type": "boolean"}, "difference": {"type": "string"}}, "additionalProperties": false},
+    "execution": {"type": "object", "required": ["format", "opening", "progression", "proof", "action"], "properties": {"format": {"type": "string"}, "opening": {"type": "string"}, "progression": {"type": "array", "items": {"type": "string"}}, "proof": {"type": "string"}, "action": {"type": "string"}}, "additionalProperties": false},
+    "evaluation": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["criterion", "judgment", "reason"], "properties": {"criterion": {"type": "string"}, "judgment": {"enum": ["STRONG", "REVISE", "FAIL", "UNKNOWN"]}, "reason": {"type": "string"}}, "additionalProperties": false}},
+    "decision": {"enum": ["SELECT", "REVISE", "REJECT", "INSUFFICIENT_DATA"]},
+    "revision": {"type": "array", "items": {"type": "string"}},
+    "missing_evidence": {"type": "array", "items": {"type": "string"}},
+    "approval_status": {"const": "DRAFT_REQUIRES_HUMAN_APPROVAL"}
+  }
+}

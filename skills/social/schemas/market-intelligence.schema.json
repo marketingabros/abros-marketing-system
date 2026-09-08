@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/market-intelligence.schema.json",
+  "title": "MARKET_INTELLIGENCE",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "question", "scope", "observations", "conventions", "whitespace", "implications", "do_not_copy", "unknowns", "checked_at", "approval_status"],
+  "properties": {
+    "output_type": {"const": "MARKET_INTELLIGENCE"},
+    "question": {"type": "string"},
+    "scope": {"type": "object", "required": ["market", "platform", "window", "sample"], "properties": {"market": {"type": "string"}, "platform": {"type": "string"}, "window": {"type": "string"}, "sample": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false},
+    "observations": {"type": "array", "items": {"type": "object", "required": ["claim", "classification", "source", "date", "confidence"], "properties": {"claim": {"type": "string"}, "classification": {"enum": ["PLATFORM_FACT", "PRACTITIONER_HEURISTIC", "OBSERVATION", "HYPOTHESIS"]}, "source": {"type": "string"}, "date": {"type": "string"}, "confidence": {"enum": ["HIGH", "MEDIUM", "LOW"]}}, "additionalProperties": false}},
+    "conventions": {"type": "array", "items": {"type": "string"}},
+    "whitespace": {"type": "array", "items": {"type": "string"}},
+    "implications": {"type": "array", "items": {"type": "string"}},
+    "do_not_copy": {"type": "array", "items": {"type": "string"}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "checked_at": {"type": "string"},
+    "approval_status": {"const": "RESEARCH_ONLY_REQUIRES_HUMAN_REVIEW"}
+  }
+}

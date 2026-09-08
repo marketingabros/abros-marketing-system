@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/performance-diagnosis.schema.json",
+  "title": "PERFORMANCE_DIAGNOSIS",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "brand_id", "objective", "period", "symptom", "data_quality", "findings", "hypotheses", "recommended_tests", "unknowns", "provenance", "approval_status"],
+  "properties": {
+    "output_type": {"const": "PERFORMANCE_DIAGNOSIS"},
+    "brand_id": {"type": "string", "minLength": 1},
+    "objective": {"type": "string", "minLength": 1},
+    "period": {"type": "string", "minLength": 1},
+    "symptom": {"type": "string", "minLength": 1},
+    "data_quality": {"type": "object", "required": ["status", "issues"], "properties": {"status": {"enum": ["SUFFICIENT", "LIMITED", "INSUFFICIENT"]}, "issues": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/evidenceClaim"}},
+    "hypotheses": {"type": "array", "minItems": 2, "items": {"type": "object", "required": ["hypothesis", "support_level", "supporting_evidence", "contradicting_evidence", "evidence_needed"], "properties": {"hypothesis": {"type": "string"}, "support_level": {"$ref": "#/$defs/supportLevel"}, "supporting_evidence": {"type": "array", "items": {"type": "string"}}, "contradicting_evidence": {"type": "array", "items": {"type": "string"}}, "evidence_needed": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false}},
+    "recommended_tests": {"type": "array", "items": {"type": "object", "required": ["priority", "change", "hold_constant", "measure", "decision_rule", "support_level"], "properties": {"priority": {"type": "integer", "minimum": 1}, "change": {"type": "string"}, "hold_constant": {"type": "array", "items": {"type": "string"}}, "measure": {"type": "string"}, "decision_rule": {"type": "string"}, "support_level": {"$ref": "#/$defs/supportLevel"}}, "additionalProperties": false}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "provenance": {"type": "array", "items": {"type": "string"}},
+    "approval_status": {"const": "DRAFT_REQUIRES_HUMAN_APPROVAL"}
+  },
+  "$defs": {
+    "supportLevel": {"enum": ["DATA_SUPPORTED", "STRONG_HEURISTIC", "EXPERIMENTAL", "INSUFFICIENT_DATA"]},
+    "evidenceClaim": {"type": "object", "required": ["claim", "support_level", "evidence"], "properties": {"claim": {"type": "string"}, "support_level": {"$ref": "#/$defs/supportLevel"}, "evidence": {"type": "array", "items": {"type": "string"}}}, "additionalProperties": false}
+  }
+}

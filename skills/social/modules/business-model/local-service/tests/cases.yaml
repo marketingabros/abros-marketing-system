@@ -1,0 +1,7 @@
+skill: local-service
+cases:
+  - id: laundry_service
+    assertion: "Use geography, trust, enquiry, turnaround, completion and repeat logic without garment-care expertise."
+  - id: hypothetical_repair_service
+    assertion: "Transfer service mechanics without laundry vocabulary, cart assumptions or appointment requirements not supplied."
+

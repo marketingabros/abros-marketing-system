@@ -1,0 +1,117 @@
+schema_version: "1.0"
+pack_version: "0.1.0"
+recorded_at: "2026-09-08"
+adaptation_policy: >-
+  All methodology in the Skill Pack is independently written Abros synthesis.
+  Public and open sources informed principles; no protected diagrams, tables,
+  course materials, case text, proprietary frameworks or platform wording is copied.
+
+sources:
+  - id: abros_social_architecture
+    source: skills/social/research/SOCIAL_ARCHITECTURE_V0.1.md
+    licence: internal_abros_repository
+    date: "2026-09-07"
+    evidence_level: normative_internal_architecture
+    adaptation_status: adopted_as_architecture
+    used_by: [all]
+
+  - id: abros_capability_layer_map
+    source: skills/social/research/CAPABILITY_LAYER_MAP.yaml
+    licence: internal_abros_repository
+    date: "2026-09-07"
+    evidence_level: normative_internal_classification
+    adaptation_status: adopted_as_layer_boundary
+    used_by: [all]
+
+  - id: amec_integrated_evaluation
+    source: https://amecorg.com/amecframework/home/framework/introduction/
+    licence: "Copyrighted public framework; concepts summarised with attribution"
+    date: "living framework; reviewed 2026-09-06"
+    evidence_level: professional_measurement_standard
+    adaptation_status: "Abros-authored objective-to-behaviour-to-outcome logic; no protected diagram/template copied"
+    used_by: [social-strategy, performance-diagnosis, content-portfolio-planning]
+
+  - id: barcelona_principles_v4
+    source: https://amecorg.com/wp-content/uploads/2025/06/Barcelona-Principles-V4.0-eBook-Finalv-compressed.pdf
+    licence: "All rights reserved; brief conceptual influence only"
+    date: "2025"
+    evidence_level: professional_measurement_principles
+    adaptation_status: "Original Abros terminology and contracts"
+    used_by: [social-strategy, performance-diagnosis]
+
+  - id: meta_instagram_current_knowledge
+    source: skills/social/research/INSTAGRAM_CURRENT_KNOWLEDGE.md
+    licence: "Internal summaries of proprietary public documentation; linked to primary sources"
+    date: "verified 2026-09-06"
+    evidence_level: primary_platform_facts_with_claim_confidence
+    adaptation_status: "Retrieved at use time; facts not duplicated into durable Skill method"
+    used_by: [performance-diagnosis, market-platform-intelligence, instagram-short-form-video, instagram-carousels-stories, community-social-proof]
+
+  - id: social_media_skills_open_source
+    source: https://github.com/social-media-skills/skills
+    licence: MIT
+    date: "inspected 2026-09-06"
+    evidence_level: open_source_structural_reference
+    adaptation_status: "Only general decomposition, hand-off and production-contract concepts independently rewritten; no code or text copied"
+    used_by: [instagram-short-form-video, instagram-carousels-stories, community-social-proof]
+
+  - id: buffer_engagement_2026
+    source: https://buffer.com/resources/state-of-social-media-engagement-2026/
+    licence: "Copyrighted public vendor research; summarise and cite"
+    date: "2026; data through 2025-12-03"
+    evidence_level: large_vendor_dataset_with_selection_limits
+    adaptation_status: "Metric-definition and comparator discipline only; medians not encoded"
+    used_by: [performance-diagnosis, market-platform-intelligence]
+
+  - id: socialinsider_instagram_2026
+    source: https://www.socialinsider.io/social-media-benchmarks/instagram
+    licence: "Copyrighted public vendor research; summarise and cite"
+    date: "2026-02-20; evolving"
+    evidence_level: large_vendor_dataset_with_declared_sample
+    adaptation_status: "Benchmark provenance checks only; numeric targets not encoded"
+    used_by: [performance-diagnosis, market-platform-intelligence]
+
+  - id: socialinsider_stories_2025
+    source: https://www.socialinsider.io/social-media-benchmarks/instagram-stories-benchmarks
+    licence: "Copyrighted public vendor research; summarise and cite"
+    date: "2025-06-26"
+    evidence_level: vendor_story_dataset_with_declared_method
+    adaptation_status: "Frame-level diagnostic concept only; no universal frame-count rule or median copied"
+    used_by: [instagram-carousels-stories, performance-diagnosis]
+
+  - id: rival_iq_2025
+    source: https://www.rivaliq.com/resources/download-the-2025-social-media-industry-benchmark-report/
+    licence: "Copyrighted public vendor report; cite, do not reproduce"
+    date: "2025"
+    evidence_level: dated_vendor_industry_benchmark
+    adaptation_status: "Comparator-selection and denominator disclosure principles only"
+    used_by: [performance-diagnosis, market-platform-intelligence]
+
+  - id: practitioner_public_cases
+    source: "Publicly accessible, attributed practitioner cases inventoried in SOCIAL_EXPERTISE_LANDSCAPE.md"
+    licence: "Mixed copyright; no paid archive or substantial case text reproduced"
+    date: "reviewed 2026-09-06"
+    evidence_level: qualitative_practitioner_observation
+    adaptation_status: "General social-native questions independently synthesised; observations remain heuristics"
+    used_by: [creative-strategy-critique, content-portfolio-planning]
+
+  - id: business_model_modules_research
+    source: skills/social/research/BUSINESS_MODEL_MODULES_V0.1.md
+    licence: internal_abros_repository
+    date: "2026-09-07"
+    evidence_level: internally_synthesised_business_model_specification
+    adaptation_status: implemented_as_lightweight_modules
+    used_by: [local-venue-experience, local-service, ecommerce-product]
+
+  - id: restaurant_research
+    source: skills/social/research/RESTAURANT_SOCIAL_FINDINGS.md
+    licence: "Internal synthesis with source-level licences recorded in that file"
+    date: "2026-09-06"
+    evidence_level: mixed_official_vendor_academic_and_practitioner_evidence
+    adaptation_status: "Conservative restaurant-only decision checks; non-local statistics remain hypotheses"
+    used_by: [restaurant]
+
+excluded_sources:
+  - id: phase_3_6_paid_resources
+    source: skills/social/research/PAID_CREATIVE_RESOURCE_SHORTLIST.md
+    reason: "Decision was BUY NONE; restricted or insufficiently licensed methodology was not accessed or encoded."

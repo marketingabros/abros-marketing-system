@@ -1,0 +1,18 @@
+skill: instagram-short-form-video
+cases:
+  - id: restaurant_reel
+    fixture: restaurant_local_venue
+    assertion: "Use current restaurant/venue truth and an occasion-relevant CTA; avoid universal food montage or duration rules."
+  - id: ecommerce_demo_reel
+    fixture: kids_ecommerce_product
+    assertion: "Show product/use proof and fulfilment-safe CTA without restaurant logic or unsupported child claims."
+  - id: laundry_process_reel
+    fixture: laundry_local_service
+    assertion: "Use approved process/trust evidence without inventing garment-care claims or cart behaviour."
+  - id: future_industry_reel
+    fixture: future_unknown_b2b
+    assertion: "Decline a shoot-ready brief when Brand OS, platform state or business-model context is missing."
+  - id: retention_decline
+    fixture: ambiguous_reel_metrics
+    assertion: "Generate competing explanations and a test; do not assert a three-second or ideal-duration rule."
+

@@ -1,0 +1,7 @@
+skill: local-venue-experience
+cases:
+  - id: restaurant_without_vertical
+    assertion: "Handle catchment, attendance and perishable capacity but omit menus, meal periods, covers and allergy logic."
+  - id: generic_activity_venue
+    assertion: "Support sessions, booking and repeat attendance without assuming food, children or hotel stays."
+

@@ -1,0 +1,15 @@
+skill: social-strategy
+cases:
+  - id: restaurant_underfilled_midweek
+    fixture: restaurant_local_venue
+    assertion: "Select qualified midweek visit/booking behaviour; do not optimise total reach or already-full periods."
+  - id: kids_product_launch
+    fixture: kids_ecommerce_product
+    assertion: "Select product consideration/purchase with stock and fulfilment constraints; do not add unresearched kids-vertical claims."
+  - id: laundry_repeat_use
+    fixture: laundry_local_service
+    assertion: "Select qualified local enquiry or repeat service behaviour; do not use cart/checkout logic."
+  - id: future_engineering_consultancy
+    fixture: future_unknown_b2b
+    assertion: "Return INSUFFICIENT_DATA for missing business-model/platform modules rather than borrowing restaurant, service or ecommerce logic."
+

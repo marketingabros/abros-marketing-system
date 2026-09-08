@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/community-recommendation.schema.json",
+  "title": "COMMUNITY_RECOMMENDATION",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "brand_id", "interaction_type", "risk_level", "objective", "recommended_action", "draft_or_guidance", "owner", "rights_privacy_checks", "evidence_level", "approval_status"],
+  "properties": {
+    "output_type": {"const": "COMMUNITY_RECOMMENDATION"},
+    "brand_id": {"type": "string"},
+    "interaction_type": {"enum": ["COMMENT", "DM", "UGC", "TESTIMONIAL", "REVIEW", "CREATOR", "OTHER"]},
+    "risk_level": {"enum": ["ROUTINE", "SENSITIVE", "CONSEQUENTIAL", "DO_NOT_ENGAGE"]},
+    "objective": {"type": "string"},
+    "recommended_action": {"enum": ["DRAFT_REPLY", "REQUEST_PERMISSION", "ESCALATE", "LOG_ONLY", "DO_NOT_ENGAGE"]},
+    "draft_or_guidance": {"type": "string"},
+    "owner": {"type": "string"},
+    "rights_privacy_checks": {"type": "array", "items": {"type": "string"}},
+    "evidence_level": {"enum": ["DATA_SUPPORTED", "STRONG_HEURISTIC", "EXPERIMENTAL", "INSUFFICIENT_DATA"]},
+    "approval_status": {"enum": ["DRAFT_REQUIRES_HUMAN_APPROVAL", "ESCALATED_NO_REPLY", "LOG_ONLY"]}
+  }
+}

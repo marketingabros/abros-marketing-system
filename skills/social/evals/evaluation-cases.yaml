@@ -1,0 +1,181 @@
+suite_version: "0.1.0"
+purpose: "Independent synthetic cross-industry evaluation of Social Skill Pack contracts and decisions"
+evidence_labels: [DATA_SUPPORTED, STRONG_HEURISTIC, EXPERIMENTAL, INSUFFICIENT_DATA]
+
+fixtures:
+  - id: restaurant_local_venue
+    synthetic_brand: Aster Table
+    business_model: local-venue-experience
+    vertical: restaurant
+    objective: "Increase qualified Tuesday dinner demand during the next six weeks without increasing already constrained Saturday demand."
+    known:
+      - "Tuesday has capacity; Saturday is regularly full."
+      - "Reservations and walk-ins are separate conversion paths."
+      - "Recent content overuses static dish close-ups."
+    unknown:
+      - "Incremental source of walk-ins"
+      - "Whether recent reach decline reflects distribution, creative mix or seasonality"
+    required_behaviours:
+      - model_correct
+      - restaurant_vertical_only_here
+      - capacity_aware
+      - matched_service_period
+      - alternative_hypotheses
+      - no_causal_overclaim
+    prohibited_behaviours:
+      - ecommerce_checkout
+      - hotel_logic
+      - optimise_total_reach
+      - promote_full_saturday
+
+  - id: kids_ecommerce_product
+    synthetic_brand: Orbit Keepsakes
+    business_model: ecommerce-product
+    vertical: null
+    objective: "Launch a new keepsake product while stock and dispatch capacity are limited."
+    known:
+      - "Purchase occurs online."
+      - "Stock and dispatch capacity are constrained."
+      - "Product demonstration assets are available."
+    unknown:
+      - "Guardian decision journey"
+      - "Age-suitability and child-image permissions"
+    required_behaviours:
+      - model_correct
+      - stock_and_fulfilment_aware
+      - kids_vertical_marked_missing
+      - product_proof
+      - no_child_claims
+    prohibited_behaviours:
+      - restaurant_logic
+      - venue_attendance
+      - local_service_enquiry_as_purchase
+      - improvised_safeguarding_rules
+
+  - id: laundry_local_service
+    synthetic_brand: ClearFold Service
+    business_model: local-service
+    vertical: null
+    objective: "Increase qualified weekday enquiries and repeat use inside the current service radius."
+    known:
+      - "Engagement declined while completed-service volume stayed stable."
+      - "Service area and weekday capacity are known."
+      - "Customers enquire before some services can be accepted."
+    unknown:
+      - "Content-level attribution to completed services"
+      - "Whether lower engagement reflects audience mix or creative fatigue"
+    required_behaviours:
+      - model_correct
+      - qualification_before_conversion
+      - service_completion_and_repeat
+      - engagement_not_primary_outcome
+      - garment_claims_not_invented
+    prohibited_behaviours:
+      - ecommerce_cart
+      - restaurant_meal_period
+      - venue_attendance
+      - laundry_vertical_assumed
+
+  - id: future_unknown_b2b
+    synthetic_brand: Northstar Engineering Advisory
+    business_model: unknown
+    vertical: null
+    objective: "Use social to create commercial growth in an unfamiliar engineering consultancy."
+    known:
+      - "A Brand OS exists but no approved social channel is named."
+    unknown:
+      - "Business model and conversion path"
+      - "Audience roles, pipeline, sales handoff and decision cycle"
+      - "Platform module"
+    required_behaviours:
+      - insufficient_data
+      - request_model_and_platform_research
+      - preserve_cross_industry_method
+      - no_model_substitution
+    prohibited_behaviours:
+      - restaurant_logic
+      - ecommerce_checkout
+      - local_service_radius
+      - invented_linkedin_facts
+
+creative_adversarial_case:
+  id: generic_behind_the_scenes
+  input: "Show behind the scenes and ask followers to comment."
+  expected_decision: REVISE
+  required_diagnosis:
+    - not_yet_a_concept
+    - no_defined_behaviour
+    - no_specific_audience_value
+    - no_brand_right
+    - no_tension_or_progression
+    - comment_has_no_decision_role
+  required_improvement:
+    - identify_consequential_process_decision_transformation_or_constraint
+    - create_stakes_and_progression
+    - use_verified_brand_and_business_truth
+    - invite_response_only_if_meaningful
+  prohibited_response:
+    - accept_as_strong_concept
+    - reject_without_improvement
+    - invent_brand_specific_example
+
+evaluated_results:
+  - fixture: restaurant_local_venue
+    result: PASS
+    observed:
+      - model_correct
+      - restaurant_vertical_only_here
+      - capacity_aware
+      - matched_service_period
+      - alternative_hypotheses
+      - no_causal_overclaim
+    prohibited_observed: []
+    evaluator_note: "Strategy, planning, diagnosis, creative and format methods correctly shift Tuesday demand and preserve Saturday capacity; walk-in attribution remains unresolved."
+
+  - fixture: kids_ecommerce_product
+    result: PASS_WITH_LIMITATION
+    observed:
+      - model_correct
+      - stock_and_fulfilment_aware
+      - kids_vertical_marked_missing
+      - product_proof
+      - no_child_claims
+    prohibited_observed: []
+    evaluator_note: "Product mechanics work, while child/guardian and safeguarding advice is correctly withheld pending a justified vertical."
+
+  - fixture: laundry_local_service
+    result: PASS
+    observed:
+      - model_correct
+      - qualification_before_conversion
+      - service_completion_and_repeat
+      - engagement_not_primary_outcome
+      - garment_claims_not_invented
+    prohibited_observed: []
+    evaluator_note: "The service module keeps enquiry, completion and repeat use distinct and does not overreact to engagement decline."
+
+  - fixture: future_unknown_b2b
+    result: PASS_WITH_LIMITATION
+    observed:
+      - insufficient_data
+      - request_model_and_platform_research
+      - preserve_cross_industry_method
+      - no_model_substitution
+    prohibited_observed: []
+    evaluator_note: "The pack preserves the strategy/creative method but appropriately refuses detailed channel or conversion advice."
+
+  - fixture: generic_behind_the_scenes
+    result: PASS
+    observed:
+      - not_yet_a_concept
+      - no_defined_behaviour
+      - no_specific_audience_value
+      - no_brand_right
+      - no_tension_or_progression
+      - comment_has_no_decision_role
+      - identify_consequential_process_decision_transformation_or_constraint
+      - create_stakes_and_progression
+      - use_verified_brand_and_business_truth
+      - invite_response_only_if_meaningful
+    prohibited_observed: []
+    evaluator_note: "The method rejects the generic framing but preserves the potentially useful access mechanism and specifies how to turn it into a real concept."

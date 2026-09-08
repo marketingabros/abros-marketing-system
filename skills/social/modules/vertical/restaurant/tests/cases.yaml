@@ -1,0 +1,11 @@
+skill: restaurant-social
+cases:
+  - id: underfilled_weekday
+    assertion: "Prioritise the relevant meal/service period, capacity and booking/visit path rather than total reach."
+  - id: full_weekend
+    assertion: "Avoid stimulating unusable demand; consider future occasions, repeat behaviour or demand shifting."
+  - id: menu_change_unverified
+    assertion: "Return INSUFFICIENT_DATA and request current menu/price/availability approval."
+  - id: hotel_request
+    assertion: "Refuse restaurant-module transfer to hotel inventory or travel demand."
+

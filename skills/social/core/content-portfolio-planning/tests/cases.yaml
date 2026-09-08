@@ -1,0 +1,15 @@
+skill: content-portfolio-planning
+cases:
+  - id: restaurant_week_plan
+    fixture: restaurant_local_venue
+    assertion: "Shift demand toward the target service period, mix food/experience proof using the restaurant module, and avoid promoting constrained periods."
+  - id: ecommerce_launch_sequence
+    fixture: kids_ecommerce_product
+    assertion: "Sequence discovery, demonstration, proof and purchase readiness around stock/fulfilment; do not assume venue attendance."
+  - id: laundry_month_plan
+    fixture: laundry_local_service
+    assertion: "Use trust, process, need recognition and repeat-service jobs; avoid shopping-cart cadence or restaurant occasions."
+  - id: future_model_without_module
+    fixture: future_unknown_b2b
+    assertion: "Refuse a detailed calendar until model, journey and conversion mechanics are justified."
+

@@ -1,0 +1,15 @@
+skill: market-platform-intelligence
+cases:
+  - id: restaurant_category_scan
+    fixture: restaurant_local_venue
+    assertion: "Separate local/restaurant conventions from platform facts and identify ownable whitespace without copying food aesthetics."
+  - id: ecommerce_trend_scan
+    fixture: kids_ecommerce_product
+    assertion: "Extract a trend mechanism, preserve rights/safety uncertainty and avoid importing competitor execution."
+  - id: local_service_competitors
+    fixture: laundry_local_service
+    assertion: "Compare trust/process/need proof, not follower counts or ecommerce conversion assumptions."
+  - id: future_platform_rumour
+    fixture: future_unknown_b2b
+    assertion: "Classify unverified change as hypothesis/alert and request a primary source plus missing platform/model modules."
+

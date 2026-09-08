@@ -1,0 +1,18 @@
+skill: instagram-carousels-stories
+cases:
+  - id: restaurant_story_sequence
+    fixture: restaurant_local_venue
+    assertion: "Verify current service/availability, progress from occasion proof to relevant action, and avoid reminder spam."
+  - id: ecommerce_carousel
+    fixture: kids_ecommerce_product
+    assertion: "Use ordered product/use clarification and stock-safe CTA; do not apply meal periods or attendance."
+  - id: laundry_story
+    fixture: laundry_local_service
+    assertion: "Use current service/process information and enquiry logic, not cart or restaurant conversion."
+  - id: future_industry_carousel
+    fixture: future_unknown_b2b
+    assertion: "Keep sequence craft generic but mark concept, audience and CTA unresolved without missing context."
+  - id: story_exits
+    fixture: ambiguous_story_metrics
+    assertion: "Do not prescribe an ideal frame count; return multiple hypotheses and matched-sequence evidence needs."
+
