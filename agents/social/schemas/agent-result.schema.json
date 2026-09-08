@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/social-agent-result.schema.json",
+  "title": "AGENT_RESULT",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "task_plan_id", "executive_recommendation", "output", "evidence_used", "assumptions_refused", "limitations", "required_human_approvals", "proposed_next_action", "self_critique", "independent_evaluation"],
+  "properties": {
+    "output_type": {"const": "AGENT_RESULT"},
+    "task_plan_id": {"type": "string", "minLength": 1},
+    "executive_recommendation": {"type": "string", "minLength": 1},
+    "output": {"type": "object"},
+    "evidence_used": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["classification", "statement", "source"], "properties": {"classification": {"enum": ["FACT", "MANAGEMENT_RULE", "DATA_SUPPORTED_CONCLUSION", "HEURISTIC", "HYPOTHESIS", "CREATIVE_RECOMMENDATION", "MISSING_INFORMATION"]}, "statement": {"type": "string"}, "source": {"type": "string"}}}},
+    "assumptions_refused": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "required_human_approvals": {"type": "array", "items": {"type": "string"}},
+    "proposed_next_action": {"type": "string"},
+    "self_critique": {"type": "array", "items": {"type": "string"}},
+    "independent_evaluation": {"type": "object", "additionalProperties": false, "required": ["status", "reference"], "properties": {"status": {"enum": ["PENDING", "PASS", "PASS_WITH_CORRECTIONS", "FAIL"]}, "reference": {"type": "string"}}}
+  }
+}

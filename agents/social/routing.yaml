@@ -1,0 +1,151 @@
+schema_version: "1.0"
+agent_version: "0.1.0"
+
+skills:
+  social_strategy: skills/social/core/social-strategy
+  performance_diagnosis: skills/social/core/performance-diagnosis
+  content_portfolio: skills/social/core/content-portfolio-planning
+  creative_strategy: skills/social/core/creative-strategy-critique
+  community_proof: skills/social/core/community-social-proof
+  market_intelligence: skills/social/core/market-platform-intelligence
+  instagram_video: skills/social/platforms/instagram-short-form-video
+  instagram_sequences: skills/social/platforms/instagram-carousels-stories
+
+platforms:
+  instagram:
+    current_knowledge: skills/social/research/INSTAGRAM_CURRENT_KNOWLEDGE.md
+    format_skills:
+      reel: instagram_video
+      carousel: instagram_sequences
+      story: instagram_sequences
+
+business_models:
+  local-venue-experience: skills/social/modules/business-model/local-venue-experience
+  local-service: skills/social/modules/business-model/local-service
+  ecommerce-product: skills/social/modules/business-model/ecommerce-product
+
+verticals:
+  restaurant:
+    path: skills/social/modules/vertical/restaurant
+    requires_business_model: local-venue-experience
+
+task_types:
+  SOCIAL_STRATEGY:
+    skills: [social_strategy]
+    brand_os_policy: REQUIRED
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [identity, positioning, audiences, business_strategy, current_objectives, commercial_priorities, management_rules]
+    runtime_evidence: [current_operations, observations]
+
+  PERFORMANCE_REVIEW:
+    skills: [performance_diagnosis]
+    brand_os_policy: REQUIRED
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [current_objectives, commercial_priorities, management_rules, operating_status]
+    runtime_evidence: [metric_definitions, content_metrics, comparison_period, social_history, current_operations, recent_changes]
+
+  CONTENT_PORTFOLIO:
+    skills: [content_portfolio]
+    brand_os_policy: REQUIRED
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [identity, positioning, audiences, business_strategy, current_objectives, commercial_priorities, management_rules]
+    runtime_evidence: [current_operations, recent_content_history, approved_commitments, asset_availability]
+
+  WEEKLY_CONTENT_PLAN:
+    skills: [social_strategy, content_portfolio, creative_strategy]
+    brand_os_policy: REQUIRED
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [identity, positioning, audiences, business_strategy, experiences, language_and_tone, current_objectives, commercial_priorities, management_rules, operating_status]
+    runtime_evidence: [recent_content_history, current_operations, approved_commitments, asset_availability, relevant_performance]
+
+  CAMPAIGN_PLAN:
+    skills: [social_strategy, content_portfolio, creative_strategy]
+    brand_os_policy: REQUIRED_FOR_BRAND_EXPRESSION
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [identity, positioning, audiences, business_strategy, experiences, language_and_tone, current_objectives, commercial_priorities, management_rules, operating_status]
+    runtime_evidence: [campaign_state, current_operations, recent_content_history, asset_availability, relevant_performance]
+
+  CONTENT_CONCEPT:
+    skills: [creative_strategy]
+    brand_os_policy: REQUIRED_FOR_BRAND_EXPRESSION
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [identity, positioning, audiences, experiences, language_and_tone, visual_system, management_rules]
+    runtime_evidence: [recent_content_history, approved_and_rejected_work, asset_availability, current_operations]
+
+  CREATIVE_CRITIQUE:
+    skills: [creative_strategy]
+    brand_os_policy: REQUIRED
+    business_model_policy: OPTIONAL
+    platform_policy: OPTIONAL
+    brand_sections: [identity, positioning, audiences, experiences, language_and_tone, visual_system, management_rules]
+    runtime_evidence: [recent_content_history, approved_and_rejected_work, current_operations]
+
+  REEL_BRIEF:
+    skills: [creative_strategy, instagram_video]
+    brand_os_policy: REQUIRED_FOR_BRAND_EXPRESSION
+    business_model_policy: REQUIRED
+    platform_policy: INSTAGRAM
+    brand_sections: [identity, positioning, audiences, experiences, language_and_tone, visual_system, management_rules]
+    runtime_evidence: [recent_content_history, asset_availability, rights_status, current_operations]
+
+  CAROUSEL_BRIEF:
+    skills: [creative_strategy, instagram_sequences]
+    brand_os_policy: REQUIRED_FOR_BRAND_EXPRESSION
+    business_model_policy: REQUIRED
+    platform_policy: INSTAGRAM
+    brand_sections: [identity, positioning, audiences, experiences, language_and_tone, visual_system, management_rules]
+    runtime_evidence: [recent_content_history, asset_availability, rights_status, current_operations]
+
+  STORY_SEQUENCE:
+    skills: [creative_strategy, instagram_sequences]
+    brand_os_policy: REQUIRED_FOR_BRAND_EXPRESSION
+    business_model_policy: REQUIRED
+    platform_policy: INSTAGRAM
+    brand_sections: [identity, positioning, audiences, experiences, language_and_tone, visual_system, management_rules, operating_status]
+    runtime_evidence: [recent_story_history, asset_availability, rights_status, current_operations]
+
+  MARKET_RESEARCH:
+    skills: [market_intelligence]
+    brand_os_policy: OPTIONAL
+    business_model_policy: OPTIONAL
+    platform_policy: OPTIONAL
+    brand_sections: [positioning, audiences, business_strategy]
+    runtime_evidence: [research_window, source_register]
+
+  COMPETITOR_ANALYSIS:
+    skills: [market_intelligence]
+    brand_os_policy: OPTIONAL
+    business_model_policy: OPTIONAL
+    platform_policy: OPTIONAL
+    brand_sections: [positioning, audiences, business_strategy]
+    runtime_evidence: [verified_comparator_set, research_window, source_register]
+
+  COMMUNITY_RECOMMENDATION:
+    skills: [community_proof]
+    brand_os_policy: REQUIRED
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [identity, experiences, language_and_tone, management_rules, operating_status, approval_status]
+    runtime_evidence: [interaction_record, consent_and_rights, current_operations, escalation_owners]
+
+  POST_PERFORMANCE_REVIEW:
+    skills: [performance_diagnosis]
+    brand_os_policy: REQUIRED
+    business_model_policy: REQUIRED
+    platform_policy: REQUIRED
+    brand_sections: [current_objectives, commercial_priorities, management_rules, operating_status]
+    runtime_evidence: [metric_definitions, content_metrics, comparison_period, conversion_evidence, current_operations, recent_changes]
+
+  LEARNING_PROPOSAL:
+    skills: []
+    brand_os_policy: REQUIRED
+    business_model_policy: OPTIONAL
+    platform_policy: OPTIONAL
+    brand_sections: [management_rules]
+    runtime_evidence: [observations, management_feedback, performance_evidence, prior_learning_proposals]

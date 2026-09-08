@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/social-agent-task-plan.schema.json",
+  "title": "AGENT_TASK_PLAN",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "task_type", "brand_id", "platform", "business_model", "vertical_module", "objective", "selected_skills", "selected_brand_os_sections", "platform_references", "runtime_evidence_requested", "missing_information", "proceed_status"],
+  "properties": {
+    "output_type": {"const": "AGENT_TASK_PLAN"},
+    "task_type": {"enum": ["SOCIAL_STRATEGY", "PERFORMANCE_REVIEW", "CONTENT_PORTFOLIO", "WEEKLY_CONTENT_PLAN", "CAMPAIGN_PLAN", "CONTENT_CONCEPT", "CREATIVE_CRITIQUE", "REEL_BRIEF", "CAROUSEL_BRIEF", "STORY_SEQUENCE", "MARKET_RESEARCH", "COMPETITOR_ANALYSIS", "COMMUNITY_RECOMMENDATION", "POST_PERFORMANCE_REVIEW", "LEARNING_PROPOSAL"]},
+    "brand_id": {"type": ["string", "null"], "pattern": "^[a-z0-9-]+$"},
+    "platform": {"type": ["string", "null"]},
+    "business_model": {"type": ["string", "null"]},
+    "vertical_module": {"type": ["string", "null"]},
+    "objective": {"type": "string", "minLength": 1},
+    "selected_skills": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "selected_brand_os_sections": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "platform_references": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "runtime_evidence_requested": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "missing_information": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "proceed_status": {"enum": ["PROCEED", "PROCEED_WITH_LIMITATIONS", "BLOCK"]}
+  }
+}

@@ -1,0 +1,71 @@
+suite_version: "0.1.0"
+evaluator: independent_contract_rubric
+evaluation_status: FINAL_AFTER_CORRECTIONS
+score_scale: "0-10; null means not materially applicable to that task"
+dimensions:
+  - strategic_quality
+  - commercial_relevance
+  - brand_alignment
+  - creative_quality
+  - diagnostic_quality
+  - context_selection
+  - factual_reliability
+  - uncertainty_handling
+  - business_model_fit
+  - repetition_control
+
+evaluations:
+  - id: FT01_WEEKLY_STRATEGY
+    scores: {strategic_quality: 9.1, commercial_relevance: 9.2, brand_alignment: 9.4, creative_quality: 8.4, diagnostic_quality: null, context_selection: 9.6, factual_reliability: 9.8, uncertainty_handling: 9.6, business_model_fit: 9.5, repetition_control: 8.8}
+    verdict: PASS
+    note: "Strong priority-led portfolio and factual restraint; real performance/history could materially change allocation."
+  - id: FT02_PERFORMANCE_DIAGNOSIS
+    scores: {strategic_quality: 8.8, commercial_relevance: 9.0, brand_alignment: 9.0, creative_quality: null, diagnostic_quality: 9.3, context_selection: 9.7, factual_reliability: 9.8, uncertainty_handling: 9.8, business_model_fit: 9.3, repetition_control: 8.7}
+    verdict: PASS
+    note: "Does not collapse mixed signals into a Reel prescription; test design is sound but uncalibrated on real data."
+  - id: FT03_CREATIVE_DEVELOPMENT
+    scores: {strategic_quality: 8.7, commercial_relevance: 8.8, brand_alignment: 9.3, creative_quality: 8.7, diagnostic_quality: null, context_selection: 9.6, factual_reliability: 9.8, uncertainty_handling: 9.4, business_model_fit: 9.2, repetition_control: 9.0}
+    verdict: PASS
+    note: "Three mechanisms are genuinely different and weak routes are rejected; two routes share messaging language and should not run together."
+  - id: FT04_CREATIVE_CRITIQUE
+    scores: {strategic_quality: 8.9, commercial_relevance: 8.8, brand_alignment: 9.6, creative_quality: 8.8, diagnostic_quality: null, context_selection: 9.3, factual_reliability: 10.0, uncertainty_handling: 9.2, business_model_fit: 9.0, repetition_control: 8.5}
+    verdict: PASS
+    note: "Identifies explicit conflicts and rebuilds around behavior rather than applying cosmetic edits."
+  - id: FT05_REPETITION_CONTROL
+    scores: {strategic_quality: 8.7, commercial_relevance: 8.5, brand_alignment: 9.2, creative_quality: 8.6, diagnostic_quality: null, context_selection: 9.0, factual_reliability: 9.8, uncertainty_handling: 9.2, business_model_fit: 8.8, repetition_control: 9.5}
+    verdict: PASS
+    note: "Changes multiple fingerprint dimensions and correctly calls fatigue unproven."
+  - id: FT06_BUSINESS_PRIORITY_CONFLICT
+    scores: {strategic_quality: 9.2, commercial_relevance: 9.3, brand_alignment: 9.5, creative_quality: 8.2, diagnostic_quality: null, context_selection: 9.2, factual_reliability: 9.8, uncertainty_handling: 9.0, business_model_fit: 9.2, repetition_control: 8.0}
+    verdict: PASS
+    note: "Commercial priority defeats vanity engagement without banning interaction universally."
+  - id: FT07_FACTUAL_BLOCKER
+    scores: {strategic_quality: 8.6, commercial_relevance: 8.5, brand_alignment: 9.4, creative_quality: 8.1, diagnostic_quality: null, context_selection: 9.8, factual_reliability: 10.0, uncertainty_handling: 10.0, business_model_fit: 9.3, repetition_control: 8.0}
+    verdict: PASS
+    note: "Blocks only unsafe facts/action and still provides a useful fact-neutral structure."
+  - id: FT08_RESTAURANT_VS_PIAZZA
+    scores: {strategic_quality: 9.3, commercial_relevance: 9.3, brand_alignment: 9.5, creative_quality: 8.3, diagnostic_quality: null, context_selection: 9.5, factual_reliability: 9.8, uncertainty_handling: 9.6, business_model_fit: 9.7, repetition_control: 8.2}
+    verdict: PASS
+    note: "Different behaviors, proof and measures demonstrate real experience separation."
+  - id: FT09_CREATIVE_SURPRISE
+    scores: {strategic_quality: 8.7, commercial_relevance: 8.8, brand_alignment: 9.0, creative_quality: 8.5, diagnostic_quality: null, context_selection: 9.0, factual_reliability: 9.7, uncertainty_handling: 9.5, business_model_fit: 9.0, repetition_control: 9.3}
+    verdict: PASS_WITH_LIMITATION
+    note: "Ownable mechanism is promising, but surprise is only established against incomplete indexed history and requires participation/rights design."
+  - id: FT10_MANAGEMENT_FEEDBACK
+    scores: {strategic_quality: 8.8, commercial_relevance: 8.7, brand_alignment: 9.4, creative_quality: 8.6, diagnostic_quality: null, context_selection: 9.0, factual_reliability: 9.9, uncertainty_handling: 9.8, business_model_fit: 8.9, repetition_control: 8.8}
+    verdict: PASS
+    note: "Revises the work and creates a low-confidence scoped proposal without converting feedback into a permanent rule."
+
+critical_violations:
+  factual_hallucinations: 0
+  brand_os_rule_violations: 0
+  critical_business_model_leakage: 0
+  brand_leakage: 0
+
+tracked_failures:
+  unnecessary_context_loads: 0
+  wrong_skill_selection: 0
+  brand_leakage: 0
+  business_model_leakage: 0
+  unsupported_claims: 0
+  generic_output: 0

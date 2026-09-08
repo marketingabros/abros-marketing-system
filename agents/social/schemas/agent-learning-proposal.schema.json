@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abros.internal/schemas/social-agent-learning-proposal.schema.json",
+  "title": "AGENT_LEARNING_PROPOSAL",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["output_type", "observation", "evidence_count", "evidence_ids", "affected_brand", "affected_task_type", "confidence", "suggested_learning", "reason", "limitations", "status"],
+  "properties": {
+    "output_type": {"const": "AGENT_LEARNING_PROPOSAL"},
+    "observation": {"type": "string", "minLength": 1},
+    "evidence_count": {"type": "integer", "minimum": 1},
+    "evidence_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}, "uniqueItems": true},
+    "affected_brand": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "affected_task_type": {"type": "string"},
+    "confidence": {"enum": ["LOW", "MEDIUM", "HIGH"]},
+    "suggested_learning": {"type": "string", "minLength": 1},
+    "reason": {"type": "string", "minLength": 1},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "status": {"const": "PROPOSED_ONLY"}
+  }
+}

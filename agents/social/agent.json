@@ -2,13 +2,15 @@
   "$schema": "../../schemas/agent.schema.json",
   "id": "social",
   "mode": "persistent",
-  "purpose": "Plan, draft, analyse, and adapt social marketing using the selected Brand OS.",
+  "purpose": "Orchestrate selective Social Skills and read-only brand/runtime context to diagnose, prioritise, plan, develop, critique, and recommend social growth work for controlled human review.",
   "inputs": [
+    "skills/social",
     "brands/{brand_id}/brand-os",
     "brands/{brand_id}/operating-context",
     "brands/{brand_id}/channels/assets",
     "brands/{brand_id}/history/social-history",
-    "brands/{brand_id}/evidence"
+    "brands/{brand_id}/evidence",
+    "task-objective"
   ],
   "writes": [
     "brands/{brand_id}/work-in-progress",
@@ -16,12 +18,17 @@
   ],
   "forbidden_writes": [
     "brands/{brand_id}/brand-os",
-    "brands/{brand_id}/governance/approved-learnings"
+    "brands/{brand_id}/governance/approved-learnings",
+    "skills/social",
+    "external-platforms"
   ],
   "human_approval_required_for": [
     "publishing",
+    "scheduling",
     "external messaging",
-    "paid promotion"
+    "profile changes",
+    "campaign activation",
+    "paid promotion",
+    "public factual claims using unconfirmed current data"
   ]
 }
-

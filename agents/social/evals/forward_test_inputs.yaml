@@ -1,0 +1,171 @@
+suite_version: "0.1.0"
+evaluation_subject: Abros Social Growth Agent v0.1
+brand_os: monzu
+brand_os_access: read_only
+generated_outputs_file: forward_test_outputs.yaml
+independent_scores_file: forward_test_evaluations.yaml
+
+shared_current_context:
+  management_rules:
+    - MONZU-A041
+    - MONZU-A045
+    - MONZU-A067
+    - MONZU-A071
+    - MONZU-A072
+    - MONZU-A076
+    - MONZU-A077
+    - MONZU-A078
+  current_priorities: [MONZU-T012, MONZU-T013, MONZU-T014]
+  current_unknowns: [MONZU-U001, MONZU-U003, MONZU-U005, MONZU-U009, MONZU-U011]
+  note: "Tests reference source IDs and selected context; they do not copy this brand knowledge into permanent agent instructions."
+
+cases:
+  - id: FT01_WEEKLY_STRATEGY
+    task_type: WEEKLY_CONTENT_PLAN
+    prompt: "Given current Monzù business priorities, build the strongest 7-day Instagram strategy."
+    objective: "Prioritise current commercial needs while preserving the three experience boundaries."
+    required_context:
+      brand_sections: [identity, positioning, audiences, business_strategy, experiences, language_and_tone, current_objectives, commercial_priorities, management_rules, operating_status]
+      runtime: [recent_content_history, current_operations, approved_commitments, asset_availability, relevant_performance]
+      skills: [social-strategy, content-portfolio-planning, creative-strategy-critique]
+      platform: instagram
+      business_model: local-venue-experience
+      vertical: restaurant
+    success_conditions:
+      - prioritises_piazza_head_start
+      - supports_cellar_continuity_and_restaurant_decline_without_blurring
+      - no_unconfirmed_hours_menu_or_open_status
+      - every_content_job_has_reason
+      - limitation_for_missing_history_assets_and_measurement
+
+  - id: FT02_PERFORMANCE_DIAGNOSIS
+    task_type: PERFORMANCE_REVIEW
+    prompt: "Diagnose this mixed six-week Instagram dataset."
+    objective: "Explain the reach change and choose the smallest useful next test."
+    synthetic_dataset:
+      comparison: "latest six weeks versus preceding six matched weeks"
+      posts_each_period: 12
+      total_reach_change_percent: -18
+      follower_reach_change_percent: 1
+      non_follower_reach_change_percent: -30
+      shares_change_percent: 12
+      saves_change_percent: 0
+      profile_visits_change_percent: -15
+      link_taps_change_percent: 0
+      reel_count: {previous: 6, current: 2}
+      carousel_count: {previous: 3, current: 7}
+      reel_retention_summary: "Stable among the two current Reels; definitions supplied but sample is small."
+      repeated_subjects: [architecture, wine_pour, set_table]
+      paid_distribution: none
+      conversion_data: unavailable
+      account_status: not_checked
+    required_context:
+      skills: [performance-diagnosis]
+      platform_reference: INSTAGRAM_CURRENT_KNOWLEDGE.md
+      business_model: local-venue-experience
+      vertical: restaurant
+    success_conditions:
+      - checks_account_status_and_metric_comparability
+      - separates_mix_distribution_creative_journey_and_external_hypotheses
+      - does_not_prescribe_more_reels_as_cause
+      - recognises_small_reel_sample
+      - no_social_to_covers_claim
+
+  - id: FT03_CREATIVE_DEVELOPMENT
+    task_type: CONTENT_CONCEPT
+    prompt: "Generate three genuinely distinct Piazza concepts. Reject weak concepts yourself and explain why."
+    objective: "Create qualified launch interest and a repeatable, lower-commitment gathering association."
+    required_context:
+      brand_sections: [identity, positioning, audiences, experiences, language_and_tone, visual_system, management_rules]
+      runtime: [recent_content_history, approved_and_rejected_work, asset_availability, current_operations]
+      skills: [creative-strategy-critique]
+      business_model: local-venue-experience
+      vertical: restaurant
+    success_conditions:
+      - three_different_organising_mechanisms
+      - social_native_not_just_formats
+      - rejects_generic_luxury_architecture_and_wine_montages
+      - does_not_invent_menu_hours_or_opening
+      - identifies_asset_and_rights_dependencies
+
+  - id: FT04_CREATIVE_CRITIQUE
+    task_type: CREATIVE_CRITIQUE
+    prompt: "Critique: cinematic facade and marble details, slow wine pour, elegant music, caption 'Where timeless luxury meets a new destination.' Improve it."
+    objective: "Assess whether the concept supports current Piazza launch priorities."
+    success_conditions:
+      - rejects_or_materially_rebuilds
+      - detects_new_destination_and_luxury_conflicts
+      - detects_generic_decoration
+      - adds_customer_behaviour_tension_and_social_mechanism
+      - removes_unnecessary_polish
+
+  - id: FT05_REPETITION_CONTROL
+    task_type: CONTENT_CONCEPT
+    prompt: "Recent fictional content repeats architecture, slow wine pours and set-table imagery. Create a different direction."
+    objective: "Create Piazza momentum without repeating the recent content fingerprint."
+    fictional_history:
+      repeated_fingerprint:
+        subjects: [facade, marble, wine_pour, set_table]
+        openings: [slow_reveal, empty_room]
+        visual_devices: [symmetry, shallow_focus, golden_light]
+        formats: [polished_reel, static_carousel]
+        actions: [generic_visit_prompt]
+    success_conditions:
+      - identifies_multi_dimension_repetition
+      - new_direction_changes_subject_opening_structure_and_participation
+      - brand_fit_preserved
+      - no_random_pattern_interruption
+
+  - id: FT06_BUSINESS_PRIORITY_CONFLICT
+    task_type: CONTENT_CONCEPT
+    prompt: "A building-trivia giveaway is predicted to generate very high comments. Should it lead next week's work?"
+    objective: "Decide against current commercial priorities, not engagement potential alone."
+    success_conditions:
+      - does_not_equate_comments_with_commercial_value
+      - rejects_or_deprioritises_unless_reframed
+      - protects_no_discount_and_no_influencer_rules
+      - prioritises_piazza_qualified_attention_and_visits
+
+  - id: FT07_FACTUAL_BLOCKER
+    task_type: STORY_SEQUENCE
+    prompt: "Publish Piazza's opening hours and name three current menu items in a Story sequence."
+    objective: "Help with the safe portion of the Story request without inventing current operating facts."
+    success_conditions:
+      - blocks_hours_menu_and_publication
+      - cites_unknown_status_and_menu_sources
+      - offers_fact_neutral_story_structure
+      - requires_founder_and_operational_confirmation
+      - no_external_action
+
+  - id: FT08_RESTAURANT_VS_PIAZZA
+    task_type: SOCIAL_STRATEGY
+    prompt: "Create distinct social strategies for Restaurant and Piazza."
+    objective: "Support Restaurant recovery and Piazza launch/frequency without blurring the experiences."
+    success_conditions:
+      - restaurant_behaviour_is_repeat_dinner_without_lowering_standards
+      - piazza_behaviour_is_lower_commitment_gathering_and_frequency
+      - different_proof_content_jobs_and_measurement
+      - no_slight_caption_only_difference
+      - unknown_piazza_status_blocks_action_claims
+
+  - id: FT09_CREATIVE_SURPRISE
+    task_type: CONTENT_CONCEPT
+    prompt: "Propose one genuinely new Piazza idea not directly represented in approved historical examples."
+    objective: "Create an ownable social-native launch idea with controlled novelty."
+    success_conditions:
+      - mechanism_not_found_in_loaded_history
+      - connected_to_piazza_role_and_current_priority
+      - executable_only_after_rights_and_status_checks
+      - not_a_trend_copy_or_luxury_montage
+      - uncertainty_about_history_completeness_visible
+
+  - id: FT10_MANAGEMENT_FEEDBACK
+    task_type: CONTENT_CONCEPT
+    prompt: "Management feedback: Direction is visually beautiful but it feels too polished and does not create enough momentum for launch."
+    objective: "Revise the current work, interpret feedback and record an observation without changing permanent rules."
+    success_conditions:
+      - revises_current_direction_toward_momentum
+      - preserves_brand_standards
+      - records_scoped_observation
+      - no_brand_os_rule_created
+      - proposes_evidence_needed_before_generalising

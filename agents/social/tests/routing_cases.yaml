@@ -1,0 +1,79 @@
+suite: selective_loading
+cases:
+  - id: A_weekly_brand_plan
+    prompt: "Plan next week's Monzù Piazza social."
+    request:
+      task_type: WEEKLY_CONTENT_PLAN
+      brand_id: monzu
+      brand_os_available: true
+      platform: instagram
+      business_model: local-venue-experience
+      vertical_module: restaurant
+      objective: "Build the strongest next-week plan for the current Piazza priority."
+      available_runtime: [recent_content_history, current_operations, approved_commitments, asset_availability, relevant_performance]
+    expect:
+      status: PROCEED
+      skills:
+        - skills/social/core/social-strategy
+        - skills/social/core/content-portfolio-planning
+        - skills/social/core/creative-strategy-critique
+      platform_references: [skills/social/research/INSTAGRAM_CURRENT_KNOWLEDGE.md]
+      business_model: local-venue-experience
+      vertical_module: restaurant
+      brand_sections: [identity, positioning, audiences, business_strategy, experiences, language_and_tone, current_objectives, commercial_priorities, management_rules, operating_status]
+      exclude:
+        - skills/social/modules/business-model/ecommerce-product
+        - skills/social/modules/business-model/local-service
+        - unrelated_history
+
+  - id: B_local_service_diagnosis
+    prompt: "Diagnose Drops Laundry Instagram reach decline."
+    request:
+      task_type: PERFORMANCE_REVIEW
+      brand_id: drops
+      brand_os_available: false
+      platform: instagram
+      business_model: local-service
+      vertical_module: null
+      objective: "Determine supported causes of the reported reach decline and the smallest useful next test."
+      available_runtime: [metric_definitions, content_metrics, comparison_period]
+    expect:
+      status: BLOCK
+      skills: [skills/social/core/performance-diagnosis]
+      platform_references: [skills/social/research/INSTAGRAM_CURRENT_KNOWLEDGE.md]
+      business_model: local-service
+      vertical_module: null
+      brand_sections: []
+      missing_contains: ["Brand OS unavailable for drops"]
+      exclude:
+        - skills/social/modules/vertical/restaurant
+        - skills/social/modules/business-model/local-venue-experience
+        - skills/social/modules/business-model/ecommerce-product
+
+  - id: C_unbranded_ecommerce_launch
+    prompt: "Create product launch content for an ecommerce children's craft brand."
+    request:
+      task_type: CAMPAIGN_PLAN
+      brand_id: craft-brand
+      brand_os_available: false
+      platform: instagram
+      business_model: ecommerce-product
+      vertical_module: null
+      objective: "Create a product-launch content architecture without inventing brand or child-specific rules."
+      available_runtime: [campaign_state, current_operations, asset_availability]
+    expect:
+      status: PROCEED_WITH_LIMITATIONS
+      skills:
+        - skills/social/core/social-strategy
+        - skills/social/core/content-portfolio-planning
+        - skills/social/core/creative-strategy-critique
+      platform_references: [skills/social/research/INSTAGRAM_CURRENT_KNOWLEDGE.md]
+      business_model: ecommerce-product
+      vertical_module: null
+      brand_sections: []
+      missing_contains: ["Brand OS unavailable for craft-brand"]
+      exclude:
+        - skills/social/modules/vertical/restaurant
+        - skills/social/modules/business-model/local-venue-experience
+        - skills/social/modules/business-model/local-service
+        - kids-family-vertical

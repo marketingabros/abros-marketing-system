@@ -1,0 +1,276 @@
+suite_version: "0.1.0"
+producer: Abros Social Growth Agent v0.1 controlled simulation
+status: DRAFT_TEST_OUTPUTS_NOT_FOR_PUBLICATION
+note: "Outputs were generated from the selected read-only test context. They are evaluated separately in forward_test_evaluations.yaml."
+
+outputs:
+  - id: FT01_WEEKLY_STRATEGY
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [social-strategy, content-portfolio-planning, creative-strategy-critique]
+    selected_context:
+      platform: instagram
+      business_model: local-venue-experience
+      vertical: restaurant
+      brand_sections: [identity, positioning, audiences, business_strategy, experiences, language_and_tone, current_objectives, commercial_priorities, management_rules, operating_status]
+      runtime_loaded: [social_history_register, operating_status, knowledge_gaps]
+      runtime_not_available: [content_level_performance, complete_recent_content_fingerprints, rights_cleared_asset_set, approved_commitments]
+    executive_recommendation: >-
+      Make Piazza the dominant seven-day planning priority, using orientation,
+      gathering proof and momentum to build qualified intent; reserve bounded work
+      for Cellar continuity and Restaurant repeat dinner. Keep every item at concept
+      or draft level until Piazza live status and asset rights are confirmed.
+    seven_day_portfolio:
+      - day: 1
+        job: orient
+        experience: piazza
+        idea: "Explain the practical difference between a relaxed gathering rhythm and the Restaurant without calling the House new."
+        why: "Reduces confusion before asking for action and protects experience boundaries."
+        evidence_class: CREATIVE_RECOMMENDATION
+      - day: 2
+        job: create_relevant_discovery
+        experience: piazza
+        idea: "From message to gathering: a scripted group-message fragment becomes real arrivals and shared time."
+        why: "Connects social behaviour to Piazza's lower-commitment gathering role."
+        evidence_class: CREATIVE_RECOMMENDATION
+      - day: 3
+        job: demonstrate_momentum
+        experience: piazza
+        idea: "Build a sequence from human arrivals, greetings and changing energy rather than an empty polished room."
+        why: "Tests management's observation that visible momentum may influence visits while keeping it a hypothesis."
+        evidence_class: HYPOTHESIS
+      - day: 4
+        job: protect_continuity
+        experience: cellar
+        idea: "Show guidance beginning with a person's need; avoid live product or availability claims."
+        why: "Supports the second commercial priority without turning Cellar into a range/price retailer."
+        evidence_class: MANAGEMENT_RULE
+      - day: 5
+        job: support_repeat_behaviour
+        experience: restaurant
+        idea: "Frame a well-made dinner as a repeatable ritual rather than a special-occasion spectacle."
+        why: "Addresses the reported perception barrier without lowering standards or inventing an offer."
+        evidence_class: HYPOTHESIS
+      - day: 6
+        job: invite_social_transmission
+        experience: piazza
+        idea: "The empty place is an invitation: build a send-to-one-relevant-person mechanism without generic comment bait."
+        why: "Uses social sharing to assemble a real gathering rather than optimise comments."
+        evidence_class: CREATIVE_RECOMMENDATION
+      - day: 7
+        job: learn_and_prepare_action
+        experience: piazza
+        idea: "Collect approved response signals and prepare the factual action layer only after launch status, hours and visit path are confirmed."
+        why: "Prevents an unverified launch claim and defines the next decision."
+        evidence_class: MISSING_INFORMATION
+    limitations:
+      - "Piazza opening status, hours, menu and booking/walk-in model are unknown."
+      - "Priority audiences are observed occasions, not validated segments."
+      - "No complete performance history or rights-cleared asset set is available."
+      - "A seven-day portfolio is not a publishing schedule and requires founder approval."
+    self_critique:
+      - "Portfolio may still overallocate Piazza without current readiness evidence; day-level execution must be reduced if operations cannot support it."
+      - "Day 3 treats momentum as a hypothesis, not an established causal lever."
+    tags: [prioritises_piazza_head_start, supports_cellar_continuity_and_restaurant_decline_without_blurring, no_unconfirmed_hours_menu_or_open_status, every_content_job_has_reason, limitation_for_missing_history_assets_and_measurement]
+
+  - id: FT02_PERFORMANCE_DIAGNOSIS
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [performance-diagnosis]
+    executive_recommendation: >-
+      The reach decline is concentrated in non-follower distribution, but the
+      evidence does not identify one cause. First verify account eligibility and
+      metric comparability; then test whether format/portfolio mix and repeated
+      creative mechanisms explain the change using matched content.
+    data_quality:
+      status: LIMITED
+      issues:
+        - "Only two current Reels; retention stability is not a robust general conclusion."
+        - "Account/recommendation eligibility was not checked."
+        - "No conversion or local demand evidence."
+        - "Format mix changed materially between periods."
+    hypotheses:
+      - hypothesis: "The shift from six Reels to two changed non-follower distribution opportunity."
+        support: DATA_SUPPORTED_CONCLUSION
+        limitation: "The data supports a mix change, not that Reels intrinsically cause reach."
+      - hypothesis: "Repeated architecture, wine-pour and table mechanisms reduced creative novelty."
+        support: HYPOTHESIS
+        limitation: "No exposure/frequency or matched-concept result establishes fatigue."
+      - hypothesis: "Recommendation eligibility or account state constrained discovery."
+        support: HYPOTHESIS
+        limitation: "Account Status is missing."
+      - hypothesis: "Audience/catchment, seasonality or demand conditions changed."
+        support: HYPOTHESIS
+        limitation: "No local/external context was supplied."
+      - hypothesis: "Lower profile visits reflect weaker journey progression despite stable link taps."
+        support: HEURISTIC
+        limitation: "Link-tap denominator and content attribution require validation."
+    next_test:
+      first: "Check Account Status and current metric definitions before creative action."
+      experiment: "Run matched concepts with different creative mechanisms while holding content job, audience opportunity and publication conditions as stable as practical; do not vary format and concept simultaneously."
+      measure: "Defined non-follower reach plus objective-linked profile/action signals; conversion remains unavailable."
+      stop_rule: "Do not generalise from two posts or claim impact on visits/covers."
+    self_critique:
+      - "The format-mix hypothesis is plausible but cannot distinguish supply opportunity from content quality."
+      - "No diagnosis can link the social changes to the Piazza objective without current operating/conversion evidence."
+    tags: [checks_account_status_and_metric_comparability, separates_mix_distribution_creative_journey_and_external_hypotheses, does_not_prescribe_more_reels_as_cause, recognises_small_reel_sample, no_social_to_covers_claim]
+
+  - id: FT03_CREATIVE_DEVELOPMENT
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [creative-strategy-critique]
+    concepts:
+      - name: "The message became a gathering"
+        mechanism: "Scripted fragments of an ordinary group exchange transform into real arrivals; sending is part of the idea, not a generic CTA."
+        behaviour: "Make a lower-commitment gathering imaginable and prompt one relevant invitation."
+        social_native_reason: "Starts in a native social behaviour and completes in an offline gathering."
+        decision: SELECT_FOR_DEVELOPMENT
+      - name: "The evening changes hands"
+        mechanism: "A continuous visual/audio handoff moves between people, gestures and moments; each participant changes the rhythm."
+        behaviour: "Demonstrate relaxed gathering through participation rather than announcing atmosphere."
+        social_native_reason: "Relay structure supports serial cuts, remixes or consented participant perspectives."
+        decision: SELECT_FOR_DEVELOPMENT
+      - name: "Plans get pleasantly revised"
+        mechanism: "A contrast narrative begins with a small, low-commitment intention and reveals how conversation changes the plan."
+        behaviour: "Build the association that Piazza can be entered easily and revisited often."
+        social_native_reason: "Uses recognisable text-message/time-intention language and progressive reveal without publishing operating times."
+        decision: SELECT_FOR_DEVELOPMENT
+    rejected_routes:
+      - route: "Slow facade reveal with elegant soundtrack"
+        reason: "A repeated treatment and category-generic decoration; no gathering behaviour or Piazza-specific mechanism."
+      - route: "Close wine pour and ask who followers would bring"
+        reason: "Topic plus comment bait, not an organising idea; recent history already repeats wine imagery."
+      - route: "Luxury is arriving"
+        reason: "Conflicts with management language/positioning, risks a new-destination claim and does not make Piazza practical."
+    limitations:
+      - "Concepts cannot become shoot-ready until live status, assets, people/UGC rights and exact action path are confirmed."
+      - "History register is not a complete content-level archive, so novelty is provisional."
+    self_critique:
+      - "Concept one and three both use messaging language; only one should advance in the same portfolio to preserve mechanism diversity."
+    tags: [three_different_organising_mechanisms, social_native_not_just_formats, rejects_generic_luxury_architecture_and_wine_montages, does_not_invent_menu_hours_or_opening, identifies_asset_and_rights_dependencies]
+
+  - id: FT04_CREATIVE_CRITIQUE
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [creative-strategy-critique]
+    decision: REJECT_AND_REBUILD
+    critique:
+      - "The route is an aesthetic treatment, not a concept tied to a customer behaviour."
+      - "'New destination' contradicts the House's established-place rule."
+      - "'Luxury' announces status instead of demonstrating relevant quality and is not approved public positioning."
+      - "Facade, marble, pour and elegant music are copyable category signals with no Piazza-specific social mechanism."
+      - "The work is polished but static; it does not create launch momentum or explain the relaxed gathering role."
+    improved_direction:
+      name: "The message became a gathering"
+      change: "Replace empty surfaces with an unfolding human invitation-to-arrival sequence. Use scripted/private-safe message fragments, movement and accumulating social energy."
+      behaviour: "Help someone imagine and initiate a lower-commitment Piazza gathering."
+      removals: [luxury_claim, new_destination_claim, decorative_marble_sequence, generic_comment_cta]
+      blocker: "No opening, menu or visit CTA until current facts and founder approval exist."
+    tags: [rejects_or_materially_rebuilds, detects_new_destination_and_luxury_conflicts, detects_generic_decoration, adds_customer_behaviour_tension_and_social_mechanism, removes_unnecessary_polish]
+
+  - id: FT05_REPETITION_CONTROL
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [creative-strategy-critique, content-portfolio-planning]
+    repetition_diagnosis:
+      repeated_dimensions: [subject, opening, visual_device, format, action]
+      conclusion: "The fictional history shows structural repetition, not merely repeated colours or subjects. Performance evidence is absent, so call this repetition risk—not proven fatigue."
+    new_direction:
+      name: "An invitation in motion"
+      mechanism: "Open on an interrupted, consented voice-note invitation; follow its movement through replies, footsteps, greetings and overlapping conversation."
+      changes:
+        subject: "people, invitation and changing social energy"
+        opening: "immediate human voice/action rather than slow reveal"
+        structure: "relay and accumulation rather than symmetrical montage"
+        participation: "a real invitation decision rather than generic visit prompt"
+      restraint: "Use only approved participants/audio and preserve calm conduct; momentum does not require noise or trend imitation."
+    tags: [identifies_multi_dimension_repetition, new_direction_changes_subject_opening_structure_and_participation, brand_fit_preserved, no_random_pattern_interruption]
+
+  - id: FT06_BUSINESS_PRIORITY_CONFLICT
+    proceed_status: PROCEED
+    selected_skills: [creative-strategy-critique]
+    decision: DEPRIORITISE
+    executive_recommendation: >-
+      Do not lead with the building-trivia giveaway. Predicted comments do not
+      establish qualified Piazza attention, visit intent or useful launch momentum,
+      and a giveaway may introduce an incentive inconsistent with current rules.
+    rationale:
+      - "Architecture is important to the House, but the idea does not explain Piazza's use or gathering role."
+      - "Comment volume is an audience-response signal, not the current business outcome."
+      - "No discount or incentive mechanism is approved."
+      - "Reframe only if the interaction helps people understand or participate in the Piazza experience; otherwise omit it."
+    tags: [does_not_equate_comments_with_commercial_value, rejects_or_deprioritises_unless_reframed, protects_no_discount_and_no_influencer_rules, prioritises_piazza_qualified_attention_and_visits]
+
+  - id: FT07_FACTUAL_BLOCKER
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [creative-strategy-critique, instagram-carousels-stories]
+    blocked:
+      - "Publishing or drafting specific Piazza hours."
+      - "Naming current menu items."
+      - "Any external publication action."
+    evidence:
+      - "MONZU-U001: opening status, days, hours and booking model unknown."
+      - "MONZU-U003: current Piazza menu, prices and availability unknown."
+      - "MONZU-A078 and Phase 5 autonomy: external action requires human approval."
+    safe_partial_output:
+      - frame: 1
+        purpose: orient
+        draft: "Piazza has a more relaxed rhythm within the House."
+      - frame: 2
+        purpose: express_use
+        draft: "A place shaped around gathering, wine and genuinely shareable food."
+      - frame: 3
+        purpose: factual_action_placeholder
+        draft: "[Insert management-confirmed opening status, hours and visit/booking path.]"
+    required_confirmation: "Responsible operating owner confirms current facts, asset/rights owner clears media, founder approves the final Story."
+    tags: [blocks_hours_menu_and_publication, cites_unknown_status_and_menu_sources, offers_fact_neutral_story_structure, requires_founder_and_operational_confirmation, no_external_action]
+
+  - id: FT08_RESTAURANT_VS_PIAZZA
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [social-strategy]
+    strategies:
+      restaurant:
+        behaviour: "Increase repeat dinner consideration/visits without lowering food or hospitality standards."
+        obstacle: "Management-observed perception of expense, difficulty and special-occasion dependence."
+        content_jobs: [demonstrate_repeatable_dinner_ritual, show_food_and_calm_hosting_proof, reduce_intimidation_without_discount]
+        measurement: [qualified_reservation_or_visit_signals, repeat_visit_evidence, matched_dinner_period_context]
+      piazza:
+        behaviour: "Create qualified launch interest and establish lower-commitment, more frequent gathering."
+        obstacle: "The experience must be understood as distinct, while opening/visit facts remain unknown."
+        content_jobs: [orient_experience_difference, show_gathering_and_shared_time, create_social_momentum, prepare_action_after_fact_confirmation]
+        measurement: [qualified_attention, confirmed_visit_or_booking_path_when_available, covers_and_repeat_frequency_after_opening]
+    distinction: "Restaurant addresses repeat dinner and perceived formality through food/hosting proof; Piazza builds gathering frequency through social momentum and lower-commitment use. These are different behaviours, proof systems and stages—not alternate captions."
+    tags: [restaurant_behaviour_is_repeat_dinner_without_lowering_standards, piazza_behaviour_is_lower_commitment_gathering_and_frequency, different_proof_content_jobs_and_measurement, no_slight_caption_only_difference, unknown_piazza_status_blocks_action_claims]
+
+  - id: FT09_CREATIVE_SURPRISE
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [creative-strategy-critique]
+    concept:
+      name: "The invitation keeps moving"
+      core_idea: "A single invitation is passed onward through a serial social narrative; each person chooses the next relevant person rather than broadcasting to everyone."
+      mechanism: "Episodes accumulate human participation and visible momentum while the invitation's path becomes the story."
+      commercial_role: "Turns Piazza's gathering proposition into qualified person-to-person transmission."
+      novelty_basis: "No equivalent serial invitation mechanism is identified in the loaded registers or fictional repetition history."
+      risk: "History indexing is incomplete; participant consent, incentive interpretation, operating readiness and moderation must be checked."
+      decision: SELECT_FOR_PROTOTYPE_ONLY
+    tags: [mechanism_not_found_in_loaded_history, connected_to_piazza_role_and_current_priority, executable_only_after_rights_and_status_checks, not_a_trend_copy_or_luxury_montage, uncertainty_about_history_completeness_visible]
+
+  - id: FT10_MANAGEMENT_FEEDBACK
+    proceed_status: PROCEED_WITH_LIMITATIONS
+    selected_skills: [creative-strategy-critique, content-portfolio-planning]
+    interpretation:
+      current_work_change: "Reduce finished hero-film polish and increase serial evidence that a gathering is assembling."
+      hypothesis: "For this launch direction, surface perfection may suppress the perception of movement and participation."
+      not_inferred: "This is not a permanent rule against polished visuals or a new Brand OS principle."
+    revision:
+      from: "One highly finished, composed reveal"
+      to: "A sequence of shorter connected moments—invitation, replies, arrivals, handoffs and accumulating presence—with one coherent visual standard."
+      preserve: [quality, credibility, calm_conduct, experience_boundaries]
+      add: [human_causality, progression, serial_release, visible_momentum]
+      remove: [empty_beauty_shots_without_job, redundant_slow_reveals]
+    proposed_observation:
+      observation: "Management judged this specific launch direction too polished to communicate momentum."
+      evidence_count: 1
+      affected_brand: monzu
+      affected_task_type: CONTENT_CONCEPT
+      confidence: LOW
+      suggested_learning: "Test whether serial, human-progressive execution communicates Piazza launch momentum better than a single polished reveal."
+      reason: "Direct management feedback identifies a potential mismatch between execution and launch job."
+      limitations: [one_direction_only, no_performance_outcome, may_not_apply_to_other_experiences_or_tasks]
+      status: PROPOSED_ONLY
+    tags: [revises_current_direction_toward_momentum, preserves_brand_standards, records_scoped_observation, no_brand_os_rule_created, proposes_evidence_needed_before_generalising]
