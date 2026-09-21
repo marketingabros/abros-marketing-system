@@ -1,0 +1,226 @@
+schema_version: "0.1"
+artifact_type: CREATIVE_CAPABILITY_GAP_ANALYSIS
+phase: "6A"
+status: DIAGNOSTIC_ONLY
+date: "2026-09-21"
+production_skills_modified: false
+
+scope:
+  system: "Abros Social Growth Agent v0.1 and Social Skill Pack v0.1"
+  tasks:
+    - id: TASK_2
+      name: "Monzu Piazza launch momentum"
+      source_task: "01a09fde-5f73-7130-92bd-d0d7e06248fe"
+      continuation_turn: "01a0a66b-82cf-7391-b22d-77b600bd7cee"
+      final_verdict: PASS_WITH_CORRECTIONS
+    - id: TASK_4
+      name: "My Treasure Bags creative capability stress test"
+      source_path: "work-in-progress/my-treasure-bags-task-4"
+      final_verdict: FAIL
+
+overall_diagnosis:
+  break_location: "between useful strategic tension and ownable organising idea"
+  pattern: >-
+    The system finds a valid behaviour and tension, generates formally different
+    mechanisms, converges on familiar premise/action families, attaches brand or
+    product detail as executional proof, and detects portability during critique.
+  primary_causes: [SKILL, PROMPT_CONTRACT]
+  contributing_causes: [AGENT_ORCHESTRATION, EVAL]
+  conditional_cause: KNOWLEDGE
+  unisolated_hypothesis: MODEL_CAPABILITY
+  confidence: HIGH
+
+allowed_problem_locations:
+  - SKILL
+  - AGENT_ORCHESTRATION
+  - PROMPT_CONTRACT
+  - EVAL
+  - KNOWLEDGE
+  - MODEL_CAPABILITY
+
+gaps:
+  - id: CG-01
+    capability: STRATEGIC_TENSION
+    status: MOSTLY_INTACT
+    severity: LOW
+    break: "The system can stop at a useful category tension without deriving a brand/product-owned contradiction."
+    task_2_evidence:
+      - "Clear movement from deferred intention to first Piazza visit and return with someone new."
+      - "Strategic quality and commercial relevance both scored 8/10."
+      - "The tension remained portable until actual Piazza detail and relationship specificity were added."
+    task_4_evidence:
+      - "Small container, multiple next moves was clear and strategically connected."
+      - "The tension described the portable activity category more than My Treasure Bags."
+    problem_locations: [SKILL, PROMPT_CONTRACT, KNOWLEDGE]
+    smallest_likely_intervention: >-
+      Require separate category/human tension and brand/product contradiction statements;
+      the latter must fail a premise-removal test before ideation proceeds as ownable invention.
+    success_signal: "Removing the consequential brand/product truth collapses the creative tension, not merely its styling."
+
+  - id: CG-02
+    capability: DIVERGENCE
+    status: PARTIAL_FAILURE
+    severity: HIGH
+    break: "Different devices and names are counted as divergence even when premise, human role and consequence repeat."
+    task_2_evidence:
+      - "Five formally distinct routes covered relay, occasions, environment, gestures and sound."
+      - "Several remained within easier gathering, meeting or sharing; the winner used a familiar invitation pattern."
+    task_4_evidence:
+      - "Seven devices differed, but most returned to portability, variety and in-between use."
+      - "The evaluator scored creative range 6/10 and found some execution trios were format variations."
+    problem_locations: [SKILL, PROMPT_CONTRACT, AGENT_ORCHESTRATION]
+    smallest_likely_intervention: >-
+      Map each route by product/brand premise, human role, action pattern and accumulating
+      consequence; treat identical maps as one family and regenerate from unused cells.
+    success_signal: "The surviving set differs at premise and consequence level, not only in format or visual mechanism."
+
+  - id: CG-03
+    capability: PRODUCT_BRAND_SPECIFICITY
+    status: PRIMARY_FAILURE
+    severity: FATAL
+    break: "Brand/product truth is used as context, proof or choreography rather than as the causal source of the idea."
+    task_2_evidence:
+      - "House entrance, shared food and service rhythm made the portable invitation mechanic more appropriate but did not own it."
+      - "Final distinctiveness stayed 7/10 and depended on yet-unfound specific guest stories."
+    task_4_evidence:
+      - "Both survivors worked substantially unchanged for a generic mixed activity box."
+      - "Product specificity scored 3/10 fatal; zip and bag form improved execution, not premise ownership."
+    problem_locations: [SKILL, KNOWLEDGE, PROMPT_CONTRACT]
+    smallest_likely_intervention: >-
+      Inventory consequential truths using 'Only this brand/product can cause the idea because...'.
+      If none is defensible, request targeted evidence or limit the brief to category communication.
+    success_signal: "Nearest-substitute replacement breaks the organising logic rather than requiring only prop or copy changes."
+
+  - id: CG-04
+    capability: CREATIVE_LEAP
+    status: FAILURE
+    severity: HIGH
+    break: "The route often illustrates the strategic proposition directly instead of transforming it into a surprising rule."
+    task_2_evidence:
+      - "Visible return behaviour became a documentary invitation relay."
+      - "Role reversal improved clarity, but the underlying invitation pattern remained familiar and portable."
+    task_4_evidence:
+      - "Compact variety became match-cut transformation or reverse packing."
+      - "Creative leap scored 5/10; both survivors remained close to familiar demonstration."
+    problem_locations: [SKILL, PROMPT_CONTRACT, MODEL_CAPABILITY]
+    smallest_likely_intervention: >-
+      Insert a forced transformation pass: for each product-owned truth, generate mutually
+      exclusive inversions, collisions, rule changes or consequences and express each as
+      truth -> unexpected rule -> audience consequence.
+    success_signal: "The core sentence is more than a demonstration, metaphor or restatement of the source proposition."
+
+  - id: CG-05
+    capability: CAMPAIGN_MECHANIC
+    status: INCONSISTENT
+    severity: HIGH
+    break: "Repeatable executions are sometimes mistaken for a self-renewing behavioural or narrative engine."
+    task_2_evidence:
+      - "Guest-to-inviter role change and linked visits created a genuine state transition."
+      - "Momentum and longevity remained 7/10 because future episodes depended on voluntary real returns; fallback lost the engine."
+    task_4_evidence:
+      - "Survivors reset the same visual question each time and accumulated no participation, proof, product state or consequence."
+    problem_locations: [SKILL, EVAL]
+    smallest_likely_intervention: >-
+      Require input, participant action, visible state change, source of next episode,
+      accumulating consequence and truthful fallback for every campaign-platform candidate.
+    success_signal: "One execution changes the conditions or material available for the next."
+
+  - id: CG-06
+    capability: SOCIAL_NATIVE_QUALITY
+    status: INCONSISTENT
+    severity: MEDIUM
+    break: "Platform-native motion or sequence can satisfy the same criterion as a genuine social consequence."
+    task_2_evidence:
+      - "Private sending, replies and linked episodes supported the invitation behaviour; score 8/10."
+      - "Public interest still depended on specific relationship stories, not the platform alone."
+    task_4_evidence:
+      - "Reveal, transformation and muted comprehension suited Instagram viewing."
+      - "Participation and sharing were secondary; social-native quality scored 6/10."
+    problem_locations: [SKILL, PROMPT_CONTRACT]
+    smallest_likely_intervention: >-
+      Score platform-native expression and social consequence separately; require a reason
+      that response, sending, contribution, witnessing or persistence changes the idea.
+    success_signal: "The concept loses material value when removed from the social environment, beyond losing video or carousel syntax."
+
+  - id: CG-07
+    capability: OWNABILITY
+    status: LATE_GATE_FAILURE
+    severity: FATAL
+    break: "Portability is discovered after selection or development, and cosmetic change can pass the existing 'unchanged' wording."
+    task_2_evidence:
+      - "The campaign was selected before independent review foregrounded portable invitation mechanics."
+      - "Conceptual repair raised distinctiveness but did not make the premise uniquely Monzu."
+    task_4_evidence:
+      - "Territory descriptions already acknowledged generic substitution, yet two routes advanced to full development."
+      - "The final substitution test correctly killed both survivors."
+    problem_locations: [SKILL, PROMPT_CONTRACT, EVAL]
+    smallest_likely_intervention: >-
+      Move premise-removal and nearest-substitute tests before survivor selection and ask
+      what logically breaks, excluding logo, prop, setting, copy and production changes.
+    success_signal: "No developed survivor can be transferred to the nearest competitor/category substitute without inventing a new premise."
+
+  - id: CG-08
+    capability: IDEA_VS_EXECUTION
+    status: FAILURE
+    severity: HIGH
+    break: "Editing, chronology, camera grammar and physical choreography create perceived novelty around a weak premise."
+    task_2_evidence:
+      - "Matched entrances, changed viewpoint and documentary chronology strengthened a portable invitation/role-reversal idea."
+      - "The evaluator warned generic togetherness would return if episode specificity weakened."
+    task_4_evidence:
+      - "Match cuts, reverse editing, bounded surfaces and zip choreography supplied watchability."
+      - "Subtraction proved legibility without polish, not product ownership."
+    problem_locations: [SKILL, EVAL]
+    smallest_likely_intervention: >-
+      Require an execution-neutral core sentence with no medium, visual, edit, copy or asset;
+      score its leap and ownability before reviewing any execution.
+    success_signal: "The core idea remains distinctive in plain language before production devices are introduced."
+
+  - id: CG-09
+    capability: CRITIQUE_TIMING
+    status: NOT_PRIMARY_FAILURE
+    severity: LOW
+    break: "Generation and self-critique are tightly coupled, but evidence does not show the final evaluator killed promising ideas prematurely."
+    task_2_evidence:
+      - "Independent critique improved the role reversal and story-specific payoff instead of prematurely rejecting the route."
+      - "The revision still relied on real story evidence to earn distinction."
+    task_4_evidence:
+      - "All seven routes received substantive articulation; two received full execution, subtraction and substitution tests."
+      - "The final no-winner verdict was independently judged correct."
+    problem_locations: [AGENT_ORCHESTRATION]
+    smallest_likely_intervention: >-
+      Separate divergent generation from adversarial evaluation and permit one development
+      pass before scoring, while retaining immediate truth/safety gates and the final fatal tests.
+    success_signal: "Raw routes gain one coherent development pass without weakening specificity or truth standards."
+
+  - id: CG-10
+    capability: GENERATIVE_CONVERGENCE
+    status: FAILURE
+    severity: HIGH
+    break: "Apparently different ideas collapse into the same promise, protagonist/action or payoff pattern."
+    task_2_evidence:
+      - "Formal variety was genuine, but multiple routes returned to making lower-commitment gathering, meeting or sharing visible."
+      - "Winner and runner-up relied on familiar interpersonal bringing/sharing behaviour."
+    task_4_evidence:
+      - "Transformation, reversal, branching and chaptering repeatedly expressed portability, variety and in-between use."
+      - "Seven named routes yielded modest proposition-level range and two category-level survivors."
+    problem_locations: [SKILL, PROMPT_CONTRACT, AGENT_ORCHESTRATION, MODEL_CAPABILITY]
+    smallest_likely_intervention: >-
+      Anonymise and cluster routes by promise, protagonist, action, payoff and temporal pattern;
+      count clusters rather than names and replace duplicates from different product truths.
+    success_signal: "At least the required number of semantic clusters survive before critique, with no shared dominant action/payoff pattern."
+
+remediation_order_for_future_phase:
+  - "Establish consequential product/brand truth as an invention precondition."
+  - "Move causal specificity and nearest-substitute failure before development."
+  - "Measure semantic rather than mechanism-label divergence."
+  - "Add a forced creative-transformation pass."
+  - "Require campaign accumulation and distinguish social consequence from platform craft."
+  - "Separate divergent generation from adversarial critique."
+  - "Rerun Tasks 2 and 4 before attributing the residual gap to model capability."
+
+non_findings:
+  - "No general strategy failure established."
+  - "No general evidence-discipline failure established."
+  - "No evidence that the Task 4 evaluator killed a viable ownable idea."
+  - "No basis yet for modifying production Skills in Phase 6A."
