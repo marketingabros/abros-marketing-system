@@ -1,131 +1,15 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Monzù Cellar Packaging Planner</title>
-<style>
-:root{--n:#192939;--c:#f4efe5;--t:#8a5a3b;--m:#6f777c;--l:#d8d0c3}*{box-sizing:border-box}body{margin:0;background:var(--c);color:#20262a;font:14px Inter,system-ui,sans-serif}header{background:var(--n);color:#fff;padding:26px 30px}header h1{margin:0;font:500 30px Georgia,serif}header p{max-width:900px;color:#dce3e8}.wrap{max-width:1550px;margin:auto;padding:22px}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tab,.btn{border:1px solid var(--n);border-radius:999px;padding:8px 12px;background:#fff;color:var(--n);cursor:pointer}.tab.on,.btn{background:var(--n);color:#fff}.panel{display:none}.panel.on{display:block}.card{background:#fff;border:1px solid var(--l);border-radius:14px;padding:18px;margin:0 0 16px}.card h2,.card h3{font:500 23px Georgia,serif;color:var(--n);margin-top:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.kpi{background:#faf8f3;border:1px solid var(--l);border-radius:9px;padding:12px}.kpi b{display:block;font-size:22px;color:var(--n);margin-top:4px}label,.muted{font-size:12px;color:var(--m)}input,select{width:100%;padding:7px;border:1px solid #cfc7bc;border-radius:7px;background:#fff}input[type=number]{text-align:right}.scroll{overflow:auto;max-height:620px;border:1px solid var(--l);border-radius:9px}table{border-collapse:collapse;width:100%;font-size:12.5px}th,td{padding:7px;border-bottom:1px solid #ece5dc;text-align:right;vertical-align:middle}th:first-child,td:first-child{text-align:left}th{position:sticky;top:0;background:#faf8f3;color:var(--m)}td input,td select{min-width:72px}.note{border-left:4px solid var(--t);background:#f8f3ea;padding:10px}.ok{color:#366149}.bad{color:#9a3f3f}.btns{display:flex;gap:8px;flex-wrap:wrap}.btn.alt{background:#fff;color:var(--n)}@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.grid{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<header><h1>Monzù Cellar — Packaging & Gift Forecast Planner</h1><p>Historical calibration → package quantities → Monzù €14 / €22 / €33 packaging demand → supplier MOQ/lead-time optimisation → procurement and marketing handoff.</p></header>
-<div class="wrap">
-<div class="tabs">
-<button class="tab on" data-p="cal">1 Calibration</button><button class="tab" data-p="map">2 Tier mapping</button><button class="tab" data-p="cat">3 Packaging catalog</button><button class="tab" data-p="fc">4 Forecast & PO</button><button class="tab" data-p="out">5 Outputs</button>
-</div>
-
-<section id="cal" class="panel on">
-<div class="card"><h2>Historic sales calibration</h2><div class="grid">
-<div><label>All corporate gifting sales, 2025 (€)</label><input id="corp" type="number" value="225856.70" step=".01"></div>
-<div><label>DIADIKASIA sales, 2025 (€)</label><input id="dia" type="number" value="37632.51" step=".01"></div>
-<div><label>Retention / growth multiplier</label><input id="growth" type="number" value="1" step=".01"></div>
-<div><label>Extra retail / e-shop gifts</label><input id="extra" type="number" value="300"></div>
-</div><p class="muted">2025 defaults come from the Vinifera corporate-gifting turnover document and remain editable.</p></div>
-<div class="card"><h3>Observed DIADIKASIA package counts</h3><p class="muted">Final historic bracket corrected to €320 per management instruction.</p><div class="scroll"><table id="matrix"></table></div></div>
-<div class="card"><h3>Proposal price evidence & physical composition</h3><div class="scroll"><table id="props"></table></div></div>
-<div class="grid" id="calK"></div>
-</section>
-
-<section id="map" class="panel">
-<div class="card"><h2>Gift bracket → Monzù packaging tier</h2><div class="note">This mapping is deliberately editable. Historic package counts and proposal composition are evidence; the Monzù €14 / €22 / €33 split is a management planning assumption until more package-specific history is loaded.</div><br><div class="scroll"><table id="maps"></table></div></div>
-<div class="card"><h3>Finishing / branding cost per package</h3><div class="grid">
-<div><label>Ribbon metres / package</label><input id="rm" type="number" value="1.5" step=".1"></div>
-<div><label>Ribbon €/metre</label><input id="rr" type="number" value="0" step=".01"></div>
-<div><label>Tag €/piece</label><input id="tag" type="number" value="0" step=".01"></div>
-<div><label>Rice paper €/package</label><input id="rice" type="number" value="0" step=".01"></div>
-<div><label>Seal / sticker €/package</label><input id="seal" type="number" value="0" step=".01"></div>
-<div><label>Filler / protection €/package</label><input id="fill" type="number" value="0" step=".01"></div>
-<div><label>Finishing wastage %</label><input id="waste" type="number" value="5" step=".1"></div>
-<div><label>Safety stock %</label><input id="safe" type="number" value="10" step=".1"></div>
-</div></div>
-</section>
-
-<section id="cat" class="panel">
-<div class="card"><h2>Packaging options / supplier catalog</h2><p class="muted">One row per supplier SKU. Use Base for everyday bottle bags that are not part of the paid €14 / €22 / €33 structural-packaging demand.</p><div class="btns"><button class="btn" id="add">Add option</button><button class="btn alt" id="catcsv">Export catalog CSV</button></div><br><div class="scroll"><table id="catalog"></table></div></div>
-<div class="card"><h3>Lead-time rules</h3><div class="grid">
-<div><label>Short-lead threshold (days)</label><input id="short" type="number" value="10"></div>
-<div><label>Buy now coverage for short-lead SKUs %</label><input id="scov" type="number" value="55"></div>
-<div><label>Buy now coverage for long-lead SKUs %</label><input id="lcov" type="number" value="100"></div>
-</div></div>
-</section>
-
-<section id="fc" class="panel">
-<div class="card"><h2>Forecast</h2><div class="grid" id="fk"></div></div>
-<div class="card"><h3>Demand by gift bracket & month</h3><div class="scroll"><table id="fct"></table></div></div>
-<div class="card"><h3>Demand by paid packaging tier</h3><div class="scroll"><table id="tier"></table></div></div>
-<div class="card"><h3>Suggested purchase order</h3><div class="scroll"><table id="po"></table></div></div>
-</section>
-
-<section id="out" class="panel">
-<div class="card"><h2>Handoff</h2><div class="btns"><button class="btn" id="pocsv">Download procurement CSV</button><button class="btn" id="mktcsv">Download marketing/render brief CSV</button><button class="btn alt" id="json">Download model JSON</button><button class="btn alt" id="reset">Reset defaults</button></div></div>
-<div class="card"><h3>Readiness checks</h3><div id="checks"></div></div>
-<div class="card"><h3>Audit note</h3><div id="audit"></div></div>
-</section>
-</div>
-
-<script>
-const M=['Oct','Nov','Dec','Jan'],B=[40,60,80,100,120,150,200,320],D={
-counts:{40:[0,0,3,0],60:[3,1,35,0],80:[11,3,32,11],100:[10,8,32,32],120:[2,0,8,2],150:[4,1,9,4],200:[0,0,1,2],320:[0,1,1,0]},
-props:{
-40:{p:[41.30,42.85,42.55],c:'2 bottles + delicatessen; or 1 sparkling + delicatessen',h:'Ondulé 2-bottle box / 1-bottle pack'},
-60:{p:[62.40,61.75,62.45],c:'2–3 bottles + delicatessen',h:'3-bottle basket / 2–3 bottle ondulé box'},
-80:{p:[81.80,82.65,82.95],c:'3–4 bottles + delicatessen',h:'3–4 bottle basket'},
-100:{p:[97.90,104.35,100.65],c:'3–4 bottles + delicatessen + decorative',h:'3–4 bottle basket'},
-120:{p:[120.80,125.65,125.45],c:'3–4 bottles + delicatessen + decorative',h:'3–4 bottle basket'},
-150:{p:[152.70,151.95,151.13],c:'3–6 bottles + delicatessen + decorative',h:'3–5 bottle basket'},
-200:{p:[208.90,207.35,208.85],c:'3–5 bottles + Port/liqueur + delicatessen + decorative',h:'5-bottle / special 3-bottle basket'},
-320:{p:[320],c:'Not present in attached 6-page proposal set — update from yearly booklet',h:'Premium format TBC'}},
-map:{40:[100,0,0],60:[85,15,0],80:[65,35,0],100:[35,60,5],120:[20,65,15],150:[10,60,30],200:[0,40,60],320:[0,10,90]},
-opts:[
-{name:'Paper bag — 1 bottle',type:'Branded paper bag',tier:'Base',cost:.74,sell:0,moq:1000,lead:50,stock:0,share:0,cap:1,supplier:'Xenos Packaging',notes:'Superfine 190gr; prepress extra'},
-{name:'Paper bag — 2 bottles',type:'Branded paper bag',tier:'Base',cost:.82,sell:0,moq:1000,lead:50,stock:0,share:0,cap:2,supplier:'Xenos Packaging',notes:'VINOCULTURA size'},
-{name:'Paper bag — 3 bottles',type:'Branded paper bag',tier:'Base',cost:.843,sell:0,moq:1000,lead:50,stock:0,share:0,cap:3,supplier:'Xenos Packaging',notes:'HOUSE OF WINE size'},
-{name:'Basket — €14',type:'Καλάθι',tier:'14',cost:10,sell:14,moq:1,lead:30,stock:0,share:35,cap:3,supplier:'TBC',notes:'Replace with chosen SKU'},
-{name:'Tray — €14',type:'Δίσκος',tier:'14',cost:10,sell:14,moq:1,lead:30,stock:0,share:25,cap:3,supplier:'TBC',notes:'Replace with chosen SKU'},
-{name:'Fabric bag — €14',type:'Υφασμάτινη τσάντα',tier:'14',cost:10,sell:14,moq:1,lead:30,stock:0,share:25,cap:2,supplier:'TBC',notes:'Replace with chosen SKU'},
-{name:'Wood box — €14',type:'Ξύλινο κουτί',tier:'14',cost:10,sell:14,moq:1,lead:30,stock:0,share:15,cap:2,supplier:'TBC',notes:'Only if viable at target cost'},
-{name:'Basket — €22',type:'Καλάθι',tier:'22',cost:17,sell:22,moq:1,lead:30,stock:0,share:35,cap:4,supplier:'TBC',notes:'Replace with chosen SKU'},
-{name:'Hatbox — €22',type:'Καπελιέρα',tier:'22',cost:17,sell:22,moq:1,lead:30,stock:0,share:25,cap:3,supplier:'TBC',notes:'Round premium option'},
-{name:'Wood box — €22',type:'Ξύλινο κουτί',tier:'22',cost:17,sell:22,moq:1,lead:30,stock:0,share:25,cap:3,supplier:'TBC',notes:'Wine-led gift'},
-{name:'Tray — €22',type:'Δίσκος',tier:'22',cost:17,sell:22,moq:1,lead:30,stock:0,share:15,cap:4,supplier:'TBC',notes:'Open composition'},
-{name:'Hatbox — €33',type:'Καπελιέρα',tier:'33',cost:25,sell:33,moq:1,lead:30,stock:0,share:35,cap:4,supplier:'TBC',notes:'Premium hero SKU'},
-{name:'Wood box — €33',type:'Ξύλινο κουτί',tier:'33',cost:25,sell:33,moq:1,lead:30,stock:0,share:35,cap:5,supplier:'TBC',notes:'Premium wine-led'},
-{name:'Basket — €33',type:'Καλάθι',tier:'33',cost:25,sell:33,moq:1,lead:30,stock:0,share:30,cap:5,supplier:'TBC',notes:'Large premium composition'}]
-};
-let S=JSON.parse(localStorage.getItem('monzuP')||'null')||structuredClone(D);
-const $=x=>document.getElementById(x),n=x=>+$(x).value||0,avg=a=>a.reduce((s,x)=>s+x,0)/a.length,
-fmt=x=>new Intl.NumberFormat('en-GB',{maximumFractionDigits:2}).format(x||0),eur=x=>'€'+fmt(x),save=()=>localStorage.setItem('monzuP',JSON.stringify(S));
-function rmatrix(){let T=B.reduce((s,b)=>s+S.counts[b].reduce((a,x)=>a+x,0),0),h='<tr><th>Band</th>'+M.map(x=>'<th>'+x+'</th>').join('')+'<th>Total</th><th>Share</th></tr>';B.forEach(b=>{let q=S.counts[b].reduce((a,x)=>a+x,0);h+=`<tr><td>€${b}</td>${S.counts[b].map((x,i)=>`<td><input type="number" value="${x}" onchange="S.counts[${b}][${i}]=+this.value;save();recalc()"></td>`).join('')}<td>${q}</td><td>${fmt(100*q/T)}%</td></tr>`});h+='<tr><th>Total</th>'+M.map((x,i)=>'<th>'+B.reduce((s,b)=>s+S.counts[b][i],0)+'</th>').join('')+'<th>'+T+'</th><th>100%</th></tr>';$('matrix').innerHTML=h}
-function rprops(){let h='<tr><th>Band</th><th>Proposal prices</th><th>Average</th><th>Composition</th><th>Historic packaging</th></tr>';B.forEach(b=>{let p=S.props[b];h+=`<tr><td>€${b}</td><td><input value="${p.p.join(', ')}" onchange="S.props[${b}].p=this.value.split(',').map(Number).filter(x=>!isNaN(x));save();recalc()"></td><td>${eur(avg(p.p))}</td><td style="text-align:left">${p.c}</td><td style="text-align:left">${p.h}</td></tr>`});$('props').innerHTML=h}
-function rmaps(){let h='<tr><th>Gift band</th><th>Historic physical evidence</th><th>€14 %</th><th>€22 %</th><th>€33 %</th><th>Total</th></tr>';B.forEach(b=>{let m=S.map[b],t=m.reduce((s,x)=>s+x,0);h+=`<tr><td>€${b}</td><td style="text-align:left">${S.props[b].c}<br><span class="muted">${S.props[b].h}</span></td>${m.map((x,i)=>`<td><input type="number" value="${x}" onchange="S.map[${b}][${i}]=+this.value;save();recalc()"></td>`).join('')}<td class="${t===100?'ok':'bad'}">${t}%</td></tr>`});$('maps').innerHTML=h}
-function rcatalog(){let h='<tr><th>Option</th><th>Type</th><th>Tier</th><th>Cost</th><th>Sell</th><th>MOQ</th><th>Lead d</th><th>Stock</th><th>Allocation %</th><th>Capacity</th><th>Supplier</th><th>Notes</th></tr>';S.opts.forEach((o,i)=>{let f=k=>`<td><input value="${o[k]}" onchange="S.opts[${i}].${k}=this.value;save();recalc()"></td>`,num=k=>`<td><input type="number" step=".01" value="${o[k]}" onchange="S.opts[${i}].${k}=+this.value;save();recalc()"></td>`;h+=`<tr>${f('name')}${f('type')}<td><select onchange="S.opts[${i}].tier=this.value;save();recalc()"><option ${o.tier==='Base'?'selected':''}>Base</option><option ${o.tier==='14'?'selected':''}>14</option><option ${o.tier==='22'?'selected':''}>22</option><option ${o.tier==='33'?'selected':''}>33</option></select></td>${['cost','sell','moq','lead','stock','share','cap'].map(num).join('')}${f('supplier')}${f('notes')}</tr>`});$('catalog').innerHTML=h}
-function calc(){
-let hist=B.reduce((s,b)=>s+S.counts[b].reduce((a,x)=>a+x,0),0),dia=n('dia'),listed=0,band={};
-B.forEach(b=>{let q=S.counts[b].reduce((a,x)=>a+x,0),ap=avg(S.props[b].p);listed+=q*ap;band[b]={q,share:q/hist,ap}});
-let rate=hist/dia,total=n('corp')*rate*n('growth')+n('extra'),mw=M.map((x,i)=>B.reduce((s,b)=>s+S.counts[b][i],0)/hist),td={14:0,22:0,33:0},bf={};
-B.forEach(b=>{let q=total*band[b].share;bf[b]={total:q,months:mw.map(w=>q*w)};['14','22','33'].forEach((t,i)=>td[t]+=q*S.map[b][i]/100)});
-let finish=(n('rm')*n('rr')+n('tag')+n('rice')+n('seal')+n('fill'))*(1+n('waste')/100),po=[];
-['14','22','33'].forEach(t=>{let os=S.opts.filter(o=>o.tier===t),st=os.reduce((s,o)=>s+o.share,0)||1;os.forEach(o=>{let demand=td[t]*(o.share/st),cov=o.lead<=n('short')?n('scov')/100:n('lcov')/100,target=demand*(1+n('safe')/100)*cov,net=Math.max(0,target-o.stock),moq=Math.max(1,o.moq||1),order=Math.ceil(net/moq)*moq,all=o.cost+finish;po.push({...o,demand,order,all,margin:o.sell-all,investment:order*all})})});
-return{hist,dia,listed,recon:dia/listed,rate,total,mw,band,bf,td,finish,po}
-}
-function recalc(){rmatrix();rprops();rmaps();rcatalog();let c=calc();
-$('calK').innerHTML=`<div class="kpi"><span class="muted">Historic packages</span><b>${c.hist}</b></div><div class="kpi"><span class="muted">Proposal-implied sales</span><b>${eur(c.listed)}</b></div><div class="kpi"><span class="muted">Observed DIADIKASIA sales</span><b>${eur(c.dia)}</b></div><div class="kpi"><span class="muted">Reconciliation factor</span><b>${fmt(c.recon)}×</b></div>`;
-$('fk').innerHTML=`<div class="kpi"><span class="muted">Packages / €1,000 historic sales</span><b>${fmt(c.rate*1000)}</b></div><div class="kpi"><span class="muted">Corporate forecast</span><b>${Math.round(n('corp')*c.rate*n('growth'))}</b></div><div class="kpi"><span class="muted">Extra retail/e-shop</span><b>${Math.round(n('extra'))}</b></div><div class="kpi"><span class="muted">Total forecast</span><b>${Math.round(c.total)}</b></div>`;
-let f='<tr><th>Gift band</th><th>Historic share</th><th>Total forecast</th>'+M.map(x=>'<th>'+x+'</th>').join('')+'</tr>';B.forEach(b=>{let x=c.bf[b];f+=`<tr><td>€${b}</td><td>${fmt(c.band[b].share*100)}%</td><td>${Math.round(x.total)}</td>${x.months.map(v=>'<td>'+Math.round(v)+'</td>').join('')}</tr>`});$('fct').innerHTML=f;
-$('tier').innerHTML='<tr><th>Tier</th><th>Forecast units</th><th>Target structural cost</th><th>Sell</th><th>Branding/finishing</th></tr>'+[['14',10,14],['22',17,22],['33',25,33]].map(x=>`<tr><td>€${x[0]}</td><td>${Math.round(c.td[x[0]])}</td><td>${eur(x[1])}</td><td>${eur(x[2])}</td><td>${eur(c.finish)}</td></tr>`).join('');
-$('po').innerHTML='<tr><th>SKU</th><th>Type</th><th>Tier</th><th>Demand</th><th>MOQ</th><th>Lead</th><th>Order now</th><th>All-in cost</th><th>Margin</th><th>Investment</th><th>Supplier</th></tr>'+c.po.map(o=>`<tr><td>${o.name}</td><td>${o.type}</td><td>€${o.tier}</td><td>${Math.round(o.demand)}</td><td>${o.moq}</td><td>${o.lead}d</td><td><b>${o.order}</b></td><td>${eur(o.all)}</td><td class="${o.margin>=0?'ok':'bad'}">${eur(o.margin)}</td><td>${eur(o.investment)}</td><td>${o.supplier}</td></tr>`).join('');
-let bm=B.filter(b=>S.map[b].reduce((s,x)=>s+x,0)!==100),bt=['14','22','33'].filter(t=>Math.abs(S.opts.filter(o=>o.tier===t).reduce((s,o)=>s+o.share,0)-100)>.01),ph=S.opts.filter(o=>o.tier!=='Base'&&o.supplier==='TBC');
-$('checks').innerHTML=`<p class="${bm.length?'bad':'ok'}">${bm.length?'✕':'✓'} Gift-band mappings total 100%${bm.length?' — fix '+bm.map(x=>'€'+x).join(', '):''}</p><p class="${bt.length?'bad':'ok'}">${bt.length?'✕':'✓'} SKU shares total 100% per tier${bt.length?' — fix '+bt.map(x=>'€'+x).join(', '):''}</p><p class="${ph.length?'bad':'ok'}">${ph.length?'⚠':'✓'} ${ph.length} supplier rows still contain TBC data.</p><p>Finishing cost: <b>${eur(c.finish)}</b>/gift including ${n('rm')}m ribbon.</p>`;
-$('audit').innerHTML=`<p><b>Volume anchor:</b> ${c.hist} observed DIADIKASIA packages / ${eur(c.dia)} annual sales = ${fmt(c.rate*1000)} packages per €1,000. This rate is applied to the editable corporate-sales base.</p><p><b>Seasonality:</b> Oct–Jan weights come only from the DIADIKASIA package-count table and are therefore a proxy for the wider client base.</p><p><b>Revenue reconciliation:</b> the attached proposal prices imply ${eur(c.listed)}, versus ${eur(c.dia)} annual DIADIKASIA sales. Per management instruction the planner does not assume missing packages; the ${fmt(c.recon)}× factor is shown explicitly as unresolved realised-price variance (label changes, shipping, product substitutions and other adjustments).</p><p><b>PO logic:</b> tier demand → SKU allocation shares → safety stock → short/long-lead coverage → current stock → MOQ rounding.</p>`;save()}
-function csv(rows){return rows.map(r=>r.map(v=>'"'+String(v??'').replaceAll('"','""')+'"').join(',')).join('\n')}function dl(name,text,type='text/csv'){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click()}
-document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.panel').forEach(x=>x.classList.remove('on'));b.classList.add('on');$(b.dataset.p).classList.add('on')});
-['corp','dia','growth','extra','rm','rr','tag','rice','seal','fill','waste','safe','short','scov','lcov'].forEach(x=>$(x).oninput=recalc);
-$('add').onclick=()=>{S.opts.push({name:'New option',type:'TBC',tier:'14',cost:10,sell:14,moq:1,lead:30,stock:0,share:0,cap:3,supplier:'TBC',notes:''});recalc()};
-$('catcsv').onclick=()=>dl('monzu-packaging-catalog.csv',csv([['Option','Type','Tier','Cost','Sell','MOQ','Lead days','Stock','Allocation %','Capacity','Supplier','Notes'],...S.opts.map(o=>[o.name,o.type,o.tier,o.cost,o.sell,o.moq,o.lead,o.stock,o.share,o.cap,o.supplier,o.notes])]));
-$('pocsv').onclick=()=>{let c=calc();dl('monzu-cellar-procurement-order.csv',csv([['SKU','Type','Tier','Supplier','Forecast demand','MOQ','Lead days','Stock','Suggested order','Structural cost','Finishing cost','All-in cost','Sell','Margin/unit','Investment','Capacity','Notes'],...c.po.map(o=>[o.name,o.type,o.tier,o.supplier,Math.round(o.demand),o.moq,o.lead,o.stock,o.order,o.cost,c.finish,o.all,o.sell,o.margin,o.investment,o.cap,o.notes])]))};
-$('mktcsv').onclick=()=>{let c=calc();dl('monzu-cellar-marketing-render-brief.csv',csv([['SKU','Type','Tier','Capacity bottles','Sell price','Supplier','Order qty','Render priority','Notes'],...c.po.filter(o=>o.order>0).map(o=>[o.name,o.type,o.tier,o.cap,o.sell,o.supplier,o.order,o.order>=50?'Hero / website priority':'Secondary',o.notes])]))};
-$('json').onclick=()=>dl('monzu-cellar-packaging-model.json',JSON.stringify({inputs:{corp:n('corp'),dia:n('dia'),growth:n('growth'),extra:n('extra')},state:S,calculation:calc()},null,2),'application/json');
-$('reset').onclick=()=>{if(confirm('Reset to defaults?')){localStorage.removeItem('monzuP');location.reload()}};
-recalc();
-</script>
-</body></html>
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Monzù Cellar Packaging Planner</title>
+<style>:root{--n:#192939;--c:#f5f0e7;--t:#8a5436;--l:#ddd4c8}*{box-sizing:border-box}body{margin:0;background:var(--c);font:14px Arial,sans-serif;color:#20252a}header{background:var(--n);color:#fff;padding:30px}h1,h2{font-family:Georgia,serif;font-weight:500}header p{max-width:860px;color:#dfe7ec}main{max-width:1200px;margin:auto;padding:24px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--l);border-radius:14px;padding:18px;margin-bottom:16px}.big{font-size:38px;font-family:Georgia,serif;color:var(--n);margin:7px 0}.tier{border-top:7px solid var(--t)}.tier .big{font-size:46px}.small{font-size:12px;color:#6e7478;line-height:1.45}table{width:100%;border-collapse:collapse;background:#fff}th,td{padding:10px;border-bottom:1px solid #eee7de;text-align:left;vertical-align:middle}th{font-size:12px;color:#687078;background:#faf7f2}.num{text-align:right}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:#edf0f2;font-size:12px}.product{display:flex;gap:10px;align-items:center}.thumb{width:74px;height:74px;object-fit:cover;border-radius:8px;background:#eee}.warn{background:#fff5dc;border-left:4px solid #b98022;padding:12px}details summary{cursor:pointer;font-weight:bold;color:var(--n)}@media(max-width:800px){.cards{grid-template-columns:1fr}.wrap{overflow:auto}}</style></head><body>
+<header><h1>Πόσες συσκευασίες χρειάζεται το Monzù Cellar;</h1><p>Τα ιστορικά στοιχεία Vinifera και DIADIKASIA είναι κλειδωμένα. Το εργαλείο τα χρησιμοποιεί αυτόματα και δείχνει γρήγορα τι χρειάζεται να αγοραστεί.</p></header><main>
+<div class="cards"><div class="card"><div class="small">Ιστορική εκτίμηση εταιρικών δώρων</div><div class="big">1.296</div><div class="small">216 δώρα DIADIKASIA / €37.632,51 × €225.856,70 συνολικό corporate gifting 2025.</div></div><div class="card"><div class="small">Προτεινόμενη κάλυψη</div><div class="big">1.426</div><div class="small">Ιστορική βάση + 10% απόθεμα ασφαλείας.</div></div><div class="card"><div class="small">Δεκέμβριος</div><div class="big">56%</div><div class="small">121 από τα 216 ιστορικά δώρα.</div></div></div>
+<h2>1. Τι χρειαζόμαστε</h2><div class="cards"><div class="card tier"><span class="pill">Πώληση €14</span><div class="big">654</div><div>τεμάχια</div><p class="small">Δώρα €40 / €60 / €80. Branded bags, fabric/jute bags, μικρά wooden boxes, μικρά καλάθια.</p></div><div class="card tier"><span class="pill">Πώληση €22</span><div class="big">660</div><div>τεμάχια</div><p class="small">Δώρα €100 / €120 + μέρος €150. Κυρίως 3–4 bottle baskets, wooden boxes, carriers.</p></div><div class="card tier"><span class="pill">Πώληση €33</span><div class="big">112</div><div>τεμάχια</div><p class="small">Μεγαλύτερα €150 / €200 / €320. Καπελιέρες, premium baskets, μεγαλύτερα wooden boxes.</p></div></div>
+<div class="card"><h2>2. Ανά αξία δώρου</h2><div class="wrap"><table><thead><tr><th>Αξία δώρου</th><th class="num">Ιστορικά</th><th class="num">Share</th><th class="num">Ανάγκη</th><th>Monzù packaging</th></tr></thead><tbody>
+<tr><td>€40</td><td class="num">3</td><td class="num">1,4%</td><td class="num"><b>20</b></td><td>€14</td></tr><tr><td>€60</td><td class="num">39</td><td class="num">18,1%</td><td class="num"><b>258</b></td><td>€14</td></tr><tr><td>€80</td><td class="num">57</td><td class="num">26,4%</td><td class="num"><b>376</b></td><td>€14</td></tr><tr><td>€100</td><td class="num">82</td><td class="num">38,0%</td><td class="num"><b>541</b></td><td>€22</td></tr><tr><td>€120</td><td class="num">12</td><td class="num">5,6%</td><td class="num"><b>79</b></td><td>€22</td></tr><tr><td>€150</td><td class="num">18</td><td class="num">8,3%</td><td class="num"><b>119</b></td><td>€22 / €33</td></tr><tr><td>€200</td><td class="num">3</td><td class="num">1,4%</td><td class="num"><b>20</b></td><td>€33</td></tr><tr><td>€320</td><td class="num">2</td><td class="num">0,9%</td><td class="num"><b>13</b></td><td>€33</td></tr></tbody></table></div></div>
+<div class="card"><h2>3. Market options που ταιριάζουν</h2><div class="wrap"><table><thead><tr><th>Tier</th><th>Προϊόν</th><th>Supplier</th><th class="num">Κόστος</th><th>MOQ</th><th>Lead time</th></tr></thead><tbody>
+<tr><td>€14</td><td>Branded paper bags 1/2/3 bottles</td><td>Xenos</td><td class="num">€0,74–0,84</td><td>1.000</td><td>50 days</td></tr><tr><td>€14</td><td>Wooden box 2 bottles</td><td>Papaderos</td><td class="num">€8,00</td><td>50</td><td>TBC</td></tr><tr><td>€14</td><td>Wooden box 3 bottles</td><td>Papaderos</td><td class="num">€9,30–9,65</td><td>25–50</td><td>15 days</td></tr><tr><td>€14</td><td><div class="product"><img class="thumb" src="https://www.gadsby.co.uk/uploads/products/_w1800/FB100_new_2026-04-24-093121_abry.jpg?v=1777023081">Natural Jute Bag</div></td><td>Gadsby</td><td class="num">€3,56*</td><td>10+</td><td>available</td></tr>
+<tr><td>€22</td><td><div class="product"><img class="thumb" src="https://www.gadsby.co.uk/uploads/products/_w1800/HA095_1_New.jpg?v=1778590963">14 Inch Hamper - Light Grey</div></td><td>Gadsby</td><td class="num">€15,72*</td><td>6–23</td><td>available</td></tr><tr><td>€22</td><td>Wooden box 6 bottles</td><td>Papaderos</td><td class="num">€11,35</td><td>50</td><td>TBC</td></tr><tr><td>€22</td><td><div class="product"><img class="thumb" src="https://www.gadsby.co.uk/uploads/products/_w1800/BH041_New_2.jpg?v=1678726689">4 Wine Bottle Carrier</div></td><td>Gadsby</td><td class="num">€18,31*</td><td>10+</td><td>available</td></tr>
+<tr><td>€33</td><td>Kapeliera / Round box</td><td>Simper</td><td class="num">€19,00</td><td>50</td><td>TBC</td></tr><tr><td>€33</td><td><div class="product"><img class="thumb" src="https://www.gadsby.co.uk/uploads/products/_w1800/HA026_1_New.jpg?v=1778253003">16 Inch Wicker Hamper</div></td><td>Gadsby</td><td class="num">€20,22*</td><td>3–23</td><td>available</td></tr><tr><td>€33</td><td><div class="product"><img class="thumb" src="https://www.gadsby.co.uk/uploads/products/_w1800/SB090_1_New.jpg?v=1780652094">Large Lined Shopping Basket</div></td><td>Gadsby</td><td class="num">€23,23*</td><td>10+</td><td>available</td></tr><tr><td>€33</td><td><div class="product"><img class="thumb" src="https://www.gadsby.co.uk/uploads/products/_w1800/HA166_1_New.jpg?v=1778589581">16 Inch Bronzed Hamper</div></td><td>Gadsby</td><td class="num">€23,43*</td><td>3–23</td><td>early Nov</td></tr></tbody></table></div><p class="small">* Packaging Options: calculated euro price incl. VAT, excluding shipping/import.</p></div>
+<div class="card"><h2>4. Branding που μπαίνει σε κάθε δώρο</h2><div class="cards"><div><b>Rice paper</b><div class="big" style="font-size:26px">€0,078</div></div><div><b>Round tag</b><div class="big" style="font-size:26px">€0,16</div></div><div><b>Ribbon</b><div class="big" style="font-size:26px">1,5 m</div><div class="small">Το Budget γράφει €0,286/unit branded ribbon. Χρειάζεται μόνο επιβεβαίωση ότι η μονάδα είναι 1m πριν κλειδώσει το all-in κόστος.</div></div></div><div class="warn">Το πραγματικό packaging cost = βασική συσκευασία + rice paper + tag + 1,5m ribbon + filler/protection όπου χρειάζεται.</div></div>
+<div class="card"><h2>5. Σταθερή ιστορική βάση</h2><details><summary>DIADIKASIA package-count matrix</summary><div class="wrap"><table><thead><tr><th>Τιμή</th><th>Oct</th><th>Nov</th><th>Dec</th><th>Jan</th><th>Σύνολο</th></tr></thead><tbody><tr><td>€40</td><td>0</td><td>0</td><td>3</td><td>0</td><td>3</td></tr><tr><td>€60</td><td>3</td><td>1</td><td>35</td><td>0</td><td>39</td></tr><tr><td>€80</td><td>11</td><td>3</td><td>32</td><td>11</td><td>57</td></tr><tr><td>€100</td><td>10</td><td>8</td><td>32</td><td>32</td><td>82</td></tr><tr><td>€120</td><td>2</td><td>0</td><td>8</td><td>2</td><td>12</td></tr><tr><td>€150</td><td>4</td><td>1</td><td>9</td><td>4</td><td>18</td></tr><tr><td>€200</td><td>0</td><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><td>€320</td><td>0</td><td>1</td><td>1</td><td>0</td><td>2</td></tr></tbody></table></div></details><p class="small">€320 replaces the handwritten/summary €300 bracket, following management correction. The six attached DIADIKASIA proposal pages are used as the fixed composition evidence for €40–€200.</p></div>
+<div class="card"><h2>6. Μόνο ένα source λείπει</h2><p>Το Vinifera Booklet που βρίσκεται στο Downloads δεν είναι διαθέσιμο μέσα στη συνομιλία. Μόλις ανέβει, θα χρησιμοποιηθεί για να κλειδώσουμε το ακριβές mix καλάθι / καπελιέρα / ξύλινο / δίσκος / bag ανά price bracket — χωρίς να αλλάξει η ιστορική βάση ή η λογική του εργαλείου.</p></div>
+</main></body></html>
